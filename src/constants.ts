@@ -1,4 +1,4 @@
-// Chain names and ID's 
+// Chain names and ID's
 export const CHAIN_IDs = {
   MAINNET: 1,
   OPTIMISM: 10,
