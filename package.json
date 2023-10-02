@@ -13,7 +13,7 @@
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
   },
-  "name": "across-constants",
+  "name": "@across-protocol/constants-v2",
   "version": "1.0.0",
   "description": "Export commonly re-used values for Across repositories",
   "main": "dist/index.js",
