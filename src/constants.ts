@@ -217,4 +217,12 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.MUMBAI]: "0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889",
     },
   },
+  OP: {
+    name: "Optimism",
+    symbol: "OP",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.OPTIMISM]: "0x4200000000000000000000000000000000000042",
+    },
+  },
 };
