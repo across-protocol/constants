@@ -230,6 +230,7 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "wECO",
     decimals: 18,
     addresses: {
+      [CHAIN_IDs.MAINNET]: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // dummy - not deployed yet. Using WETH for now.
       [CHAIN_IDs.GOERLI]: "0x495A1619EEAcD776Eaa241df7A38dC74Ee7F1779",
       [CHAIN_IDs.OPTIMISM_GOERLI]: "0x130c1Dcc9FD997Fa02f555dad54EDaf553f2555A",
       [CHAIN_IDs.BASE_GOERLI]: "0x4489d0a0345eCB216A3994De780d453c7fA6312C",
