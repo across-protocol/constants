@@ -227,12 +227,24 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.OPTIMISM]: "0x4200000000000000000000000000000000000042",
     },
   },
+  ECO: {
+    name: "Eco",
+    symbol: "ECO",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x8dBF9A4c99580fC7Fd4024ee08f3994420035727",
+      [CHAIN_IDs.OPTIMISM]: "0xe7BC9b3A936F122f08AAC3b1fac3C3eC29A78874",
+      [CHAIN_IDs.BASE]: "0x434769c82fB928150B87C4Ae6320Bf71F92dCCa5",
+      [CHAIN_IDs.GOERLI]: "0x3E87d4d9E69163E7590f9b39a70853cf25e5ABE3",
+      [CHAIN_IDs.OPTIMISM_GOERLI]: "0xD2f598c826429EEe7c071C02735549aCd88F2c09",
+    },
+  },
   wECO: {
     name: "Wrapped ECO",
     symbol: "wECO",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.MAINNET]: "0xaa55aa55aa55aa55aa55aa55aa55aa55aa55aa55", // dummy - not deployed yet.
+      [CHAIN_IDs.MAINNET]: "0x8dBF9A4c99580fC7Fd4024ee08f3994420035727", // not deployed yet; fallback to ECO.
       [CHAIN_IDs.GOERLI]: "0x495A1619EEAcD776Eaa241df7A38dC74Ee7F1779",
       [CHAIN_IDs.OPTIMISM_GOERLI]: "0x130c1Dcc9FD997Fa02f555dad54EDaf553f2555A",
       [CHAIN_IDs.BASE_GOERLI]: "0x4489d0a0345eCB216A3994De780d453c7fA6312C",
