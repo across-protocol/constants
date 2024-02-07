@@ -228,15 +228,4 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.OPTIMISM]: "0x4200000000000000000000000000000000000042",
     },
   },
-  wECO: {
-    name: "Wrapped ECO",
-    symbol: "wECO",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.MAINNET]: "0xaa55aa55aa55aa55aa55aa55aa55aa55aa55aa55", // dummy - not deployed yet.
-      [CHAIN_IDs.GOERLI]: "0x495A1619EEAcD776Eaa241df7A38dC74Ee7F1779",
-      [CHAIN_IDs.OPTIMISM_GOERLI]: "0x130c1Dcc9FD997Fa02f555dad54EDaf553f2555A",
-      [CHAIN_IDs.BASE_GOERLI]: "0x4489d0a0345eCB216A3994De780d453c7fA6312C",
-    },
-  },
 };
