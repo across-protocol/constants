@@ -1,12 +1,5 @@
 // Chain names and ID's
-export const CHAIN_IDs = {
-  MAINNET: 1,
-  OPTIMISM: 10,
-  POLYGON: 137,
-  BOBA: 288,
-  ZK_SYNC: 324,
-  BASE: 8453,
-  ARBITRUM: 42161,
+export const TESTNET_CHAIN_IDs = {
   GOERLI: 5,
   OPTIMISM_GOERLI: 420,
   ZK_SYNC_GOERLI: 280,
@@ -19,7 +12,22 @@ export const CHAIN_IDs = {
   POLYGON_AMOY: 80002,
   BASE_SEPOLIA: 84532,
   ARBITRUM_SEPOLIA: 421614,
-};
+} as const;
+
+export const MAINNET_CHAIN_IDs = {
+  MAINNET: 1,
+  OPTIMISM: 10,
+  POLYGON: 137,
+  BOBA: 288,
+  ZK_SYNC: 324,
+  BASE: 8453,
+  ARBITRUM: 42161,
+} as const;
+
+export const CHAIN_IDs = {
+  ...MAINNET_CHAIN_IDs,
+  ...TESTNET_CHAIN_IDs,
+} as const;
 
 // Information for the supported tokens on each chain.
 // NOTE: All addresses should be checksummed
