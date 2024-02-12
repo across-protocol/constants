@@ -6,7 +6,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   ARBITRUM_SEPOLIA: 421614,
   SEPOLIA: 11155111,
   OPTIMISM_SEPOLIA: 11155420,
-} as const;
+};
 
 export const TESTNET_GOERLI_CHAIN_IDs = {
   GOERLI: 5,
@@ -15,7 +15,7 @@ export const TESTNET_GOERLI_CHAIN_IDs = {
   MUMBAI: 80001,
   BASE_GOERLI: 84531,
   ARBITRUM_GOERLI: 421613,
-} as const;
+};
 
 export const TESTNET_CHAIN_IDs = {
   ...TESTNET_SEPOLIA_CHAIN_IDs,
@@ -30,12 +30,12 @@ export const MAINNET_CHAIN_IDs = {
   ZK_SYNC: 324,
   BASE: 8453,
   ARBITRUM: 42161,
-} as const;
+};
 
 export const CHAIN_IDs = {
   ...MAINNET_CHAIN_IDs,
   ...TESTNET_CHAIN_IDs,
-} as const;
+};
 
 // Information for the supported tokens on each chain.
 // NOTE: All addresses should be checksummed
