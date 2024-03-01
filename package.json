@@ -1,6 +1,6 @@
 {
   "name": "@across-protocol/constants-v2",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Export commonly re-used values for Across repositories",
   "repository": "https://github.com/across-protocol/constants-v2.git",
   "author": "hello@umaproject.org",
