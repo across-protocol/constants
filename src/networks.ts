@@ -60,7 +60,6 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ARBITRUM_SEPOLIA]: { name: "Arbitrum Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.arbiscan.io" },
   [CHAIN_IDs.BASE_GOERLI]: { name: "Base Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.basescan.org" },
   [CHAIN_IDs.BASE_SEPOLIA]: { name: "Base Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.basescan.org" },
-  [CHAIN_IDs.BASE_GOERLI]: { name: "Arbitrum Rinkeby", nativeToken: "ETH", blockExplorer: "https://testnet.arbiscan.io" },
   [CHAIN_IDs.GOERLI]: { name: "Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.ethercan.io" },
   [CHAIN_IDs.MUMBAI]: { name: "Polygon Mumbai", nativeToken: "MATIC", blockExplorer: "https://mumbai.polygonscan.com" },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: { name: "Optimism Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-optimism.etherscan.io" },
