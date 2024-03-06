@@ -27,30 +27,31 @@ interface PublicNetwork {
   blockExplorer: string;
 }
 
-export const PUBLIC_NETWORKS: { [chainId: number]: PublicNetwork } = {
-  1: { name: "Mainnet",  nativeToken: "ETH", blockExplorer: "https://etherscan.io" },
-  3: { name: "Ropsten", nativeToken: "ETH", blockExplorer: "https://ropsten.etherscan.io" },
-  4: { name: "Rinkeby", nativeToken: "ETH",  blockExplorer: "https://rinkeby.etherscan.io" },
-  5: { name: "Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.ethercan.io" },
-  10: { name: "Optimism", nativeToken: "ETH", blockExplorer: "https://optimistic.ethercan.io" },
-  42: { name: "Kovan", nativeToken: "ETH", blockExplorer: "https://kovan.etherscan.io" },
-  69: { name: "Optimism Kovan", nativeToken: "ETH", blockExplorer: "https://kovan-optimistic.ethercan.io" },
-  100: { name: "Gnosis", nativeToken: "XDAI", blockExplorer: "https://blockscout.comxdai/mainnet" },
-  137: { name: "Polygon",  nativeToken: "MATIC", blockExplorer: "https://polygonscan.com" },
-  280: { name: "zkSync Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.explorer.zksync.io" },
-  288: { name: "Boba", nativeToken: "ETH", blockExplorer: "https://blockexplorer.boba.network" },
-  300: { name: "zkSync Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.explorer.zksync.io" },
-  324: { name: "zksync", nativeToken: "ETH", blockExplorer: "https://explorer.zksync.io" },
-  80001: { name: "Polygon Mumbai", nativeToken: "MATIC", blockExplorer: "https://mumbai.polygonscan.com" },
-  42161: { name: "Arbitrum One", nativeToken: "ETH", blockExplorer: "https://arbiscan.io" },
-  43114: { name: "Avalanche", nativeToken: "AVAX", blockExplorer: "https://snowtrace.io" },
-  8453: { name: "Base", nativeToken: "ETH", blockExplorer: "https://basescan.org" },
-  84531: { name: "Base Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.basescan.org" },
-  84532: { name: "Base Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.basescan.org" },
-  421611: { name: "Arbitrum Rinkeby", nativeToken: "ETH", blockExplorer: "https://testnet.arbiscan.io" },
-  421613: { name: "Arbitrum Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.arbiscan.io" },
-  421614: { name: "Arbitrum Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.arbiscan.io" },
-  11155111: { name: "Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.ethercan.io" },
-  11155420: { name: "Optimism Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-optimism.etherscan.io" },
-  168587773: { name: "Blast Sepolia", nativeToken: "ETH", blockExplorer: "https://testnet.blastscan.io" },
+export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
+  [CHAIN_IDs.ARBITRUM]: { name: "Arbitrum One", nativeToken: "ETH", blockExplorer: "https://arbiscan.io" },
+  [CHAIN_IDs.BASE]: { name: "Base", nativeToken: "ETH", blockExplorer: "https://basescan.org" },
+  [CHAIN_IDs.BOBA]: { name: "Boba", nativeToken: "ETH", blockExplorer: "https://blockexplorer.boba.network" },
+  [CHAIN_IDs.MAINNET]: { name: "Mainnet",  nativeToken: "ETH", blockExplorer: "https://etherscan.io" },
+  [CHAIN_IDs.OPTIMISM]: { name: "Optimism", nativeToken: "ETH", blockExplorer: "https://optimistic.ethercan.io" },
+  [CHAIN_IDs.POLYGON]: { name: "Polygon",  nativeToken: "MATIC", blockExplorer: "https://polygonscan.com" },
+  [CHAIN_IDs.ZK_SYNC]: { name: "zksync", nativeToken: "ETH", blockExplorer: "https://explorer.zksync.io" },
+};
+
+export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
+  [CHAIN_IDs.ARBITRUM_GOERLI]: { name: "Arbitrum Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.arbiscan.io" },
+  [CHAIN_IDs.ARBITRUM_SEPOLIA]: { name: "Arbitrum Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.arbiscan.io" },
+  [CHAIN_IDs.BASE_GOERLI]: { name: "Base Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.basescan.org" },
+  [CHAIN_IDs.BASE_SEPOLIA]: { name: "Base Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.basescan.org" },
+  [CHAIN_IDs.BASE_GOERLI]: { name: "Arbitrum Rinkeby", nativeToken: "ETH", blockExplorer: "https://testnet.arbiscan.io" },
+  [CHAIN_IDs.GOERLI]: { name: "Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.ethercan.io" },
+  [CHAIN_IDs.MUMBAI]: { name: "Polygon Mumbai", nativeToken: "MATIC", blockExplorer: "https://mumbai.polygonscan.com" },
+  [CHAIN_IDs.OPTIMISM_SEPOLIA]: { name: "Optimism Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-optimism.etherscan.io" },
+  [CHAIN_IDs.SEPOLIA]: { name: "Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.ethercan.io" },
+  [CHAIN_IDs.ZK_SYNC_GOERLI]: { name: "zkSync Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.explorer.zksync.io" },
+  [CHAIN_IDs.ZK_SYNC_SEPOLIA]: { name: "zkSync Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.explorer.zksync.io" },
+};
+
+export const PUBLIC_NETWORKS = {
+  ...PRODUCTION_NETWORKS,
+  ...TEST_NETWORKS,
 };
