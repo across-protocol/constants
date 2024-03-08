@@ -1,43 +1,4 @@
-// Chain names and ID's
-export const TESTNET_SEPOLIA_CHAIN_IDs = {
-  ZK_SYNC_SEPOLIA: 300,
-  POLYGON_AMOY: 80002,
-  BASE_SEPOLIA: 84532,
-  ARBITRUM_SEPOLIA: 421614,
-  SEPOLIA: 11155111,
-  OPTIMISM_SEPOLIA: 11155420,
-};
-
-export const TESTNET_GOERLI_CHAIN_IDs = {
-  GOERLI: 5,
-  ZK_SYNC_GOERLI: 280,
-  OPTIMISM_GOERLI: 420,
-  MUMBAI: 80001,
-  BASE_GOERLI: 84531,
-  ARBITRUM_GOERLI: 421613,
-  LINEA_GOERLI: 59140
-};
-
-export const TESTNET_CHAIN_IDs = {
-  ...TESTNET_SEPOLIA_CHAIN_IDs,
-  ...TESTNET_GOERLI_CHAIN_IDs,
-} as const;
-
-export const MAINNET_CHAIN_IDs = {
-  MAINNET: 1,
-  OPTIMISM: 10,
-  POLYGON: 137,
-  BOBA: 288,
-  ZK_SYNC: 324,
-  BASE: 8453,
-  ARBITRUM: 42161,
-  LINEA: 59144
-};
-
-export const CHAIN_IDs = {
-  ...MAINNET_CHAIN_IDs,
-  ...TESTNET_CHAIN_IDs,
-};
+import { CHAIN_IDs } from "./networks";
 
 // Information for the supported tokens on each chain.
 // NOTE: All addresses should be checksummed
