@@ -53,6 +53,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.OPTIMISM]: { name: "Optimism", nativeToken: "ETH", blockExplorer: "https://optimistic.ethercan.io" },
   [CHAIN_IDs.POLYGON]: { name: "Polygon",  nativeToken: "MATIC", blockExplorer: "https://polygonscan.com" },
   [CHAIN_IDs.ZK_SYNC]: { name: "zksync", nativeToken: "ETH", blockExplorer: "https://explorer.zksync.io" },
+  [CHAIN_IDs.LINEA]: { name: "Linea", nativeToken: "ETH", blockExplorer: "https://lineascan.build" },
 };
 
 export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
