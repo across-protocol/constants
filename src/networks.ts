@@ -52,7 +52,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.MAINNET]: { name: "Mainnet",  nativeToken: "ETH", blockExplorer: "https://etherscan.io" },
   [CHAIN_IDs.OPTIMISM]: { name: "Optimism", nativeToken: "ETH", blockExplorer: "https://optimistic.ethercan.io" },
   [CHAIN_IDs.POLYGON]: { name: "Polygon",  nativeToken: "MATIC", blockExplorer: "https://polygonscan.com" },
-  [CHAIN_IDs.ZK_SYNC]: { name: "zksync", nativeToken: "ETH", blockExplorer: "https://explorer.zksync.io" },
+  [CHAIN_IDs.ZK_SYNC]: { name: "zkSync", nativeToken: "ETH", blockExplorer: "https://era.zksync.network/" },
   [CHAIN_IDs.LINEA]: { name: "Linea", nativeToken: "ETH", blockExplorer: "https://lineascan.build" },
 };
 
@@ -67,7 +67,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.POLYGON_AMOY]: { name: "Polygon Amoy", nativeToken: "MATIC", blockExplorer: "https://oklink.com/amoy" },
   [CHAIN_IDs.SEPOLIA]: { name: "Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.ethercan.io" },
   [CHAIN_IDs.ZK_SYNC_GOERLI]: { name: "zkSync Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.explorer.zksync.io" },
-  [CHAIN_IDs.ZK_SYNC_SEPOLIA]: { name: "zkSync Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.explorer.zksync.io" },
+  [CHAIN_IDs.ZK_SYNC_SEPOLIA]: { name: "zkSync Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-era.zksync.network/" },
 };
 
 export const PUBLIC_NETWORKS = {
