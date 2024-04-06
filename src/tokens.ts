@@ -196,7 +196,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.LINEA_GOERLI]: "0xB4257F31750961C8e536f5cfCBb3079437700416",
     },
   },
-  "USCbC": {
+  "USDbC": {
     name: "USD Coin (bridged)",
     symbol: "USDbC",
     decimals: 6,
