@@ -157,6 +157,52 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.LINEA_GOERLI]: "0xB4257F31750961C8e536f5cfCBb3079437700416",
     },
   },
+  // NOTE: The entry `_USDC` should eventually replace the `USDC` entry because we now distinguish
+  // between bridged and non-bridged USDC. Until all components of the system are able to handle this
+  // distinction, we keep both entries for backwards compatibility.
+  "_USDC": {
+    name: "USD Coin",
+    symbol: "USDC",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      [CHAIN_IDs.OPTIMISM]: "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
+      [CHAIN_IDs.POLYGON]: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      [CHAIN_IDs.ARBITRUM]: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      [CHAIN_IDs.ZK_SYNC]: "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4",
+      [CHAIN_IDs.BASE]: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      [CHAIN_IDs.SEPOLIA]: "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+      [CHAIN_IDs.POLYGON_AMOY]: "0x41E94Eb019C0762f9Bfcf9Fb1E58725BfB0e7582",
+      [CHAIN_IDs.ZK_SYNC_SEPOLIA]: "0xAe045DE5638162fa134807Cb558E15A3F5A7F853",
+      [CHAIN_IDs.BASE_SEPOLIA]: "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+      [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
+      [CHAIN_IDs.ARBITRUM_SEPOLIA]: "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d"
+    },
+  },
+  "USDC.e": {
+    name: "USD Coin (bridged)",
+    symbol: "USDC.e",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.OPTIMISM]: "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
+      [CHAIN_IDs.POLYGON]: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      [CHAIN_IDs.BOBA]: "0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc",
+      [CHAIN_IDs.ARBITRUM]: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+      [CHAIN_IDs.ZK_SYNC]: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+      [CHAIN_IDs.LINEA]: "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
+      [CHAIN_IDs.BASE]: "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      [CHAIN_IDs.MUMBAI]: "0xe6b8a5CF854791412c1f6EFC7CAf629f5Df1c747",
+      [CHAIN_IDs.LINEA_GOERLI]: "0xB4257F31750961C8e536f5cfCBb3079437700416",
+    },
+  },
+  "USDbC": {
+    name: "USD Coin (bridged)",
+    symbol: "USDbC",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.BASE]: "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    },
+  },
   USDT: {
     name: "USDT",
     symbol: "USDT",
