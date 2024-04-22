@@ -4,7 +4,7 @@ import { CHAIN_IDs } from "./networks";
 // NOTE: All addresses should be checksummed
 export const TOKEN_SYMBOLS_MAP = {
   ACX: {
-    name: "ACX",
+    name: "Across Protocol Token",
     symbol: "ACX",
     decimals: 18,
     addresses: {
@@ -125,7 +125,7 @@ export const TOKEN_SYMBOLS_MAP = {
     },
   },
   UMA: {
-    name: "UMA",
+    name: "UMA Voting Token",
     symbol: "UMA",
     decimals: 18,
     addresses: {
@@ -192,7 +192,6 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.ARBITRUM]: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
       [CHAIN_IDs.ZK_SYNC]: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
       [CHAIN_IDs.LINEA]: "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
-      [CHAIN_IDs.BASE]: "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
       [CHAIN_IDs.MUMBAI]: "0xe6b8a5CF854791412c1f6EFC7CAf629f5Df1c747",
       [CHAIN_IDs.LINEA_GOERLI]: "0xB4257F31750961C8e536f5cfCBb3079437700416",
     },
@@ -206,7 +205,7 @@ export const TOKEN_SYMBOLS_MAP = {
     },
   },
   USDT: {
-    name: "USDT",
+    name: "Tether USD",
     symbol: "USDT",
     decimals: 6,
     addresses: {
