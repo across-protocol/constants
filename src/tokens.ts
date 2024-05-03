@@ -204,7 +204,7 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 6,
     addresses: {
       [CHAIN_IDs.BASE]: "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
-      [CHAIN_IDs.BASE_SEPOLIA]: "0xe634ec56b73779ecffa78109a653fa0ae33d243f"
+      [CHAIN_IDs.BASE_SEPOLIA]: "0xE634Ec56B73779eCFfa78109a653FA0aE33D243f"
     },
   },
   USDT: {
