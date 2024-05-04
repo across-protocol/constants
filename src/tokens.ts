@@ -186,6 +186,7 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "USDC.e",
     decimals: 6,
     addresses: {
+      [CHAIN_IDs.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       [CHAIN_IDs.OPTIMISM]: "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
       [CHAIN_IDs.POLYGON]: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
       [CHAIN_IDs.BOBA]: "0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc",
@@ -201,6 +202,7 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "USDbC",
     decimals: 6,
     addresses: {
+      [CHAIN_IDs.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       [CHAIN_IDs.BASE]: "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
     },
   },
