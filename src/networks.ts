@@ -1,6 +1,7 @@
 // Chain names and ID's
 export const TESTNET_SEPOLIA_CHAIN_IDs = {
   ZK_SYNC_SEPOLIA: 300,
+  MODE_SEPOLIA: 919,
   POLYGON_AMOY: 80002,
   BASE_SEPOLIA: 84532,
   ARBITRUM_SEPOLIA: 421614,
@@ -31,6 +32,7 @@ export const MAINNET_CHAIN_IDs = {
   BOBA: 288,
   ZK_SYNC: 324,
   BASE: 8453,
+  MODE: 34443,
   ARBITRUM: 42161,
   LINEA: 59144,
   SCROLL: 534352
@@ -57,6 +59,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ZK_SYNC]: { name: "zkSync", nativeToken: "ETH", blockExplorer: "https://era.zksync.network/" },
   [CHAIN_IDs.LINEA]: { name: "Linea", nativeToken: "ETH", blockExplorer: "https://lineascan.build" },
   [CHAIN_IDs.SCROLL]: { name: "Scroll", nativeToken: "ETH", blockExplorer: "https://scrollscan.com" },
+  [CHAIN_IDs.MODE]: { name: "Mode", nativeToken: "ETH", blockExplorer: "https://explorer.mode.network" },
 };
 
 export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
@@ -72,6 +75,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.SEPOLIA]: { name: "Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.etherscan.io" },
   [CHAIN_IDs.ZK_SYNC_GOERLI]: { name: "zkSync Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.explorer.zksync.io" },
   [CHAIN_IDs.ZK_SYNC_SEPOLIA]: { name: "zkSync Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-era.zksync.network/" },
+  [CHAIN_IDs.MODE_SEPOLIA]: { name: "Mode Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.explorer.mode.network" },
 };
 
 export const PUBLIC_NETWORKS = {
