@@ -2,6 +2,7 @@
 export const TESTNET_SEPOLIA_CHAIN_IDs = {
   ZK_SYNC_SEPOLIA: 300,
   MODE_SEPOLIA: 919,
+  LINEA_SEPOLIA: 59141,
   POLYGON_AMOY: 80002,
   BASE_SEPOLIA: 84532,
   ARBITRUM_SEPOLIA: 421614,
@@ -68,6 +69,8 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.BASE_GOERLI]: { name: "Base Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.basescan.org" },
   [CHAIN_IDs.BASE_SEPOLIA]: { name: "Base Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.basescan.org" },
   [CHAIN_IDs.GOERLI]: { name: "Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.etherscan.io" },
+  [CHAIN_IDs.LINEA_GOERLI]: { name: "Linea Goerli", nativeToken: "ETH", blockExplorer: "https://goerli.lineascan.build" },
+  [CHAIN_IDs.LINEA_SEPOLIA]: { name: "Linea Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.lineascan.build" },
   [CHAIN_IDs.MUMBAI]: { name: "Polygon Mumbai", nativeToken: "MATIC", blockExplorer: "https://mumbai.polygonscan.com" },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: { name: "Optimism Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-optimism.etherscan.io" },
   [CHAIN_IDs.POLYGON_AMOY]: { name: "Polygon Amoy", nativeToken: "MATIC", blockExplorer: "https://oklink.com/amoy" },
