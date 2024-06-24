@@ -2,6 +2,7 @@
 export const TESTNET_SEPOLIA_CHAIN_IDs = {
   ZK_SYNC_SEPOLIA: 300,
   MODE_SEPOLIA: 919,
+  LISK_SEPOLIA: 4202,
   POLYGON_AMOY: 80002,
   BASE_SEPOLIA: 84532,
   ARBITRUM_SEPOLIA: 421614,
@@ -20,6 +21,7 @@ export const MAINNET_CHAIN_IDs = {
   POLYGON: 137,
   BOBA: 288,
   ZK_SYNC: 324,
+  LISK: 1135,
   BASE: 8453,
   MODE: 34443,
   ARBITRUM: 42161,
@@ -43,6 +45,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.BASE]: { name: "Base", nativeToken: "ETH", blockExplorer: "https://basescan.org" },
   [CHAIN_IDs.BOBA]: { name: "Boba", nativeToken: "ETH", blockExplorer: "https://blockexplorer.boba.network" },
   [CHAIN_IDs.LINEA]: { name: "Linea", nativeToken: "ETH", blockExplorer: "https://lineascan.build" },
+  [CHAIN_IDs.LISK]: { name: "Lisk", nativeToken: "ETH", blockExplorer: "https://blockscout.lisk.com" },
   [CHAIN_IDs.MAINNET]: { name: "Mainnet",  nativeToken: "ETH", blockExplorer: "https://etherscan.io" },
   [CHAIN_IDs.MODE]: { name: "Mode", nativeToken: "ETH", blockExplorer: "https://explorer.mode.network" },
   [CHAIN_IDs.OPTIMISM]: { name: "Optimism", nativeToken: "ETH", blockExplorer: "https://optimistic.etherscan.io" },
@@ -54,6 +57,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
 export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ARBITRUM_SEPOLIA]: { name: "Arbitrum Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.arbiscan.io" },
   [CHAIN_IDs.BASE_SEPOLIA]: { name: "Base Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.basescan.org" },
+  [CHAIN_IDs.LISK_SEPOLIA]: { name: "Lisk Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-blockscout.lisk.com" },
   [CHAIN_IDs.MODE_SEPOLIA]: { name: "Mode Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.explorer.mode.network" },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: { name: "Optimism Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-optimism.etherscan.io" },
   [CHAIN_IDs.POLYGON_AMOY]: { name: "Polygon Amoy", nativeToken: "MATIC", blockExplorer: "https://amoy.polygonscan.com" },
