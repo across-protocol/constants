@@ -1,3 +1,3 @@
-# Across V2 Constants
+# Across Constants
 
 Export commonly used constant files
