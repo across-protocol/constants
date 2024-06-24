@@ -102,6 +102,14 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.MODE_SEPOLIA]: "0x4200000000000000000000000000000000000006",
     },
   },
+  LSK: {
+    name: "Lisk",
+    symbol: "LSK",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.LISK]: "0xac485391EB2d7D88253a7F1eF18C37f4242D1A24"
+    },
+  },
   MATIC: {
     name: "Matic",
     symbol: "MATIC",
