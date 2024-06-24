@@ -42,24 +42,24 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ARBITRUM]: { name: "Arbitrum One", nativeToken: "ETH", blockExplorer: "https://arbiscan.io" },
   [CHAIN_IDs.BASE]: { name: "Base", nativeToken: "ETH", blockExplorer: "https://basescan.org" },
   [CHAIN_IDs.BOBA]: { name: "Boba", nativeToken: "ETH", blockExplorer: "https://blockexplorer.boba.network" },
+  [CHAIN_IDs.LINEA]: { name: "Linea", nativeToken: "ETH", blockExplorer: "https://lineascan.build" },
   [CHAIN_IDs.MAINNET]: { name: "Mainnet",  nativeToken: "ETH", blockExplorer: "https://etherscan.io" },
+  [CHAIN_IDs.MODE]: { name: "Mode", nativeToken: "ETH", blockExplorer: "https://explorer.mode.network" },
   [CHAIN_IDs.OPTIMISM]: { name: "Optimism", nativeToken: "ETH", blockExplorer: "https://optimistic.etherscan.io" },
   [CHAIN_IDs.POLYGON]: { name: "Polygon",  nativeToken: "MATIC", blockExplorer: "https://polygonscan.com" },
-  [CHAIN_IDs.ZK_SYNC]: { name: "zkSync", nativeToken: "ETH", blockExplorer: "https://era.zksync.network/" },
-  [CHAIN_IDs.LINEA]: { name: "Linea", nativeToken: "ETH", blockExplorer: "https://lineascan.build" },
   [CHAIN_IDs.SCROLL]: { name: "Scroll", nativeToken: "ETH", blockExplorer: "https://scrollscan.com" },
-  [CHAIN_IDs.MODE]: { name: "Mode", nativeToken: "ETH", blockExplorer: "https://explorer.mode.network" },
+  [CHAIN_IDs.ZK_SYNC]: { name: "zkSync", nativeToken: "ETH", blockExplorer: "https://era.zksync.network" }
 };
 
 export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ARBITRUM_SEPOLIA]: { name: "Arbitrum Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.arbiscan.io" },
   [CHAIN_IDs.BASE_SEPOLIA]: { name: "Base Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.basescan.org" },
-  [CHAIN_IDs.OPTIMISM_SEPOLIA]: { name: "Optimism Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-optimism.etherscan.io" },
-  [CHAIN_IDs.POLYGON_AMOY]: { name: "Polygon Amoy", nativeToken: "MATIC", blockExplorer: "https://amoy.polygonscan.com/" },
-  [CHAIN_IDs.SCROLL_SEPOLIA]: { name: "Scroll Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.scrollscan.com/" },
-  [CHAIN_IDs.SEPOLIA]: { name: "Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.etherscan.io" },
-  [CHAIN_IDs.ZK_SYNC_SEPOLIA]: { name: "zkSync Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-era.zksync.network/" },
   [CHAIN_IDs.MODE_SEPOLIA]: { name: "Mode Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.explorer.mode.network" },
+  [CHAIN_IDs.OPTIMISM_SEPOLIA]: { name: "Optimism Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-optimism.etherscan.io" },
+  [CHAIN_IDs.POLYGON_AMOY]: { name: "Polygon Amoy", nativeToken: "MATIC", blockExplorer: "https://amoy.polygonscan.com" },
+  [CHAIN_IDs.SCROLL_SEPOLIA]: { name: "Scroll Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.scrollscan.com" },
+  [CHAIN_IDs.SEPOLIA]: { name: "Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.etherscan.io" },
+  [CHAIN_IDs.ZK_SYNC_SEPOLIA]: { name: "zkSync Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-era.zksync.network" }
 };
 
 export const PUBLIC_NETWORKS = {
