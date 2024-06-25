@@ -93,6 +93,15 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.ZK_SYNC]: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"
     },
   },
+  LSK: {
+    name: "Lisk",
+    symbol: "LSK",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.LISK]: "0xac485391EB2d7D88253a7F1eF18C37f4242D1A24",
+      [CHAIN_IDs.MAINNET]: "0x6033F7f88332B8db6ad452B7C6D5bB643990aE3f"
+    },
+  },
   MATIC: {
     name: "Matic",
     symbol: "MATIC",
