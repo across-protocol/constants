@@ -98,8 +98,8 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "LSK",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.LISK]: "0x6033F7f88332B8db6ad452B7C6D5bB643990aE3f",
-      [CHAIN_IDs.MAINNET]: "0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f"
+      [CHAIN_IDs.LISK]: "0xac485391EB2d7D88253a7F1eF18C37f4242D1A24",
+      [CHAIN_IDs.MAINNET]: "0x6033F7f88332B8db6ad452B7C6D5bB643990aE3f"
     },
   },
   MATIC: {
