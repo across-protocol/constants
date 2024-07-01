@@ -3,6 +3,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   ZK_SYNC_SEPOLIA: 300,
   MODE_SEPOLIA: 919,
   LISK_SEPOLIA: 4202,
+  LINEA_SEPOLIA: 59141,
   POLYGON_AMOY: 80002,
   BASE_SEPOLIA: 84532,
   ARBITRUM_SEPOLIA: 421614,
@@ -57,6 +58,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
 export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ARBITRUM_SEPOLIA]: { name: "Arbitrum Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.arbiscan.io" },
   [CHAIN_IDs.BASE_SEPOLIA]: { name: "Base Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.basescan.org" },
+  [CHAIN_IDs.LINEA_SEPOLIA]: { name: "Linea Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.lineascan.build" },
   [CHAIN_IDs.LISK_SEPOLIA]: { name: "Lisk Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-blockscout.lisk.com" },
   [CHAIN_IDs.MODE_SEPOLIA]: { name: "Mode Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.explorer.mode.network" },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: { name: "Optimism Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-optimism.etherscan.io" },
