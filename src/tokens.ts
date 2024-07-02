@@ -167,6 +167,7 @@ export const TOKEN_SYMBOLS_MAP = {
     addresses: {
       [CHAIN_IDs.BLAST]: "0x4300000000000000000000000000000000000003",
       [CHAIN_IDs.MAINNET]: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+    },
   },
   USDC: {
     name: "USD Coin",
