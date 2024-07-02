@@ -9,6 +9,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   SCROLL_SEPOLIA: 534351,
   SEPOLIA: 11155111,
   OPTIMISM_SEPOLIA: 11155420,
+  BLAST_SEPOLIA: 168587773,
 };
 
 export const TESTNET_CHAIN_IDs = {
@@ -26,6 +27,7 @@ export const MAINNET_CHAIN_IDs = {
   MODE: 34443,
   ARBITRUM: 42161,
   LINEA: 59144,
+  BLAST: 81457,
   SCROLL: 534352
 };
 
@@ -43,6 +45,7 @@ interface PublicNetwork {
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ARBITRUM]: { name: "Arbitrum One", nativeToken: "ETH", blockExplorer: "https://arbiscan.io" },
   [CHAIN_IDs.BASE]: { name: "Base", nativeToken: "ETH", blockExplorer: "https://basescan.org" },
+  [CHAIN_IDs.BLAST]: { name: "Blast", nativeToken: "ETH", blockExplorer: "https://blastscan.io" },
   [CHAIN_IDs.BOBA]: { name: "Boba", nativeToken: "ETH", blockExplorer: "https://blockexplorer.boba.network" },
   [CHAIN_IDs.LINEA]: { name: "Linea", nativeToken: "ETH", blockExplorer: "https://lineascan.build" },
   [CHAIN_IDs.LISK]: { name: "Lisk", nativeToken: "ETH", blockExplorer: "https://blockscout.lisk.com" },
@@ -57,6 +60,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
 export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ARBITRUM_SEPOLIA]: { name: "Arbitrum Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.arbiscan.io" },
   [CHAIN_IDs.BASE_SEPOLIA]: { name: "Base Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.basescan.org" },
+  [CHAIN_IDs.BLAST_SEPOLIA]: { name: "Blast Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.blastscan.io" },
   [CHAIN_IDs.LISK_SEPOLIA]: { name: "Lisk Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-blockscout.lisk.com" },
   [CHAIN_IDs.MODE_SEPOLIA]: { name: "Mode Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia.explorer.mode.network" },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: { name: "Optimism Sepolia", nativeToken: "ETH", blockExplorer: "https://sepolia-optimism.etherscan.io" },
