@@ -36,7 +36,7 @@ export const CHAIN_IDs = {
   ...TESTNET_CHAIN_IDs,
 };
 
-enum ChainFamily {
+export enum ChainFamily {
   OP_STACK,
 };
 
