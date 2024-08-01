@@ -28,6 +28,7 @@ export const MAINNET_CHAIN_IDs = {
   ARBITRUM: 42161,
   LINEA: 59144,
   BLAST: 81457,
+  REDSTONE: 690,
   SCROLL: 534352
 };
 
@@ -103,6 +104,12 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Polygon",
     nativeToken: "MATIC",
     blockExplorer: "https://polygonscan.com"
+  },
+  [CHAIN_IDs.REDSTONE]: {
+    name: "Redstone",
+    nativeToken: "ETH",
+    blockExplorer: "https://explorer.redstone.xyz",
+    family: OP_STACK,
   },
   [CHAIN_IDs.SCROLL]: {
     name: "Scroll",
