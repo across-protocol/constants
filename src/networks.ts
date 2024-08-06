@@ -29,7 +29,8 @@ export const MAINNET_CHAIN_IDs = {
   POLYGON: 137,
   REDSTONE: 690,
   SCROLL: 534352,
-  ZK_SYNC: 324
+  ZK_SYNC: 324,
+  ZORA: 7777777
 };
 
 export const CHAIN_IDs = {
@@ -120,6 +121,12 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "zkSync",
     nativeToken: "ETH",
     blockExplorer: "https://era.zksync.network"
+  },
+  [CHAIN_IDs.ZORA]: {
+    name: "Zora",
+    nativeToken: "ETH",
+    blockExplorer: "https://zorascan.xyz",
+    family: OP_STACK
   }
 };
 
