@@ -106,6 +106,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SEPOLIA]: "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
       [CHAIN_IDs.ZK_SYNC]: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
       [CHAIN_IDs.ZK_SYNC_SEPOLIA]: "0x2D6Db36B3117802E996f13073A08A685D3FeF7eD",
+      [CHAIN_IDs.ZORA]: "0x4200000000000000000000000000000000000006",
     },
     coingeckoId: "ethereum",
   },
@@ -233,6 +234,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "bridged-usd-coin-base",
   },
+  USDzC: {
+    name: "USD Coin (bridged)",
+    symbol: "USDzC",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      [CHAIN_IDs.ZORA]: "0xCccCCccc7021b32EBb4e8C08314bD62F7c653EC4",
+    },
+    coingeckoId: "usd-coin-ethereum-bridged",
+  },
   USDT: {
     name: "Tether USD",
     symbol: "USDT",
@@ -298,6 +309,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SEPOLIA]: "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
       [CHAIN_IDs.ZK_SYNC]: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
       [CHAIN_IDs.ZK_SYNC_SEPOLIA]: "0x2D6Db36B3117802E996f13073A08A685D3FeF7eD",
+      [CHAIN_IDs.ZORA]: "0x4200000000000000000000000000000000000006",
     },
     coingeckoId: "weth",
   },
