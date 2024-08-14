@@ -1,5 +1,6 @@
 // Chain names and IDs.
 export const TESTNET_SEPOLIA_CHAIN_IDs = {
+  AIE_SEPOLIA: 413413,
   ARBITRUM_SEPOLIA: 421614,
   BASE_SEPOLIA: 84532,
   BLAST_SEPOLIA: 168587773,
@@ -40,6 +41,7 @@ export const CHAIN_IDs = {
 
 export enum ChainFamily {
   OP_STACK,
+  ARBITRUM_ORBIT,
 };
 
 interface PublicNetwork {
@@ -49,10 +51,11 @@ interface PublicNetwork {
   family?: ChainFamily;
 }
 
-const { OP_STACK } = ChainFamily;
+const { OP_STACK, ARBITRUM_ORBIT } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ARBITRUM]: {
     name: "Arbitrum One",
+    family: ARBITRUM_ORBIT,
     nativeToken: "ETH",
     blockExplorer: "https://arbiscan.io"
   },
@@ -131,8 +134,15 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
 };
 
 export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
+  [CHAIN_IDs.AIE_SEPOLIA]: {
+    name: "AIE Sepolia",
+    family: ARBITRUM_ORBIT,
+    nativeToken: "ETH",
+    blockExplorer: "https://testnet.aiescan.io"
+  },
   [CHAIN_IDs.ARBITRUM_SEPOLIA]: {
     name: "Arbitrum Sepolia",
+    family: ARBITRUM_ORBIT,
     nativeToken: "ETH",
     blockExplorer: "https://sepolia.arbiscan.io"
   },
