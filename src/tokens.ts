@@ -331,5 +331,6 @@ export const TOKEN_SYMBOLS_MAP = {
 export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   [TOKEN_SYMBOLS_MAP["USDC.e"].symbol]: TOKEN_SYMBOLS_MAP["USDC"].symbol,
   [TOKEN_SYMBOLS_MAP["USDbC"].symbol]: TOKEN_SYMBOLS_MAP["USDC"].symbol,
+  [TOKEN_SYMBOLS_MAP["USDzC"].symbol]: TOKEN_SYMBOLS_MAP["USDC"].symbol,
   [TOKEN_SYMBOLS_MAP["USDB"].symbol]: TOKEN_SYMBOLS_MAP["DAI"].symbol,
 };
