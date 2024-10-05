@@ -29,7 +29,7 @@ export const MAINNET_CHAIN_IDs = {
   POLYGON: 137,
   REDSTONE: 690,
   SCROLL: 534352,
-  WORLDCHAIN: 480,
+  WORLD_CHAIN: 480,
   ZK_SYNC: 324,
   ZORA: 7777777
 };
@@ -118,8 +118,8 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     blockExplorer: "https://scrollscan.com"
   },
-  [CHAIN_IDs.WORLDCHAIN]: {
-    name: "WorldChain",
+  [CHAIN_IDs.WORLD_CHAIN]: {
+    name: "World Chain",
     nativeToken: "ETH",
     blockExplorer: "https://worldchain-mainnet-explorer.alchemy.com",
     family: OP_STACK
