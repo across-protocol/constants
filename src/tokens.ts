@@ -27,6 +27,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "arbitrum",
   },
+  AZERO: {
+    name: "Aleph Zero",
+    symbol: "AZERO",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.ALEPH_ZERO]: "0xb7Da55D7040ef9C887e20374D76A88F93A59119E",
+      [CHAIN_IDs.MAINNET]: "0xdD0ae774F7E300CdAA4EA371cD55169665Ee6AFe",
+    },
+    coingeckoId: "aleph-zero",
+  },
   BAL: {
     name: "Balancer",
     symbol: "BAL",
@@ -265,6 +275,16 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.ZK_SYNC]: "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
     },
     coingeckoId: "tether",
+  },
+  WAZERO: {
+    name: "Wrapped AZERO",
+    symbol: "WAZERO",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.ALEPH_ZERO]: "0xb7Da55D7040ef9C887e20374D76A88F93A59119E",
+      [CHAIN_IDs.MAINNET]: "0xdD0ae774F7E300CdAA4EA371cD55169665Ee6AFe",
+    },
+    coingeckoId: "aleph-zero",
   },
   WBTC: {
     name: "Wrapped Bitcoin",

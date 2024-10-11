@@ -17,6 +17,7 @@ export const TESTNET_CHAIN_IDs = {
 } as const;
 
 export const MAINNET_CHAIN_IDs = {
+  ALEPH_ZERO: 41455,
   ARBITRUM: 42161,
   BASE: 8453,
   BLAST: 81457,
@@ -41,6 +42,7 @@ export const CHAIN_IDs = {
 
 export enum ChainFamily {
   OP_STACK,
+  ARBITRUM_ORBIT,
 };
 
 interface PublicNetwork {
@@ -50,8 +52,14 @@ interface PublicNetwork {
   family?: ChainFamily;
 }
 
-const { OP_STACK } = ChainFamily;
+const { ARBITRUM_ORBIT, OP_STACK } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
+  [CHAIN_IDs.ALEPH_ZERO]: {
+    name: "Aleph Zero",
+    family: ARBITRUM_ORBIT,
+    nativeToken: "AZERO",
+    blockExplorer: "https://evm-explorer.alephzero.org",
+  },
   [CHAIN_IDs.ARBITRUM]: {
     name: "Arbitrum One",
     nativeToken: "ETH",
