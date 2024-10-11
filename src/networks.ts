@@ -42,7 +42,7 @@ export const CHAIN_IDs = {
 
 export enum ChainFamily {
   OP_STACK,
-  ARBITRUM_ORBIT,
+  ORBIT,
 };
 
 interface PublicNetwork {
@@ -52,11 +52,11 @@ interface PublicNetwork {
   family?: ChainFamily;
 }
 
-const { ARBITRUM_ORBIT, OP_STACK } = ChainFamily;
+const { ORBIT, OP_STACK } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ALEPH_ZERO]: {
     name: "Aleph Zero",
-    family: ARBITRUM_ORBIT,
+    family: ORBIT,
     nativeToken: "AZERO",
     blockExplorer: "https://evm-explorer.alephzero.org",
   },
