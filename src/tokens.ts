@@ -111,6 +111,19 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "ethereum",
   },
+  GHO: {
+    name: "Gho Token",
+    symbol: "GHO",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.ARBITRUM_SEPOLIA]: "0xb13Cfa6f8B2Eed2C37fB00fF0c1A59807C585810",
+      [CHAIN_IDs.BASE_SEPOLIA]: "0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb",
+      [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0xb13Cfa6f8B2Eed2C37fB00fF0c1A59807C585810",
+      [CHAIN_IDs.MAINNET]: "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+      [CHAIN_IDs.SEPOLIA]: "0xc4bF5CbDaBE595361438F8c6a187bDc330539c60",
+    },
+    coingeckoId: "gho",
+  },
   LSK: {
     name: "Lisk",
     symbol: "LSK",
