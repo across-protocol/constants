@@ -42,7 +42,7 @@ export const CHAIN_IDs = {
 
 export enum ChainFamily {
   OP_STACK,
-  ORBIT,
+  ORBIT, // Future: Might need to distinguish between ORBIT_L2 and ORBIT_L3...
 };
 
 interface PublicNetwork {
