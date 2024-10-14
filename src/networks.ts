@@ -30,6 +30,7 @@ export const MAINNET_CHAIN_IDs = {
   POLYGON: 137,
   REDSTONE: 690,
   SCROLL: 534352,
+  SUPERSEED: 5330,
   WORLD_CHAIN: 480,
   ZK_SYNC: 324,
   ZORA: 7777777
@@ -125,6 +126,12 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Scroll",
     nativeToken: "ETH",
     blockExplorer: "https://scrollscan.com"
+  },
+  [CHAIN_IDs.SUPERSEED]: {
+    name: "Superseed",
+    nativeToken: "ETH",
+    blockExplorer: "", // @todo: To be added later
+    family: OP_STACK
   },
   [CHAIN_IDs.WORLD_CHAIN]: {
     name: "World Chain",
