@@ -58,5 +58,8 @@
       "require": "./dist/cjs/*.js",
       "import": "./dist/esm/*.js"
     }
+  },
+  "dependencies": {
+    "viem": "^2.21.37"
   }
 }

@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-    // Target ES5
-    "target": "ES5",
+    // Target ES6
+    "target": "ES2020",
     // Set the import helpers
     "importHelpers": true,
     // output .d.ts declaration files for consumers
