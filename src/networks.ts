@@ -3,6 +3,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   ARBITRUM_SEPOLIA: 421614,
   BASE_SEPOLIA: 84532,
   BLAST_SEPOLIA: 168587773,
+  INK_SEPOLIA: 763373,
   LISK_SEPOLIA: 4202,
   MODE_SEPOLIA: 919,
   OPTIMISM_SEPOLIA: 11155420,
@@ -22,6 +23,7 @@ export const MAINNET_CHAIN_IDs = {
   BASE: 8453,
   BLAST: 81457,
   BOBA: 288,
+  INK: 57073,
   LINEA: 59144,
   LISK: 1135,
   MAINNET: 1,
@@ -82,6 +84,11 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Boba",
     nativeToken: "ETH",
     blockExplorer: "https://blockexplorer.boba.network"
+  },
+  [CHAIN_IDs.INK]: {
+    name: "Ink",
+    nativeToken: "ETH",
+    blockExplorer: "https://explorer.inkonchain.com"
   },
   [CHAIN_IDs.LINEA]: {
     name: "Linea",
