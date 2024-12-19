@@ -44,18 +44,19 @@ export const CHAIN_IDs = {
 };
 
 export enum ChainFamily {
+  NONE,
   OP_STACK,
   ORBIT, // Future: Might need to distinguish between ORBIT_L2 and ORBIT_L3...
 };
 
 interface PublicNetwork {
   name: string;
+  family: ChainFamily;
   nativeToken: string;
   blockExplorer: string;
-  family?: ChainFamily;
 }
 
-const { ORBIT, OP_STACK } = ChainFamily;
+const { NONE, OP_STACK, ORBIT } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ALEPH_ZERO]: {
     name: "Aleph Zero",
@@ -65,6 +66,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.ARBITRUM]: {
     name: "Arbitrum One",
+    family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://arbiscan.io"
   },
@@ -82,6 +84,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.BOBA]: {
     name: "Boba",
+    family: OP_STACK,
     nativeToken: "ETH",
     blockExplorer: "https://blockexplorer.boba.network"
   },
@@ -93,6 +96,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.LINEA]: {
     name: "Linea",
+    family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://lineascan.build"
   },
@@ -104,6 +108,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.MAINNET]: {
     name: "Mainnet",
+    family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://etherscan.io"
   },
@@ -121,48 +126,52 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.POLYGON]: {
     name: "Polygon",
+    family: NONE,
     nativeToken: "MATIC",
     blockExplorer: "https://polygonscan.com"
   },
   [CHAIN_IDs.REDSTONE]: {
     name: "Redstone",
+    family: OP_STACK,
     nativeToken: "ETH",
     blockExplorer: "https://explorer.redstone.xyz",
-    family: OP_STACK,
   },
   [CHAIN_IDs.SCROLL]: {
     name: "Scroll",
+    family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://scrollscan.com"
   },
   [CHAIN_IDs.SUPERSEED]: {
     name: "Superseed",
+    family: OP_STACK,
     nativeToken: "ETH",
-    blockExplorer: "", // @todo: To be added later
-    family: OP_STACK
+    blockExplorer: "" // @todo: To be added later
   },
   [CHAIN_IDs.WORLD_CHAIN]: {
     name: "World Chain",
+    family: OP_STACK,
     nativeToken: "ETH",
     blockExplorer: "https://worldchain-mainnet-explorer.alchemy.com",
-    family: OP_STACK
   },
   [CHAIN_IDs.ZK_SYNC]: {
     name: "zkSync",
+    family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://era.zksync.network"
   },
   [CHAIN_IDs.ZORA]: {
     name: "Zora",
+    family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://zorascan.xyz",
-    family: OP_STACK
   }
 };
 
 export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ARBITRUM_SEPOLIA]: {
     name: "Arbitrum Sepolia",
+    family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://sepolia.arbiscan.io"
   },
@@ -198,21 +207,25 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.POLYGON_AMOY]: {
     name: "Polygon Amoy",
+    family: NONE,
     nativeToken: "MATIC",
     blockExplorer: "https://amoy.polygonscan.com"
   },
   [CHAIN_IDs.SCROLL_SEPOLIA]: {
     name: "Scroll Sepolia",
+    family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://sepolia.scrollscan.com"
   },
   [CHAIN_IDs.SEPOLIA]: {
     name: "Sepolia",
+    family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://sepolia.etherscan.io"
   },
   [CHAIN_IDs.ZK_SYNC_SEPOLIA]: {
     name: "zkSync Sepolia",
+    family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://sepolia-era.zksync.network"
   }
