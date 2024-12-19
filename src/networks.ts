@@ -87,6 +87,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.INK]: {
     name: "Ink",
+    family: OP_STACK,
     nativeToken: "ETH",
     blockExplorer: "https://explorer.inkonchain.com"
   },
