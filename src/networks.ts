@@ -162,7 +162,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.ZORA]: {
     name: "Zora",
-    family: NONE,
+    family: OP_STACK,
     nativeToken: "ETH",
     blockExplorer: "https://zorascan.xyz",
   }
