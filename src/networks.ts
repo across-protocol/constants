@@ -4,6 +4,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   BASE_SEPOLIA: 84532,
   BLAST_SEPOLIA: 168587773,
   INK_SEPOLIA: 763373,
+  LENS_SEPOLIA: 37111,
   LISK_SEPOLIA: 4202,
   MODE_SEPOLIA: 919,
   OPTIMISM_SEPOLIA: 11155420,
@@ -186,6 +187,12 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     blockExplorer: "https://sepolia.blastscan.io"
+  },
+  [CHAIN_IDs.LENS_SEPOLIA]: {
+    name: "Lens Sepolia",
+    family: ZK_STACK,
+    nativeToken: "GRASS",
+    blockExplorer: "https://explorer.inkonchain.com"
   },
   [CHAIN_IDs.LISK_SEPOLIA]: {
     name: "Lisk Sepolia",
