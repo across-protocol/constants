@@ -137,7 +137,7 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "gho",
   },
-  GHO: {
+  GRASS: {
     name: "Grass",
     symbol: "GRASS",
     decimals: 18,
