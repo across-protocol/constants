@@ -137,6 +137,18 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "gho",
   },
+  GHO: {
+    name: "Grass",
+    symbol: "GRASS",
+    decimals: 18,
+    addresses: {
+      // [CHAIN_IDs.LENS]: @todo
+      // [CHAIN_IDs.LENS_SEPOLIA]: @todo
+      // [CHAIN_IDs.MAINNET]: @todo
+      [CHAIN_IDs.SEPOLIA]: "0x8D725d9dBBb5E0667efeDC833D6A9e8C6cA02C68",
+    },
+    coingeckoId: "", // @todo
+  },
   LSK: {
     name: "Lisk",
     symbol: "LSK",
