@@ -48,6 +48,7 @@ export enum ChainFamily {
   NONE,
   OP_STACK,
   ORBIT, // Future: Might need to distinguish between ORBIT_L2 and ORBIT_L3...
+  ZK_STACK
 };
 
 interface PublicNetwork {
@@ -232,7 +233,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.LENS_SEPOLIA]: {
     name: "Lens Sepolia",
-    family: NONE,
+    family: ChainFamily.ZK_STACK,
     nativeToken: "GRASS",
     blockExplorer: "https://block-explorer.testnet.lens.dev"
   },
