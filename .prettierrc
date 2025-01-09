@@ -3,6 +3,7 @@
   "bracketSpacing": true,
   "explicitTypes": "preserve",
   "tabWidth": 2,
+  "trailingComma": "none",
   "overrides": [
     {
       "files": "*.md",

@@ -13,9 +13,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.MAINNET]: "0x44108f0223A3C3028F5Fe7AEC7f9bb2E66beF82F",
       [CHAIN_IDs.OPTIMISM]: "0xFf733b2A3557a7ed6697007ab5D11B79FdD1b76B",
       [CHAIN_IDs.POLYGON]: "0xF328b73B6c685831F238c30a23Fc19140CB4D8FC",
-      [CHAIN_IDs.SEPOLIA]: "0x49fCaC04AE71dbD074304Fb12071bD771e0E927A",
+      [CHAIN_IDs.SEPOLIA]: "0x49fCaC04AE71dbD074304Fb12071bD771e0E927A"
     },
-    coingeckoId: "across-protocol",
+    coingeckoId: "across-protocol"
   },
   ARB: {
     name: "Arbitrum",
@@ -23,9 +23,9 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.ARBITRUM]: "0x912CE59144191C1204E64559FE8253a0e49E6548",
-      [CHAIN_IDs.MAINNET]: "0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1",
+      [CHAIN_IDs.MAINNET]: "0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1"
     },
-    coingeckoId: "arbitrum",
+    coingeckoId: "arbitrum"
   },
   AZERO: {
     name: "Aleph Zero",
@@ -33,9 +33,9 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.ALEPH_ZERO]: "0xb7Da55D7040ef9C887e20374D76A88F93A59119E",
-      [CHAIN_IDs.MAINNET]: "0xdD0ae774F7E300CdAA4EA371cD55169665Ee6AFe",
+      [CHAIN_IDs.MAINNET]: "0xdD0ae774F7E300CdAA4EA371cD55169665Ee6AFe"
     },
-    coingeckoId: "aleph-zero",
+    coingeckoId: "aleph-zero"
   },
   BAL: {
     name: "Balancer",
@@ -47,9 +47,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.LINEA]: "0x660edb0A46c3f69be9eFF5446318593b9469F9e2",
       [CHAIN_IDs.MAINNET]: "0xba100000625a3754423978a60c9317c58a424e3D",
       [CHAIN_IDs.OPTIMISM]: "0xFE8B128bA8C78aabC59d4c64cEE7fF28e9379921",
-      [CHAIN_IDs.POLYGON]: "0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3",
+      [CHAIN_IDs.POLYGON]: "0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3"
     },
-    coingeckoId: "balancer",
+    coingeckoId: "balancer"
   },
   BADGER: {
     name: "Badger",
@@ -58,9 +58,9 @@ export const TOKEN_SYMBOLS_MAP = {
     addresses: {
       [CHAIN_IDs.ARBITRUM]: "0xBfa641051Ba0a0Ad1b0AcF549a89536A0D76472E",
       [CHAIN_IDs.MAINNET]: "0x3472A5A71965499acd81997a54BBA8D852C6E53d",
-      [CHAIN_IDs.POLYGON]: "0x1FcbE5937B0cc2adf69772D228fA4205aCF4D9b2",
+      [CHAIN_IDs.POLYGON]: "0x1FcbE5937B0cc2adf69772D228fA4205aCF4D9b2"
     },
-    coingeckoId: "badger-dao",
+    coingeckoId: "badger-dao"
   },
   BOBA: {
     name: "Boba",
@@ -68,9 +68,9 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.BOBA]: "0xa18bF3994C0Cc6E3b63ac420308E5383f53120D7",
-      [CHAIN_IDs.MAINNET]: "0x42bBFa2e77757C645eeaAd1655E0911a7553Efbc",
+      [CHAIN_IDs.MAINNET]: "0x42bBFa2e77757C645eeaAd1655E0911a7553Efbc"
     },
-    coingeckoId: "boba-network",
+    coingeckoId: "boba-network"
   },
   DAI: {
     name: "Dai Stablecoin",
@@ -84,9 +84,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.MAINNET]: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
       [CHAIN_IDs.OPTIMISM]: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       [CHAIN_IDs.POLYGON]: "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
-      [CHAIN_IDs.ZK_SYNC]: "0x4B9eb6c0b6ea15176BBF62841C6B2A8a398cb656",
+      [CHAIN_IDs.ZK_SYNC]: "0x4B9eb6c0b6ea15176BBF62841C6B2A8a398cb656"
     },
-    coingeckoId: "dai",
+    coingeckoId: "dai"
   },
   ETH: {
     name: "Ether",
@@ -120,9 +120,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.WORLD_CHAIN]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.ZK_SYNC]: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
       [CHAIN_IDs.ZK_SYNC_SEPOLIA]: "0x2D6Db36B3117802E996f13073A08A685D3FeF7eD",
-      [CHAIN_IDs.ZORA]: "0x4200000000000000000000000000000000000006",
+      [CHAIN_IDs.ZORA]: "0x4200000000000000000000000000000000000006"
     },
-    coingeckoId: "ethereum",
+    coingeckoId: "ethereum"
   },
   GHO: {
     name: "Gho Token",
@@ -133,9 +133,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.BASE_SEPOLIA]: "0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb",
       [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0xb13Cfa6f8B2Eed2C37fB00fF0c1A59807C585810",
       [CHAIN_IDs.MAINNET]: "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
-      [CHAIN_IDs.SEPOLIA]: "0xc4bF5CbDaBE595361438F8c6a187bDc330539c60",
+      [CHAIN_IDs.SEPOLIA]: "0xc4bF5CbDaBE595361438F8c6a187bDc330539c60"
     },
-    coingeckoId: "gho",
+    coingeckoId: "gho"
   },
   LSK: {
     name: "Lisk",
@@ -143,9 +143,9 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.LISK]: "0xac485391EB2d7D88253a7F1eF18C37f4242D1A24",
-      [CHAIN_IDs.MAINNET]: "0x6033F7f88332B8db6ad452B7C6D5bB643990aE3f",
+      [CHAIN_IDs.MAINNET]: "0x6033F7f88332B8db6ad452B7C6D5bB643990aE3f"
     },
-    coingeckoId: "lisk",
+    coingeckoId: "lisk"
   },
   MATIC: {
     name: "Matic",
@@ -154,18 +154,18 @@ export const TOKEN_SYMBOLS_MAP = {
     addresses: {
       [CHAIN_IDs.MAINNET]: "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
       [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
-      [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
+      [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53"
     },
-    coingeckoId: "matic-network",
+    coingeckoId: "matic-network"
   },
   OP: {
     name: "Optimism",
     symbol: "OP",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.OPTIMISM]: "0x4200000000000000000000000000000000000042",
+      [CHAIN_IDs.OPTIMISM]: "0x4200000000000000000000000000000000000042"
     },
-    coingeckoId: "optimism",
+    coingeckoId: "optimism"
   },
   POOL: {
     name: "PoolTogether",
@@ -178,9 +178,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.OPTIMISM]: "0x395Ae52bB17aef68C2888d941736A71dC6d4e125",
       [CHAIN_IDs.POLYGON]: "0x25788a1a171ec66Da6502f9975a15B609fF54CF6",
       [CHAIN_IDs.SCROLL]: "0xF9Af83FC41e0cc2af2fba93644D542Df6eA0F2b7",
-      [CHAIN_IDs.WORLD_CHAIN]: "0x7077C71B4AF70737a08287E279B717Dcf64fdC57",
+      [CHAIN_IDs.WORLD_CHAIN]: "0x7077C71B4AF70737a08287E279B717Dcf64fdC57"
     },
-    coingeckoId: "pooltogether",
+    coingeckoId: "pooltogether"
   },
   SNX: {
     name: "Synthetix",
@@ -189,9 +189,9 @@ export const TOKEN_SYMBOLS_MAP = {
     // Based on https://github.com/Synthetixio/synthetix-docs/blob/fe83d0757977b1cb7f69796126e71a66295bf264/content/addresses.md
     addresses: {
       [CHAIN_IDs.MAINNET]: "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
-      [CHAIN_IDs.OPTIMISM]: "0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4",
+      [CHAIN_IDs.OPTIMISM]: "0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4"
     },
-    coingeckoId: "havven",
+    coingeckoId: "havven"
   },
   UMA: {
     name: "UMA Voting Token",
@@ -202,9 +202,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.BOBA]: "0x780f33Ad21314d9A1Ffb6867Fe53d48a76Ec0D16",
       [CHAIN_IDs.MAINNET]: "0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828",
       [CHAIN_IDs.OPTIMISM]: "0xE7798f023fC62146e8Aa1b36Da45fb70855a77Ea",
-      [CHAIN_IDs.POLYGON]: "0x3066818837c5e6eD6601bd5a91B0762877A6B731",
+      [CHAIN_IDs.POLYGON]: "0x3066818837c5e6eD6601bd5a91B0762877A6B731"
     },
-    coingeckoId: "uma",
+    coingeckoId: "uma"
   },
   USDB: {
     name: "USDB",
@@ -212,9 +212,9 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.BLAST]: "0x4300000000000000000000000000000000000003",
-      [CHAIN_IDs.MAINNET]: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      [CHAIN_IDs.MAINNET]: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
     },
-    coingeckoId: "usdb",
+    coingeckoId: "usdb"
   },
   USDC: {
     name: "USD Coin",
@@ -231,9 +231,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.POLYGON]: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
       [CHAIN_IDs.POLYGON_AMOY]: "0x41E94Eb019C0762f9Bfcf9Fb1E58725BfB0e7582",
       [CHAIN_IDs.SCROLL]: "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
-      [CHAIN_IDs.SEPOLIA]: "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+      [CHAIN_IDs.SEPOLIA]: "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238"
     },
-    coingeckoId: "usd-coin",
+    coingeckoId: "usd-coin"
   },
   "USDC.e": {
     name: "USD Coin (bridged)",
@@ -251,9 +251,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0x9552a0a6624A23B848060AE5901659CDDa1f83f8",
       [CHAIN_IDs.POLYGON]: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
       [CHAIN_IDs.WORLD_CHAIN]: "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1",
-      [CHAIN_IDs.ZK_SYNC]: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+      [CHAIN_IDs.ZK_SYNC]: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"
     },
-    coingeckoId: "usd-coin-ethereum-bridged",
+    coingeckoId: "usd-coin-ethereum-bridged"
   },
   USDbC: {
     name: "USD Coin (bridged)",
@@ -262,9 +262,9 @@ export const TOKEN_SYMBOLS_MAP = {
     addresses: {
       [CHAIN_IDs.BASE]: "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
       [CHAIN_IDs.BASE_SEPOLIA]: "0xE634Ec56B73779eCFfa78109a653FA0aE33D243f",
-      [CHAIN_IDs.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      [CHAIN_IDs.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
     },
-    coingeckoId: "bridged-usd-coin-base",
+    coingeckoId: "bridged-usd-coin-base"
   },
   USDzC: {
     name: "USD Coin (bridged)",
@@ -272,9 +272,9 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 6,
     addresses: {
       [CHAIN_IDs.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-      [CHAIN_IDs.ZORA]: "0xCccCCccc7021b32EBb4e8C08314bD62F7c653EC4",
+      [CHAIN_IDs.ZORA]: "0xCccCCccc7021b32EBb4e8C08314bD62F7c653EC4"
     },
-    coingeckoId: "usd-coin-ethereum-bridged",
+    coingeckoId: "usd-coin-ethereum-bridged"
   },
   USDT: {
     name: "Tether USD",
@@ -292,9 +292,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.POLYGON]: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
       [CHAIN_IDs.SCROLL]: "0xf55BEC9cafDbE8730f096Aa55dad6D22d44099Df",
       [CHAIN_IDs.SEPOLIA]: "0x7169D38820dfd117C3FA1f22a697dBA58d90BA06",
-      [CHAIN_IDs.ZK_SYNC]: "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
+      [CHAIN_IDs.ZK_SYNC]: "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C"
     },
-    coingeckoId: "tether",
+    coingeckoId: "tether"
   },
   WAZERO: {
     name: "Wrapped AZERO",
@@ -302,9 +302,9 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.ALEPH_ZERO]: "0xb7Da55D7040ef9C887e20374D76A88F93A59119E",
-      [CHAIN_IDs.MAINNET]: "0xdD0ae774F7E300CdAA4EA371cD55169665Ee6AFe",
+      [CHAIN_IDs.MAINNET]: "0xdD0ae774F7E300CdAA4EA371cD55169665Ee6AFe"
     },
-    coingeckoId: "aleph-zero",
+    coingeckoId: "aleph-zero"
   },
   WBTC: {
     name: "Wrapped Bitcoin",
@@ -322,9 +322,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.POLYGON]: "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
       [CHAIN_IDs.WORLD_CHAIN]: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3",
       [CHAIN_IDs.SCROLL]: "0x3C1BCa5a656e69edCD0D4E36BEbb3FcDAcA60Cf1",
-      [CHAIN_IDs.ZK_SYNC]: "0xBBeB516fb02a01611cBBE0453Fe3c580D7281011",
+      [CHAIN_IDs.ZK_SYNC]: "0xBBeB516fb02a01611cBBE0453Fe3c580D7281011"
     },
-    coingeckoId: "wrapped-bitcoin",
+    coingeckoId: "wrapped-bitcoin"
   },
   WETH: {
     name: "Wrapped Ether",
@@ -359,9 +359,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.ZK_SYNC]: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
       [CHAIN_IDs.ZK_SYNC_SEPOLIA]: "0x2D6Db36B3117802E996f13073A08A685D3FeF7eD",
       [CHAIN_IDs.ZORA]: "0x4200000000000000000000000000000000000006",
-      [CHAIN_IDs.LENS_SEPOLIA]: "0xaA91D645D7a6C1aeaa5988e0547267B77d33fe16",
+      [CHAIN_IDs.LENS_SEPOLIA]: "0xaA91D645D7a6C1aeaa5988e0547267B77d33fe16"
     },
-    coingeckoId: "weth",
+    coingeckoId: "weth"
   },
   WMATIC: {
     name: "Matic",
@@ -371,9 +371,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.MAINNET]: "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
       [CHAIN_IDs.POLYGON]: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
       [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
-      [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
+      [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53"
     },
-    coingeckoId: "wmatic",
+    coingeckoId: "wmatic"
   },
   GRASS: {
     name: "Grass",
@@ -381,10 +381,10 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
-      [CHAIN_IDs.SEPOLIA]: "0x8D725d9dBBb5E0667efeDC833D6A9e8C6cA02C68",
+      [CHAIN_IDs.SEPOLIA]: "0x8D725d9dBBb5E0667efeDC833D6A9e8C6cA02C68"
     },
-    coingeckoId: "grass", // TODO: add when listed
-  },
+    coingeckoId: "grass" // TODO: verify when listed
+  }
 };
 
 // Hard-coded mapping of token symbols that should be treated as having equivalent
@@ -393,5 +393,5 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   [TOKEN_SYMBOLS_MAP["USDC.e"].symbol]: TOKEN_SYMBOLS_MAP["USDC"].symbol,
   [TOKEN_SYMBOLS_MAP["USDbC"].symbol]: TOKEN_SYMBOLS_MAP["USDC"].symbol,
   [TOKEN_SYMBOLS_MAP["USDzC"].symbol]: TOKEN_SYMBOLS_MAP["USDC"].symbol,
-  [TOKEN_SYMBOLS_MAP["USDB"].symbol]: TOKEN_SYMBOLS_MAP["DAI"].symbol,
+  [TOKEN_SYMBOLS_MAP["USDB"].symbol]: TOKEN_SYMBOLS_MAP["DAI"].symbol
 };
