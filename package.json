@@ -11,15 +11,13 @@
     "access": "public"
   },
   "type": "module",
-  "files": [
-    "/dist/**/*"
-  ],
+  "files": ["/dist/**/*"],
   "scripts": {
-    "lint": "yarn eslint && yarn prettier --list-different",
-    "lint-fix": "yarn eslint --fix && yarn prettier --write",
-    "prettier": "prettier .",
-    "eslint": "eslint .",
-    "prepare": "yarn build",
+    "lint": "yarn biome lint",
+    "lint-fix": "yarn biome lint --write",
+    "format": "yarn biome format",
+    "format-fix": "yarn biome format --write",
+    "lint-format": "yarn biome check --write --no-errors-on-unmatched --files-ignore-unknown=true",
     "build": "yarn run clean && yarn run build:cjs && yarn run build:esm && yarn run build:types",
     "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir ./dist/cjs --removeComments --verbatimModuleSyntax false && echo > ./dist/cjs/package.json '{\"type\":\"commonjs\"}'",
     "build:esm": "tsc --project tsconfig.json --module es2015 --outDir ./dist/esm && echo > ./dist/esm/package.json '{\"type\":\"module\",\"sideEffects\":false}'",
@@ -27,6 +25,7 @@
     "clean": "rm -rf ./dist"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
     "eslint": "^8.50.0",
@@ -37,6 +36,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-promise": "^6.1.1",
+    "lefthook": "^1.10.1",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
   },
