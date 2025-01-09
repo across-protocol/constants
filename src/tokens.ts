@@ -374,6 +374,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "wmatic",
   },
+  GRASS: {
+    name: "Grass",
+    symbol: "GRASS",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
+      [CHAIN_IDs.SEPOLIA]: "0x8D725d9dBBb5E0667efeDC833D6A9e8C6cA02C68"
+    },
+    coingeckoId: "grass" // TODO: verify when listed
+  },
 };
 
 // Hard-coded mapping of token symbols that should be treated as having equivalent

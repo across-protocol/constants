@@ -11,6 +11,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   SCROLL_SEPOLIA: 534351,
   SEPOLIA: 11155111,
   ZK_SYNC_SEPOLIA: 300,
+  LENS_SEPOLIA: 37111,
 };
 
 export const TESTNET_CHAIN_IDs = {
@@ -228,7 +229,13 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://sepolia-era.zksync.network"
-  }
+  },
+  [CHAIN_IDs.LENS_SEPOLIA]: {
+    name: "Lens Sepolia",
+    family: NONE,
+    nativeToken: "GRASS",
+    blockExplorer: "https://block-explorer.testnet.lens.dev"
+  },
 };
 
 export const PUBLIC_NETWORKS = {
