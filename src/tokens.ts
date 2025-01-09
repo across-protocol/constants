@@ -121,6 +121,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.ZK_SYNC]: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
       [CHAIN_IDs.ZK_SYNC_SEPOLIA]: "0x2D6Db36B3117802E996f13073A08A685D3FeF7eD",
       [CHAIN_IDs.ZORA]: "0x4200000000000000000000000000000000000006",
+      [CHAIN_IDs.LENS_SEPOLIA]: "0xaA91D645D7a6C1aeaa5988e0547267B77d33fe16"
     },
     coingeckoId: "ethereum",
   },
@@ -359,6 +360,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.ZK_SYNC]: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
       [CHAIN_IDs.ZK_SYNC_SEPOLIA]: "0x2D6Db36B3117802E996f13073A08A685D3FeF7eD",
       [CHAIN_IDs.ZORA]: "0x4200000000000000000000000000000000000006",
+      [CHAIN_IDs.LENS_SEPOLIA]: "0xaA91D645D7a6C1aeaa5988e0547267B77d33fe16",
     },
     coingeckoId: "weth",
   },
@@ -373,6 +375,26 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
     },
     coingeckoId: "wmatic",
+  },
+  GRASS: {
+    name: "Grass",
+    symbol: "GRASS",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
+      [CHAIN_IDs.SEPOLIA]: "0x8D725d9dBBb5E0667efeDC833D6A9e8C6cA02C68"
+    },
+    coingeckoId: "grass" // TODO: verify when listed
+  },
+  WGRASS: {
+    name: "Wrapped Grass",
+    symbol: "WGRASS",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
+      [CHAIN_IDs.SEPOLIA]: "0x8D725d9dBBb5E0667efeDC833D6A9e8C6cA02C68"
+    },
+    coingeckoId: "wgrass" // TODO: verify when listed
   },
 };
 
