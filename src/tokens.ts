@@ -382,7 +382,7 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
-      [CHAIN_IDs.SEPOLIA]: "0x8D725d9dBBb5E0667efeDC833D6A9e8C6cA02C68"
+      [CHAIN_IDs.SEPOLIA]: "0x2Be68B15c693D3b5747F9F0D49D30A2E81BAA2Df"
     },
     coingeckoId: "grass" // TODO: verify when listed
   },
@@ -392,7 +392,7 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
-      [CHAIN_IDs.SEPOLIA]: "0x8D725d9dBBb5E0667efeDC833D6A9e8C6cA02C68"
+      [CHAIN_IDs.SEPOLIA]: "0x2Be68B15c693D3b5747F9F0D49D30A2E81BAA2Df"
     },
     coingeckoId: "wgrass" // TODO: verify when listed
   },
