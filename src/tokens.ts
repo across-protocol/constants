@@ -37,6 +37,17 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "aleph-zero",
   },
+  BADGER: {
+    name: "Badger",
+    symbol: "BADGER",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.ARBITRUM]: "0xBfa641051Ba0a0Ad1b0AcF549a89536A0D76472E",
+      [CHAIN_IDs.MAINNET]: "0x3472A5A71965499acd81997a54BBA8D852C6E53d",
+      [CHAIN_IDs.POLYGON]: "0x1FcbE5937B0cc2adf69772D228fA4205aCF4D9b2",
+    },
+    coingeckoId: "badger-dao",
+  },
   BAL: {
     name: "Balancer",
     symbol: "BAL",
@@ -50,17 +61,6 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.POLYGON]: "0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3",
     },
     coingeckoId: "balancer",
-  },
-  BADGER: {
-    name: "Badger",
-    symbol: "BADGER",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.ARBITRUM]: "0xBfa641051Ba0a0Ad1b0AcF549a89536A0D76472E",
-      [CHAIN_IDs.MAINNET]: "0x3472A5A71965499acd81997a54BBA8D852C6E53d",
-      [CHAIN_IDs.POLYGON]: "0x1FcbE5937B0cc2adf69772D228fA4205aCF4D9b2",
-    },
-    coingeckoId: "badger-dao",
   },
   BOBA: {
     name: "Boba",
@@ -138,6 +138,16 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SEPOLIA]: "0xc4bF5CbDaBE595361438F8c6a187bDc330539c60",
     },
     coingeckoId: "gho",
+  },
+  GRASS: {
+    name: "Grass",
+    symbol: "GRASS",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
+      [CHAIN_IDs.SEPOLIA]: "0x2Be68B15c693D3b5747F9F0D49D30A2E81BAA2Df"
+    },
+    coingeckoId: "grass" // TODO: verify when listed
   },
   LSK: {
     name: "Lisk",
@@ -367,6 +377,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "weth",
   },
+  WGRASS: {
+    name: "Wrapped Grass",
+    symbol: "WGRASS",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
+      [CHAIN_IDs.SEPOLIA]: "0x2Be68B15c693D3b5747F9F0D49D30A2E81BAA2Df"
+    },
+    coingeckoId: "wgrass" // TODO: verify when listed
+  },
   WMATIC: {
     name: "Matic",
     symbol: "WMATIC",
@@ -378,26 +398,6 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
     },
     coingeckoId: "wmatic",
-  },
-  GRASS: {
-    name: "Grass",
-    symbol: "GRASS",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
-      [CHAIN_IDs.SEPOLIA]: "0x2Be68B15c693D3b5747F9F0D49D30A2E81BAA2Df"
-    },
-    coingeckoId: "grass" // TODO: verify when listed
-  },
-  WGRASS: {
-    name: "Wrapped Grass",
-    symbol: "WGRASS",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
-      [CHAIN_IDs.SEPOLIA]: "0x2Be68B15c693D3b5747F9F0D49D30A2E81BAA2Df"
-    },
-    coingeckoId: "wgrass" // TODO: verify when listed
   },
 };
 
