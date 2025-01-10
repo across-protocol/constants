@@ -29,7 +29,7 @@ export const MAINNET_CHAIN_IDs = {
   LISK: 1135,
   MAINNET: 1,
   MODE: 34443,
-  NEWCHAIN: 1868,
+  CHER: 1868,
   OPTIMISM: 10,
   POLYGON: 137,
   REDSTONE: 690,
@@ -91,6 +91,12 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     blockExplorer: "https://blockexplorer.boba.network"
   },
+  [CHAIN_IDs.CHER]: { // @todo: To be updated later
+    name: "Cher",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    blockExplorer: "" // @todo: To be added later
+  },
   [CHAIN_IDs.INK]: {
     name: "Ink",
     family: OP_STACK,
@@ -120,12 +126,6 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     blockExplorer: "https://explorer.mode.network"
-  },
-  [CHAIN_IDs.NEWCHAIN]: { // @todo: To be updated later
-    name: "New Chain",
-    family: OP_STACK,
-    nativeToken: "ETH",
-    blockExplorer: "" // @todo: To be added later
   },
   [CHAIN_IDs.OPTIMISM]: {
     name: "Optimism",
