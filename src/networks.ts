@@ -24,6 +24,7 @@ export const MAINNET_CHAIN_IDs = {
   BASE: 8453,
   BLAST: 81457,
   BOBA: 288,
+  CHER: 1868,
   INK: 57073,
   LINEA: 59144,
   LISK: 1135,
@@ -89,6 +90,12 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     blockExplorer: "https://blockexplorer.boba.network"
+  },
+  [CHAIN_IDs.CHER]: { // @todo: To be updated later
+    name: "Cher",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    blockExplorer: "" // @todo: To be added later
   },
   [CHAIN_IDs.INK]: {
     name: "Ink",
