@@ -4,6 +4,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   BASE_SEPOLIA: 84532,
   BLAST_SEPOLIA: 168587773,
   INK_SEPOLIA: 763373,
+  LENS_SEPOLIA: 37111,
   LISK_SEPOLIA: 4202,
   MODE_SEPOLIA: 919,
   OPTIMISM_SEPOLIA: 11155420,
@@ -11,7 +12,6 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   SCROLL_SEPOLIA: 534351,
   SEPOLIA: 11155111,
   ZK_SYNC_SEPOLIA: 300,
-  LENS_SEPOLIA: 37111,
 };
 
 export const TESTNET_CHAIN_IDs = {
@@ -29,6 +29,7 @@ export const MAINNET_CHAIN_IDs = {
   LISK: 1135,
   MAINNET: 1,
   MODE: 34443,
+  NEWCHAIN: 1868,
   OPTIMISM: 10,
   POLYGON: 137,
   REDSTONE: 690,
@@ -120,6 +121,12 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     blockExplorer: "https://explorer.mode.network"
   },
+  [CHAIN_IDs.NEWCHAIN]: { // @todo: To be updated later
+    name: "New Chain",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    blockExplorer: "" // @todo: To be added later
+  },
   [CHAIN_IDs.OPTIMISM]: {
     name: "Optimism",
     family: OP_STACK,
@@ -189,6 +196,12 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     blockExplorer: "https://sepolia.blastscan.io"
   },
+  [CHAIN_IDs.LENS_SEPOLIA]: {
+    name: "Lens Sepolia",
+    family: ChainFamily.ZK_STACK,
+    nativeToken: "GRASS",
+    blockExplorer: "https://block-explorer.testnet.lens.dev"
+  },
   [CHAIN_IDs.LISK_SEPOLIA]: {
     name: "Lisk Sepolia",
     family: OP_STACK,
@@ -230,12 +243,6 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://sepolia-era.zksync.network"
-  },
-  [CHAIN_IDs.LENS_SEPOLIA]: {
-    name: "Lens Sepolia",
-    family: ChainFamily.ZK_STACK,
-    nativeToken: "GRASS",
-    blockExplorer: "https://block-explorer.testnet.lens.dev"
   },
 };
 
