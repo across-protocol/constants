@@ -24,7 +24,6 @@ export const MAINNET_CHAIN_IDs = {
   BASE: 8453,
   BLAST: 81457,
   BOBA: 288,
-  CHER: 1868,
   INK: 57073,
   LINEA: 59144,
   LISK: 1135,
@@ -34,6 +33,7 @@ export const MAINNET_CHAIN_IDs = {
   POLYGON: 137,
   REDSTONE: 690,
   SCROLL: 534352,
+  SONEIUM: 1868,
   SUPERSEED: 5330,
   WORLD_CHAIN: 480,
   ZK_SYNC: 324,
@@ -91,12 +91,6 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     blockExplorer: "https://blockexplorer.boba.network"
   },
-  [CHAIN_IDs.CHER]: { // @todo: To be updated later
-    name: "Cher",
-    family: OP_STACK,
-    nativeToken: "ETH",
-    blockExplorer: "" // @todo: To be added later
-  },
   [CHAIN_IDs.INK]: {
     name: "Ink",
     family: OP_STACK,
@@ -150,6 +144,12 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     blockExplorer: "https://scrollscan.com"
+  },
+  [CHAIN_IDs.SONEIUM]: {
+    name: "Soneium",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    blockExplorer: "https://soneium.blockscout.com/"
   },
   [CHAIN_IDs.SUPERSEED]: {
     name: "Superseed",
