@@ -149,7 +149,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Soneium",
     family: OP_STACK,
     nativeToken: "ETH",
-    blockExplorer: "https://soneium.blockscout.com/"
+    blockExplorer: "https://soneium.blockscout.com"
   },
   [CHAIN_IDs.SUPERSEED]: {
     name: "Superseed",
