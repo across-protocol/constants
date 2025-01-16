@@ -4,6 +4,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   BASE_SEPOLIA: 84532,
   BLAST_SEPOLIA: 168587773,
   INK_SEPOLIA: 763373,
+  LENS_SEPOLIA: 37111,
   LISK_SEPOLIA: 4202,
   MODE_SEPOLIA: 919,
   OPTIMISM_SEPOLIA: 11155420,
@@ -32,6 +33,7 @@ export const MAINNET_CHAIN_IDs = {
   POLYGON: 137,
   REDSTONE: 690,
   SCROLL: 534352,
+  SONEIUM: 1868,
   SUPERSEED: 5330,
   WORLD_CHAIN: 480,
   ZK_SYNC: 324,
@@ -47,6 +49,7 @@ export enum ChainFamily {
   NONE,
   OP_STACK,
   ORBIT, // Future: Might need to distinguish between ORBIT_L2 and ORBIT_L3...
+  ZK_STACK
 };
 
 interface PublicNetwork {
@@ -157,6 +160,12 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.scroll.io",
     blockExplorer: "https://scrollscan.com"
   },
+  [CHAIN_IDs.SONEIUM]: {
+    name: "Soneium",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    blockExplorer: "https://soneium.blockscout.com"
+  },
   [CHAIN_IDs.SUPERSEED]: {
     name: "Superseed",
     family: OP_STACK,
@@ -209,6 +218,12 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia.blast.io",
     blockExplorer: "https://sepolia.blastscan.io"
   },
+  [CHAIN_IDs.LENS_SEPOLIA]: {
+    name: "Lens Sepolia",
+    family: ChainFamily.ZK_STACK,
+    nativeToken: "GRASS",
+    blockExplorer: "https://block-explorer.testnet.lens.dev"
+  },
   [CHAIN_IDs.LISK_SEPOLIA]: {
     name: "Lisk Sepolia",
     family: OP_STACK,
@@ -257,7 +272,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     publicRPC: "https://sepolia.era.zksync.dev",
     blockExplorer: "https://sepolia-era.zksync.network"
-  }
+  },
 };
 
 export const PUBLIC_NETWORKS = {
