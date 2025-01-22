@@ -164,6 +164,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Soneium",
     family: OP_STACK,
     nativeToken: "ETH",
+    publicRPC: "https://rpc.soneium.org ",
     blockExplorer: "https://soneium.blockscout.com"
   },
   [CHAIN_IDs.SUPERSEED]: {
@@ -222,6 +223,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Lens Sepolia",
     family: ChainFamily.ZK_STACK,
     nativeToken: "GRASS",
+    publicRPC: "https://rpc.testnet.lens.dev",
     blockExplorer: "https://block-explorer.testnet.lens.dev"
   },
   [CHAIN_IDs.LISK_SEPOLIA]: {
