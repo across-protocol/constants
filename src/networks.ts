@@ -242,7 +242,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Optimism Sepolia",
     family: OP_STACK,
     nativeToken: "ETH",
-    "rpc": "https://sepolia.optimism.io",
+    publicRPC: "https://sepolia.optimism.io",
     blockExplorer: "https://sepolia-optimism.etherscan.io"
   },
   [CHAIN_IDs.POLYGON_AMOY]: {
