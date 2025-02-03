@@ -24,6 +24,7 @@ export const MAINNET_CHAIN_IDs = {
   BASE: 8453,
   BLAST: 81457,
   BOBA: 288,
+  DOCTOR_WHO: 130,
   INK: 57073,
   LINEA: 59144,
   LISK: 1135,
@@ -96,6 +97,13 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     publicRPC: "https://mainnet.boba.network",
     blockExplorer: "https://blockexplorer.boba.network"
+  },
+  [CHAIN_IDs.DOCTOR_WHO]: {
+    name: "Doctor Who",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    publicRPC: "https://e9e9da47.doctor_who.org/",
+    blockExplorer: "https://doctor_who-d7a86fxp.blockscout.com"
   },
   [CHAIN_IDs.INK]: {
     name: "Ink",
