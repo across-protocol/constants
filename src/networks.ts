@@ -79,7 +79,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://arb1.arbitrum.io/rpc",
-    blockExplorer: "https://arbiscan.io"
+    blockExplorer: "https://arbiscan.io",
     cctpDomain: 3,
   },
   [CHAIN_IDs.BASE]: {
@@ -87,7 +87,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.base.org",
-    blockExplorer: "https://basescan.org"
+    blockExplorer: "https://basescan.org",
     cctpDomain: 6,
   },
   [CHAIN_IDs.BLAST]: {
@@ -95,7 +95,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://rpc.blast.io",
-    blockExplorer: "https://blastscan.io"
+    blockExplorer: "https://blastscan.io",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.BOBA]: {
@@ -103,7 +103,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.boba.network",
-    blockExplorer: "https://blockexplorer.boba.network"
+    blockExplorer: "https://blockexplorer.boba.network",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.UNICHAIN]: {
@@ -111,7 +111,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.unichain.org/",
-    blockExplorer: "https://uniscan.xyz"
+    blockExplorer: "https://uniscan.xyz",
     cctpDomain: 10,
   },
   [CHAIN_IDs.INK]: {
@@ -119,7 +119,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://rpc-gel.inkonchain.com",
-    blockExplorer: "https://explorer.inkonchain.com"
+    blockExplorer: "https://explorer.inkonchain.com",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.LINEA]: {
@@ -127,7 +127,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://rpc.linea.build",
-    blockExplorer: "https://lineascan.build"
+    blockExplorer: "https://lineascan.build",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.LISK]: {
@@ -135,7 +135,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://rpc.api.lisk.com",
-    blockExplorer: "https://blockscout.lisk.com"
+    blockExplorer: "https://blockscout.lisk.com",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.MAINNET]: {
@@ -143,7 +143,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://eth.llamarpc.com",
-    blockExplorer: "https://etherscan.io"
+    blockExplorer: "https://etherscan.io",
     cctpDomain: 0,
   },
   [CHAIN_IDs.MODE]: {
@@ -151,7 +151,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.mode.network",
-    blockExplorer: "https://explorer.mode.network"
+    blockExplorer: "https://explorer.mode.network",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.OPTIMISM]: {
@@ -159,7 +159,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.optimism.io",
-    blockExplorer: "https://optimistic.etherscan.io"
+    blockExplorer: "https://optimistic.etherscan.io",
     cctpDomain: 2,
   },
   [CHAIN_IDs.POLYGON]: {
@@ -167,14 +167,14 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "MATIC",
     publicRPC: "https://polygon-rpc.com",
-    blockExplorer: "https://polygonscan.com"
+    blockExplorer: "https://polygonscan.com",
     cctpDomain: 7,
   },
   [CHAIN_IDs.REDSTONE]: {
     name: "Redstone",
     family: OP_STACK,
     nativeToken: "ETH",
-    publicRPC: "https://rpc.redstonechain.com ",
+    publicRPC: "https://rpc.redstonechain.com",
     blockExplorer: "https://explorer.redstone.xyz",
     cctpDomain: CCTP_NO_DOMAIN,
   },
@@ -183,15 +183,15 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://rpc.scroll.io",
-    blockExplorer: "https://scrollscan.com"
+    blockExplorer: "https://scrollscan.com",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.SONEIUM]: {
     name: "Soneium",
     family: OP_STACK,
     nativeToken: "ETH",
-    publicRPC: "https://rpc.soneium.org ",
-    blockExplorer: "https://soneium.blockscout.com"
+    publicRPC: "https://rpc.soneium.org",
+    blockExplorer: "https://soneium.blockscout.com",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.SUPERSEED]: {
@@ -215,7 +215,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.era.zksync.io",
-    blockExplorer: "https://era.zksync.network"
+    blockExplorer: "https://era.zksync.network",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.ZORA]: {
@@ -234,7 +234,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://sepolia-rollup.arbitrum.io/rpc",
-    blockExplorer: "https://sepolia.arbiscan.io"
+    blockExplorer: "https://sepolia.arbiscan.io",
     cctpDomain: 3,
   },
   [CHAIN_IDs.BASE_SEPOLIA]: {
@@ -242,7 +242,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://sepolia.base.org",
-    blockExplorer: "https://sepolia.basescan.org"
+    blockExplorer: "https://sepolia.basescan.org",
     cctpDomain: 6,
   },
   [CHAIN_IDs.BLAST_SEPOLIA]: {
@@ -250,7 +250,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://sepolia.blast.io",
-    blockExplorer: "https://sepolia.blastscan.io"
+    blockExplorer: "https://sepolia.blastscan.io",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.LENS_SEPOLIA]: {
@@ -258,7 +258,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: ChainFamily.ZK_STACK,
     nativeToken: "GRASS",
     publicRPC: "https://rpc.testnet.lens.dev",
-    blockExplorer: "https://block-explorer.testnet.lens.dev"
+    blockExplorer: "https://block-explorer.testnet.lens.dev",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.LISK_SEPOLIA]: {
@@ -266,7 +266,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://rpc.sepolia-api.lisk.com",
-    blockExplorer: "https://sepolia-blockscout.lisk.com"
+    blockExplorer: "https://sepolia-blockscout.lisk.com",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.MODE_SEPOLIA]: {
@@ -274,7 +274,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://sepolia.mode.network",
-    blockExplorer: "https://sepolia.explorer.mode.network"
+    blockExplorer: "https://sepolia.explorer.mode.network",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: {
@@ -282,7 +282,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://sepolia.optimism.io",
-    blockExplorer: "https://sepolia-optimism.etherscan.io"
+    blockExplorer: "https://sepolia-optimism.etherscan.io",
     cctpDomain: 2,
   },
   [CHAIN_IDs.POLYGON_AMOY]: {
@@ -290,7 +290,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "MATIC",
     publicRPC: "https://rpc-amoy.polygon.technology",
-    blockExplorer: "https://amoy.polygonscan.com"
+    blockExplorer: "https://amoy.polygonscan.com",
     cctpDomain: 7,
   },
   [CHAIN_IDs.SCROLL_SEPOLIA]: {
@@ -298,7 +298,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://sepolia-rpc.scroll.io",
-    blockExplorer: "https://sepolia.scrollscan.com"
+    blockExplorer: "https://sepolia.scrollscan.com",
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.SEPOLIA]: {
@@ -306,7 +306,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://sepolia.drpc.org",
-    blockExplorer: "https://sepolia.etherscan.io"
+    blockExplorer: "https://sepolia.etherscan.io",
     cctpDomain: 0,
   },
   [CHAIN_IDs.ZK_SYNC_SEPOLIA]: {
@@ -314,7 +314,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://sepolia.era.zksync.dev",
-    blockExplorer: "https://sepolia-era.zksync.network"
+    blockExplorer: "https://sepolia-era.zksync.network",
     cctpDomain: CCTP_NO_DOMAIN,
   },
 };
