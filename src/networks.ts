@@ -99,7 +99,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://blockexplorer.boba.network"
   },
   [CHAIN_IDs.UNICHAIN]: {
-    name: "Doctor Who",
+    name: "Unichain",
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.unichain.org/",
