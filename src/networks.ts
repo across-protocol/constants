@@ -24,7 +24,6 @@ export const MAINNET_CHAIN_IDs = {
   BASE: 8453,
   BLAST: 81457,
   BOBA: 288,
-  DOCTOR_WHO: 130,
   INK: 57073,
   LINEA: 59144,
   LISK: 1135,
@@ -36,6 +35,7 @@ export const MAINNET_CHAIN_IDs = {
   SCROLL: 534352,
   SONEIUM: 1868,
   SUPERSEED: 5330,
+  UNICHAIN: 130,
   WORLD_CHAIN: 480,
   ZK_SYNC: 324,
   ZORA: 7777777
@@ -62,7 +62,7 @@ interface PublicNetwork {
   cctpDomain: number;
 }
 
-const CCTP_NO_DOMAIN = -1;
+export const CCTP_NO_DOMAIN = -1;
 
 const { NONE, OP_STACK, ORBIT } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
@@ -106,12 +106,12 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://blockexplorer.boba.network"
     cctpDomain: CCTP_NO_DOMAIN,
   },
-  [CHAIN_IDs.DOCTOR_WHO]: {
-    name: "Doctor Who",
+  [CHAIN_IDs.UNICHAIN]: {
+    name: "Unichain",
     family: OP_STACK,
     nativeToken: "ETH",
-    publicRPC: "https://e9e9da47.doctor_who.org/",
-    blockExplorer: "https://doctor_who-d7a86fxp.blockscout.com"
+    publicRPC: "https://mainnet.unichain.org/",
+    blockExplorer: "https://uniscan.xyz"
     cctpDomain: 10,
   },
   [CHAIN_IDs.INK]: {
