@@ -291,7 +291,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "MATIC",
     publicRPC: "https://rpc-amoy.polygon.technology",
     blockExplorer: "https://amoy.polygonscan.com"
-    cctpDomain: 8,
+    cctpDomain: 7,
   },
   [CHAIN_IDs.SCROLL_SEPOLIA]: {
     name: "Scroll Sepolia",
