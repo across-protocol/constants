@@ -199,7 +199,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.superseed.xyz",
-    blockExplorer: "" // @todo: To be added later
+    blockExplorer: "", // @todo: To be added later
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.WORLD_CHAIN]: {
