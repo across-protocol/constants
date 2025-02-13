@@ -316,6 +316,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     publicRPC: "https://sepolia.unichain.org",
     blockExplorer: "https://sepolia.uniscan.xyz",
+    cctpDomain: 10,
   },
   [CHAIN_IDs.ZK_SYNC_SEPOLIA]: {
     name: "zkSync Sepolia",
