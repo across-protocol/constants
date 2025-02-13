@@ -11,6 +11,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   POLYGON_AMOY: 80002,
   SCROLL_SEPOLIA: 534351,
   SEPOLIA: 11155111,
+  UNICHAIN_SEPOLIA: 1301,
   ZK_SYNC_SEPOLIA: 300,
 };
 
@@ -38,7 +39,7 @@ export const MAINNET_CHAIN_IDs = {
   UNICHAIN: 130,
   WORLD_CHAIN: 480,
   ZK_SYNC: 324,
-  ZORA: 7777777
+  ZORA: 7777777,
 };
 
 export const CHAIN_IDs = {
@@ -50,8 +51,8 @@ export enum ChainFamily {
   NONE,
   OP_STACK,
   ORBIT, // Future: Might need to distinguish between ORBIT_L2 and ORBIT_L3...
-  ZK_STACK
-};
+  ZK_STACK,
+}
 
 interface PublicNetwork {
   name: string;
@@ -225,7 +226,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.zora.energy",
     blockExplorer: "https://zorascan.xyz",
     cctpDomain: CCTP_NO_DOMAIN,
-  }
+  },
 };
 
 export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
@@ -308,6 +309,13 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia.drpc.org",
     blockExplorer: "https://sepolia.etherscan.io",
     cctpDomain: 0,
+  },
+  [CHAIN_IDs.UNICHAIN_SEPOLIA]: {
+    name: "Unichain Sepolia",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    publicRPC: "https://sepolia.unichain.org",
+    blockExplorer: "https://sepolia.uniscan.xyz",
   },
   [CHAIN_IDs.ZK_SYNC_SEPOLIA]: {
     name: "zkSync Sepolia",
