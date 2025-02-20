@@ -160,7 +160,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.BASE_SEPOLIA]: "0xCcB47b9904f8e1914Cae99C629eb14b06f9B1AC1",
       [CHAIN_IDs.SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
     },
-    coingeckoId: "xyz", // TODO: verify when listed
+    coingeckoId: "xyz", // This is a testnet token only.
   },
   LSK: {
     name: "Lisk",
