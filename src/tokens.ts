@@ -151,6 +151,17 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "grass", // TODO: verify when listed
   },
+  XYZ: {
+    name: "XYZ Token",
+    symbol: "XYZ",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BASE_SEPOLIA]: "0x180d555759e4d1d5cf70c3babbae4b8f410bdad9",
+      [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0x180d555759e4d1d5cf70c3babbae4b8f410bdad9",
+      [CHAIN_IDs.SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
+    },
+    coingeckoId: "xyz", // This is a testnet token only.
+  },
   LSK: {
     name: "Lisk",
     symbol: "LSK",
