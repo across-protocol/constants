@@ -156,8 +156,8 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "XYZ",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0xf60b6d2A3336262841F61c7fe4A45901cD08d5F9",
       [CHAIN_IDs.BASE_SEPOLIA]: "0xCcB47b9904f8e1914Cae99C629eb14b06f9B1AC1",
+      [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0xf60b6d2A3336262841F61c7fe4A45901cD08d5F9",
       [CHAIN_IDs.SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
     },
     coingeckoId: "xyz", // This is a testnet token only.
