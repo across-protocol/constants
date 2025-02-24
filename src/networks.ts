@@ -17,6 +17,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
 
 export const TESTNET_CHAIN_IDs = {
   ...TESTNET_SEPOLIA_CHAIN_IDs,
+  SOLANA_DEVNET: 133268194659241,
 } as const;
 
 export const MAINNET_CHAIN_IDs = {
@@ -40,6 +41,7 @@ export const MAINNET_CHAIN_IDs = {
   WORLD_CHAIN: 480,
   ZK_SYNC: 324,
   ZORA: 7777777,
+  SOLANA: 34268394551451,
 };
 
 export const CHAIN_IDs = {
