@@ -54,7 +54,7 @@ export enum ChainFamily {
   OP_STACK,
   ORBIT, // Future: Might need to distinguish between ORBIT_L2 and ORBIT_L3...
   ZK_STACK,
-  SOLANA,
+  SVM,
 }
 
 interface PublicNetwork {
@@ -68,7 +68,7 @@ interface PublicNetwork {
 
 export const CCTP_NO_DOMAIN = -1;
 
-const { NONE, OP_STACK, ORBIT, SOLANA } = ChainFamily;
+const { NONE, OP_STACK, ORBIT, SVM } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ALEPH_ZERO]: {
     name: "Aleph Zero",
@@ -192,7 +192,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.SOLANA]: {
     name: "Solana",
-    family: SOLANA,
+    family: SVM,
     nativeToken: "SOL",
     publicRPC: "https://api.mainnet-beta.solana.com",
     blockExplorer: "https://solscan.io",
@@ -323,7 +323,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.SOLANA_DEVNET]: {
     name: "Solana Devnet",
-    family: SOLANA,
+    family: SVM,
     nativeToken: "SOL",
     publicRPC: "https://api.devnet.solana.com",
     blockExplorer: "https://explorer.solana.com/?cluster=devnet",
