@@ -218,6 +218,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "havven",
   },
+  SOL: {
+    name: "Solana",
+    symbol: "SOL",
+    decimals: 9,
+    addresses: {
+      [CHAIN_IDs.SOLANA]: "So11111111111111111111111111111111111111112",
+      [CHAIN_IDs.SOLANA_DEVNET]: "So11111111111111111111111111111111111111112",
+    },
+    coingeckoId: "solana",
+  },
   UMA: {
     name: "UMA Voting Token",
     symbol: "UMA",
@@ -417,6 +427,16 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
     },
     coingeckoId: "wmatic",
+  },
+  WSOL: {
+    name: "Wrapped SOL",
+    symbol: "WSOL",
+    decimals: 9,
+    addresses: {
+      [CHAIN_IDs.SOLANA]: "So11111111111111111111111111111111111111112",
+      [CHAIN_IDs.SOLANA_DEVNET]: "So11111111111111111111111111111111111111112",
+    },
+    coingeckoId: "wrapped-solana",
   },
 };
 

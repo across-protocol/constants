@@ -54,6 +54,7 @@ export enum ChainFamily {
   OP_STACK,
   ORBIT, // Future: Might need to distinguish between ORBIT_L2 and ORBIT_L3...
   ZK_STACK,
+  SVM,
 }
 
 interface PublicNetwork {
@@ -67,7 +68,7 @@ interface PublicNetwork {
 
 export const CCTP_NO_DOMAIN = -1;
 
-const { NONE, OP_STACK, ORBIT } = ChainFamily;
+const { NONE, OP_STACK, ORBIT, SVM } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ALEPH_ZERO]: {
     name: "Aleph Zero",
@@ -188,6 +189,14 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.scroll.io",
     blockExplorer: "https://scrollscan.com",
     cctpDomain: CCTP_NO_DOMAIN,
+  },
+  [CHAIN_IDs.SOLANA]: {
+    name: "Solana",
+    family: SVM,
+    nativeToken: "SOL",
+    publicRPC: "https://api.mainnet-beta.solana.com",
+    blockExplorer: "https://solscan.io",
+    cctpDomain: 5,
   },
   [CHAIN_IDs.SONEIUM]: {
     name: "Soneium",
@@ -311,6 +320,14 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia.drpc.org",
     blockExplorer: "https://sepolia.etherscan.io",
     cctpDomain: 0,
+  },
+  [CHAIN_IDs.SOLANA_DEVNET]: {
+    name: "Solana Devnet",
+    family: SVM,
+    nativeToken: "SOL",
+    publicRPC: "https://api.devnet.solana.com",
+    blockExplorer: "https://explorer.solana.com/?cluster=devnet",
+    cctpDomain: 5,
   },
   [CHAIN_IDs.UNICHAIN_SEPOLIA]: {
     name: "Unichain Sepolia",
