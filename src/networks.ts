@@ -27,6 +27,7 @@ export const MAINNET_CHAIN_IDs = {
   BLAST: 81457,
   BOBA: 288,
   INK: 57073,
+  LENS: 232,
   LINEA: 59144,
   LISK: 1135,
   MAINNET: 1,
@@ -68,7 +69,7 @@ interface PublicNetwork {
 
 export const CCTP_NO_DOMAIN = -1;
 
-const { NONE, OP_STACK, ORBIT, SVM } = ChainFamily;
+const { NONE, OP_STACK, ORBIT, SVM, ZK_STACK } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ALEPH_ZERO]: {
     name: "Aleph Zero",
@@ -124,6 +125,14 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     publicRPC: "https://rpc-gel.inkonchain.com",
     blockExplorer: "https://explorer.inkonchain.com",
+    cctpDomain: CCTP_NO_DOMAIN,
+  },
+  [CHAIN_IDs.LENS]: {
+    name: "Lens",
+    family: ZK_STACK,
+    nativeToken: "GHO",
+    publicRPC: "https://api.lens.matterhosted.dev",
+    blockExplorer: "https://block-explorer.testnet.lens.dev", // @todo update
     cctpDomain: CCTP_NO_DOMAIN,
   },
   [CHAIN_IDs.LINEA]: {
@@ -267,7 +276,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.LENS_SEPOLIA]: {
     name: "Lens Sepolia",
-    family: ChainFamily.ZK_STACK,
+    family: ZK_STACK,
     nativeToken: "GRASS",
     publicRPC: "https://rpc.testnet.lens.dev",
     blockExplorer: "https://block-explorer.testnet.lens.dev",
