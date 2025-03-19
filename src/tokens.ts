@@ -410,7 +410,7 @@ export const TOKEN_SYMBOLS_MAP = {
   },
   WGHO: {
     name: "Gho Token",
-    symbol: "GHO",
+    symbol: "wGHO",
     decimals: 18,
     addresses: {
       [CHAIN_IDs.LENS]: "0x6bDc36E20D267Ff0dd6097799f82e78907105e2F",
