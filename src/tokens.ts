@@ -151,18 +151,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
       [CHAIN_IDs.SEPOLIA]: "0x2Be68B15c693D3b5747F9F0D49D30A2E81BAA2Df",
     },
-    coingeckoId: "grass", // TODO: verify when listed
-  },
-  XYZ: {
-    name: "XYZ Token",
-    symbol: "XYZ",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.BASE_SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
-      [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
-      [CHAIN_IDs.SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
-    },
-    coingeckoId: "xyz", // This is a testnet token only.
+    coingeckoId: "gho", // GRASS is Sepolia GHO.
   },
   LSK: {
     name: "Lisk",
@@ -411,12 +400,12 @@ export const TOKEN_SYMBOLS_MAP = {
     coingeckoId: "weth",
   },
   WGHO: {
-    name: "Gho Token",
-    symbol: "wGHO",
+    name: "Wrapped GHO Token",
+    symbol: "WGHO",
     decimals: 18,
     addresses: {
       [CHAIN_IDs.LENS]: "0x6bDc36E20D267Ff0dd6097799f82e78907105e2F",
-      [CHAIN_IDs.MAINNET]: "0x1ff1dC3cB9eeDbC6Eb2d99C03b30A05cA625fB5a",
+      [CHAIN_IDs.MAINNET]: "0x1ff1dC3cB9eeDbC6Eb2d99C03b30A05cA625fB5a", // Lens Wrapped GHO
     },
     coingeckoId: "gho",
   },
@@ -429,7 +418,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.LENS_SEPOLIA]: "0xeee5a340Cdc9c179Db25dea45AcfD5FE8d4d3eB8",
       [CHAIN_IDs.SEPOLIA]: "0x2Be68B15c693D3b5747F9F0D49D30A2E81BAA2Df",
     },
-    coingeckoId: "wgrass", // TODO: verify when listed
+    coingeckoId: "gho", // GRASS is Sepolia GHO.
   },
   WMATIC: {
     name: "Matic",
@@ -452,6 +441,17 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SOLANA_DEVNET]: "So11111111111111111111111111111111111111112",
     },
     coingeckoId: "wrapped-solana",
+  },
+  XYZ: {
+    name: "XYZ Token",
+    symbol: "XYZ",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BASE_SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
+      [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
+      [CHAIN_IDs.SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
+    },
+    coingeckoId: "xyz", // This is a testnet token only.
   },
 };
 
