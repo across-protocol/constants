@@ -59,7 +59,7 @@ export enum ChainFamily {
 }
 
 // source https://docs.layerzero.network/v2/developers/evm/technical-reference/deployed-contracts
-export const MAINNET_OFT_EIDS = {
+export const PRODUCTION_OFT_EIDs = {
   ARBITRUM: 30110,
   BASE: 30184,
   BLAST: 30243,
@@ -73,13 +73,14 @@ export const MAINNET_OFT_EIDS = {
 };
 
 // source https://docs.layerzero.network/v2/developers/evm/technical-reference/deployed-contracts
-export const TESTNET_OFT_EIDS = {
+export const TESTNET_OFT_EIDs = {
   ARBITRUM_SEPOLIA: 40231,
   BASE_SEPOLIA: 40245,
   OPTIMISM_SEPOLIA: 40232,
   POLYGON_AMOY: 40267,
   SEPOLIA: 40161,
   UNICHAIN_SEPOLIA: 40333,
+  SOLANA_DEVNET: 40168,
 };
 
 interface PublicNetwork {
@@ -89,7 +90,7 @@ interface PublicNetwork {
   publicRPC: string; // RPC provider of last resort.
   blockExplorer: string;
   cctpDomain: number;
-  oftEId: number;
+  oftEid: number;
 }
 
 export const CCTP_NO_DOMAIN = -1;
@@ -104,7 +105,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.alephzero.raas.gelato.cloud",
     blockExplorer: "https://evm-explorer.alephzero.org",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.ARBITRUM]: {
     name: "Arbitrum One",
@@ -113,7 +114,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://arb1.arbitrum.io/rpc",
     blockExplorer: "https://arbiscan.io",
     cctpDomain: 3,
-    oftEId: MAINNET_OFT_EIDS.ARBITRUM,
+    oftEid: PRODUCTION_OFT_EIDs.ARBITRUM,
   },
   [CHAIN_IDs.BASE]: {
     name: "Base",
@@ -122,7 +123,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://mainnet.base.org",
     blockExplorer: "https://basescan.org",
     cctpDomain: 6,
-    oftEId: MAINNET_OFT_EIDS.BASE,
+    oftEid: PRODUCTION_OFT_EIDs.BASE,
   },
   [CHAIN_IDs.BLAST]: {
     name: "Blast",
@@ -131,7 +132,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.blast.io",
     blockExplorer: "https://blastscan.io",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: MAINNET_OFT_EIDS.BLAST,
+    oftEid: PRODUCTION_OFT_EIDs.BLAST,
   },
   [CHAIN_IDs.BOBA]: {
     name: "Boba",
@@ -140,7 +141,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://mainnet.boba.network",
     blockExplorer: "https://blockexplorer.boba.network",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.UNICHAIN]: {
     name: "Unichain",
@@ -149,7 +150,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://mainnet.unichain.org/",
     blockExplorer: "https://uniscan.xyz",
     cctpDomain: 10,
-    oftEId: MAINNET_OFT_EIDS.UNICHAIN,
+    oftEid: PRODUCTION_OFT_EIDs.UNICHAIN,
   },
   [CHAIN_IDs.INK]: {
     name: "Ink",
@@ -158,7 +159,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc-gel.inkonchain.com",
     blockExplorer: "https://explorer.inkonchain.com",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.LENS]: {
     name: "Lens",
@@ -167,6 +168,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://api.lens.matterhosted.dev",
     blockExplorer: "https://block-explorer.testnet.lens.dev", // @todo update
     cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.LINEA]: {
     name: "Linea",
@@ -175,7 +177,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.linea.build",
     blockExplorer: "https://lineascan.build",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.LISK]: {
     name: "Lisk",
@@ -184,7 +186,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.api.lisk.com",
     blockExplorer: "https://blockscout.lisk.com",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.MAINNET]: {
     name: "Mainnet",
@@ -193,7 +195,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://eth.llamarpc.com",
     blockExplorer: "https://etherscan.io",
     cctpDomain: 0,
-    oftEId: MAINNET_OFT_EIDS.MAINNET,
+    oftEid: PRODUCTION_OFT_EIDs.MAINNET,
   },
   [CHAIN_IDs.MODE]: {
     name: "Mode",
@@ -202,7 +204,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://mainnet.mode.network",
     blockExplorer: "https://explorer.mode.network",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.OPTIMISM]: {
     name: "Optimism",
@@ -211,7 +213,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://mainnet.optimism.io",
     blockExplorer: "https://optimistic.etherscan.io",
     cctpDomain: 2,
-    oftEId: MAINNET_OFT_EIDS.OPTIMISM,
+    oftEid: PRODUCTION_OFT_EIDs.OPTIMISM,
   },
   [CHAIN_IDs.POLYGON]: {
     name: "Polygon",
@@ -220,7 +222,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://polygon-rpc.com",
     blockExplorer: "https://polygonscan.com",
     cctpDomain: 7,
-    oftEId: MAINNET_OFT_EIDS.POLYGON,
+    oftEid: PRODUCTION_OFT_EIDs.POLYGON,
   },
   [CHAIN_IDs.REDSTONE]: {
     name: "Redstone",
@@ -229,7 +231,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.redstonechain.com",
     blockExplorer: "https://explorer.redstone.xyz",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.SCROLL]: {
     name: "Scroll",
@@ -238,7 +240,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.scroll.io",
     blockExplorer: "https://scrollscan.com",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.SOLANA]: {
     name: "Solana",
@@ -247,6 +249,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://api.mainnet-beta.solana.com",
     blockExplorer: "https://solscan.io",
     cctpDomain: 5,
+    oftEid: PRODUCTION_OFT_EIDs.SOLANA,
   },
   [CHAIN_IDs.SONEIUM]: {
     name: "Soneium",
@@ -255,7 +258,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.soneium.org",
     blockExplorer: "https://soneium.blockscout.com",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: MAINNET_OFT_EIDS.SONEIUM,
+    oftEid: PRODUCTION_OFT_EIDs.SONEIUM,
   },
   [CHAIN_IDs.SUPERSEED]: {
     name: "Superseed",
@@ -264,7 +267,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://mainnet.superseed.xyz",
     blockExplorer: "", // @todo: To be added later
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.WORLD_CHAIN]: {
     name: "World Chain",
@@ -273,7 +276,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://worldchain-mainnet.g.alchemy.com/public",
     blockExplorer: "https://worldchain-mainnet-explorer.alchemy.com",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: MAINNET_OFT_EIDS.WORLD_CHAIN,
+    oftEid: PRODUCTION_OFT_EIDs.WORLD_CHAIN,
   },
   [CHAIN_IDs.ZK_SYNC]: {
     name: "zkSync",
@@ -282,7 +285,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://mainnet.era.zksync.io",
     blockExplorer: "https://era.zksync.network",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.ZORA]: {
     name: "Zora",
@@ -291,7 +294,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.zora.energy",
     blockExplorer: "https://zorascan.xyz",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
 };
 
@@ -303,7 +306,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia-rollup.arbitrum.io/rpc",
     blockExplorer: "https://sepolia.arbiscan.io",
     cctpDomain: 3,
-    oftEId: TESTNET_OFT_EIDS.ARBITRUM_SEPOLIA,
+    oftEid: TESTNET_OFT_EIDs.ARBITRUM_SEPOLIA,
   },
   [CHAIN_IDs.BASE_SEPOLIA]: {
     name: "Base Sepolia",
@@ -312,7 +315,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia.base.org",
     blockExplorer: "https://sepolia.basescan.org",
     cctpDomain: 6,
-    oftEId: TESTNET_OFT_EIDS.BASE_SEPOLIA,
+    oftEid: TESTNET_OFT_EIDs.BASE_SEPOLIA,
   },
   [CHAIN_IDs.BLAST_SEPOLIA]: {
     name: "Blast Sepolia",
@@ -321,7 +324,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia.blast.io",
     blockExplorer: "https://sepolia.blastscan.io",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.LENS_SEPOLIA]: {
     name: "Lens Sepolia",
@@ -330,7 +333,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.testnet.lens.dev",
     blockExplorer: "https://block-explorer.testnet.lens.dev",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.LISK_SEPOLIA]: {
     name: "Lisk Sepolia",
@@ -339,7 +342,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.sepolia-api.lisk.com",
     blockExplorer: "https://sepolia-blockscout.lisk.com",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.MODE_SEPOLIA]: {
     name: "Mode Sepolia",
@@ -348,7 +351,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia.mode.network",
     blockExplorer: "https://sepolia.explorer.mode.network",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: {
     name: "Optimism Sepolia",
@@ -357,7 +360,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia.optimism.io",
     blockExplorer: "https://sepolia-optimism.etherscan.io",
     cctpDomain: 2,
-    oftEId: TESTNET_OFT_EIDS.OPTIMISM_SEPOLIA,
+    oftEid: TESTNET_OFT_EIDs.OPTIMISM_SEPOLIA,
   },
   [CHAIN_IDs.POLYGON_AMOY]: {
     name: "Polygon Amoy",
@@ -366,7 +369,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc-amoy.polygon.technology",
     blockExplorer: "https://amoy.polygonscan.com",
     cctpDomain: 7,
-    oftEId: TESTNET_OFT_EIDS.POLYGON_AMOY,
+    oftEid: TESTNET_OFT_EIDs.POLYGON_AMOY,
   },
   [CHAIN_IDs.SCROLL_SEPOLIA]: {
     name: "Scroll Sepolia",
@@ -375,7 +378,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia-rpc.scroll.io",
     blockExplorer: "https://sepolia.scrollscan.com",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
   [CHAIN_IDs.SEPOLIA]: {
     name: "Sepolia",
@@ -384,7 +387,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia.drpc.org",
     blockExplorer: "https://sepolia.etherscan.io",
     cctpDomain: 0,
-    oftEId: TESTNET_OFT_EIDS.SEPOLIA,
+    oftEid: TESTNET_OFT_EIDs.SEPOLIA,
   },
   [CHAIN_IDs.SOLANA_DEVNET]: {
     name: "Solana Devnet",
@@ -393,6 +396,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://api.devnet.solana.com",
     blockExplorer: "https://explorer.solana.com/?cluster=devnet",
     cctpDomain: 5,
+    oftEid: TESTNET_OFT_EIDs.SOLANA_DEVNET,
   },
   [CHAIN_IDs.UNICHAIN_SEPOLIA]: {
     name: "Unichain Sepolia",
@@ -401,7 +405,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia.unichain.org",
     blockExplorer: "https://sepolia.uniscan.xyz",
     cctpDomain: 10,
-    oftEId: TESTNET_OFT_EIDS.UNICHAIN_SEPOLIA,
+    oftEid: TESTNET_OFT_EIDs.UNICHAIN_SEPOLIA,
   },
   [CHAIN_IDs.ZK_SYNC_SEPOLIA]: {
     name: "zkSync Sepolia",
@@ -410,7 +414,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://sepolia.era.zksync.dev",
     blockExplorer: "https://sepolia-era.zksync.network",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEId: OFT_NO_EID,
+    oftEid: OFT_NO_EID,
   },
 };
 
