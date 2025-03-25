@@ -58,7 +58,7 @@ export enum ChainFamily {
   SVM,
 }
 
-// source https://docs.layerzero.network/v2/developers/evm/technical-reference/deployed-contracts
+// Source https://docs.layerzero.network/v2/developers/evm/technical-reference/deployed-contracts
 export const PRODUCTION_OFT_EIDs = {
   ARBITRUM: 30110,
   BASE: 30184,
@@ -72,7 +72,7 @@ export const PRODUCTION_OFT_EIDs = {
   SOLANA: 30168,
 };
 
-// source https://docs.layerzero.network/v2/developers/evm/technical-reference/deployed-contracts
+// Source https://docs.layerzero.network/v2/developers/evm/technical-reference/deployed-contracts
 export const TESTNET_OFT_EIDs = {
   ARBITRUM_SEPOLIA: 40231,
   BASE_SEPOLIA: 40245,
@@ -83,6 +83,13 @@ export const TESTNET_OFT_EIDs = {
   SOLANA_DEVNET: 40168,
 };
 
+// Collection of Hyperlane domain ids that are different from CHAIN_IDs.
+// Source https://github.com/hyperlane-xyz/hyperlane-registry
+export const HYPERLANE_DOMAIN_ID_OVERRIDES = {
+  SOLANA: 1399811149,
+  SOLANA_DEVNET: 1399811151,
+};
+
 interface PublicNetwork {
   name: string;
   family: ChainFamily;
@@ -91,10 +98,12 @@ interface PublicNetwork {
   blockExplorer: string;
   cctpDomain: number;
   oftEid: number;
+  hypDomainId: number; // Hyperlane domain id
 }
 
 export const CCTP_NO_DOMAIN = -1;
 export const OFT_NO_EID = -1;
+export const HYPERLANE_NO_DOMAIN_ID = -1;
 
 const { NONE, OP_STACK, ORBIT, SVM, ZK_STACK } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
@@ -106,6 +115,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://evm-explorer.alephzero.org",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.ARBITRUM]: {
     name: "Arbitrum One",
@@ -115,6 +125,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://arbiscan.io",
     cctpDomain: 3,
     oftEid: PRODUCTION_OFT_EIDs.ARBITRUM,
+    hypDomainId: MAINNET_CHAIN_IDs.ARBITRUM,
   },
   [CHAIN_IDs.BASE]: {
     name: "Base",
@@ -124,6 +135,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://basescan.org",
     cctpDomain: 6,
     oftEid: PRODUCTION_OFT_EIDs.BASE,
+    hypDomainId: MAINNET_CHAIN_IDs.BASE,
   },
   [CHAIN_IDs.BLAST]: {
     name: "Blast",
@@ -133,6 +145,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://blastscan.io",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: PRODUCTION_OFT_EIDs.BLAST,
+    hypDomainId: MAINNET_CHAIN_IDs.BLAST,
   },
   [CHAIN_IDs.BOBA]: {
     name: "Boba",
@@ -142,6 +155,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://blockexplorer.boba.network",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.UNICHAIN]: {
     name: "Unichain",
@@ -151,6 +165,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://uniscan.xyz",
     cctpDomain: 10,
     oftEid: PRODUCTION_OFT_EIDs.UNICHAIN,
+    hypDomainId: MAINNET_CHAIN_IDs.UNICHAIN,
   },
   [CHAIN_IDs.INK]: {
     name: "Ink",
@@ -160,6 +175,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://explorer.inkonchain.com",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: MAINNET_CHAIN_IDs.INK,
   },
   [CHAIN_IDs.LENS]: {
     name: "Lens",
@@ -169,6 +185,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://block-explorer.testnet.lens.dev", // @todo update
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.LINEA]: {
     name: "Linea",
@@ -178,6 +195,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://lineascan.build",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: MAINNET_CHAIN_IDs.LINEA,
   },
   [CHAIN_IDs.LISK]: {
     name: "Lisk",
@@ -187,6 +205,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://blockscout.lisk.com",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.MAINNET]: {
     name: "Mainnet",
@@ -196,6 +215,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://etherscan.io",
     cctpDomain: 0,
     oftEid: PRODUCTION_OFT_EIDs.MAINNET,
+    hypDomainId: MAINNET_CHAIN_IDs.MAINNET,
   },
   [CHAIN_IDs.MODE]: {
     name: "Mode",
@@ -205,6 +225,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://explorer.mode.network",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: MAINNET_CHAIN_IDs.MODE,
   },
   [CHAIN_IDs.OPTIMISM]: {
     name: "Optimism",
@@ -214,6 +235,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://optimistic.etherscan.io",
     cctpDomain: 2,
     oftEid: PRODUCTION_OFT_EIDs.OPTIMISM,
+    hypDomainId: MAINNET_CHAIN_IDs.OPTIMISM,
   },
   [CHAIN_IDs.POLYGON]: {
     name: "Polygon",
@@ -223,6 +245,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://polygonscan.com",
     cctpDomain: 7,
     oftEid: PRODUCTION_OFT_EIDs.POLYGON,
+    hypDomainId: MAINNET_CHAIN_IDs.POLYGON,
   },
   [CHAIN_IDs.REDSTONE]: {
     name: "Redstone",
@@ -232,6 +255,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://explorer.redstone.xyz",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: MAINNET_CHAIN_IDs.REDSTONE,
   },
   [CHAIN_IDs.SCROLL]: {
     name: "Scroll",
@@ -241,6 +265,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://scrollscan.com",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.SOLANA]: {
     name: "Solana",
@@ -250,6 +275,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://solscan.io",
     cctpDomain: 5,
     oftEid: PRODUCTION_OFT_EIDs.SOLANA,
+    hypDomainId: HYPERLANE_DOMAIN_ID_OVERRIDES.SOLANA,
   },
   [CHAIN_IDs.SONEIUM]: {
     name: "Soneium",
@@ -259,6 +285,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://soneium.blockscout.com",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: PRODUCTION_OFT_EIDs.SONEIUM,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.SUPERSEED]: {
     name: "Superseed",
@@ -268,6 +295,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "", // @todo: To be added later
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.WORLD_CHAIN]: {
     name: "World Chain",
@@ -277,6 +305,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://worldchain-mainnet-explorer.alchemy.com",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: PRODUCTION_OFT_EIDs.WORLD_CHAIN,
+    hypDomainId: MAINNET_CHAIN_IDs.WORLD_CHAIN,
   },
   [CHAIN_IDs.ZK_SYNC]: {
     name: "zkSync",
@@ -286,6 +315,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://era.zksync.network",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: MAINNET_CHAIN_IDs.ZK_SYNC,
   },
   [CHAIN_IDs.ZORA]: {
     name: "Zora",
@@ -295,6 +325,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://zorascan.xyz",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
 };
 
@@ -307,6 +338,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://sepolia.arbiscan.io",
     cctpDomain: 3,
     oftEid: TESTNET_OFT_EIDs.ARBITRUM_SEPOLIA,
+    hypDomainId: TESTNET_CHAIN_IDs.ARBITRUM_SEPOLIA,
   },
   [CHAIN_IDs.BASE_SEPOLIA]: {
     name: "Base Sepolia",
@@ -316,6 +348,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://sepolia.basescan.org",
     cctpDomain: 6,
     oftEid: TESTNET_OFT_EIDs.BASE_SEPOLIA,
+    hypDomainId: TESTNET_CHAIN_IDs.BASE_SEPOLIA,
   },
   [CHAIN_IDs.BLAST_SEPOLIA]: {
     name: "Blast Sepolia",
@@ -325,6 +358,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://sepolia.blastscan.io",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: TESTNET_CHAIN_IDs.BLAST_SEPOLIA,
   },
   [CHAIN_IDs.LENS_SEPOLIA]: {
     name: "Lens Sepolia",
@@ -334,6 +368,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://block-explorer.testnet.lens.dev",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.LISK_SEPOLIA]: {
     name: "Lisk Sepolia",
@@ -343,6 +378,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://sepolia-blockscout.lisk.com",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.MODE_SEPOLIA]: {
     name: "Mode Sepolia",
@@ -352,6 +388,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://sepolia.explorer.mode.network",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: TESTNET_CHAIN_IDs.MODE_SEPOLIA,
   },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: {
     name: "Optimism Sepolia",
@@ -361,6 +398,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://sepolia-optimism.etherscan.io",
     cctpDomain: 2,
     oftEid: TESTNET_OFT_EIDs.OPTIMISM_SEPOLIA,
+    hypDomainId: TESTNET_CHAIN_IDs.OPTIMISM_SEPOLIA,
   },
   [CHAIN_IDs.POLYGON_AMOY]: {
     name: "Polygon Amoy",
@@ -370,6 +408,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://amoy.polygonscan.com",
     cctpDomain: 7,
     oftEid: TESTNET_OFT_EIDs.POLYGON_AMOY,
+    hypDomainId: TESTNET_CHAIN_IDs.POLYGON_AMOY,
   },
   [CHAIN_IDs.SCROLL_SEPOLIA]: {
     name: "Scroll Sepolia",
@@ -379,6 +418,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://sepolia.scrollscan.com",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.SEPOLIA]: {
     name: "Sepolia",
@@ -388,6 +428,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://sepolia.etherscan.io",
     cctpDomain: 0,
     oftEid: TESTNET_OFT_EIDs.SEPOLIA,
+    hypDomainId: TESTNET_CHAIN_IDs.SEPOLIA,
   },
   [CHAIN_IDs.SOLANA_DEVNET]: {
     name: "Solana Devnet",
@@ -397,6 +438,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://explorer.solana.com/?cluster=devnet",
     cctpDomain: 5,
     oftEid: TESTNET_OFT_EIDs.SOLANA_DEVNET,
+    hypDomainId: HYPERLANE_DOMAIN_ID_OVERRIDES.SOLANA_DEVNET,
   },
   [CHAIN_IDs.UNICHAIN_SEPOLIA]: {
     name: "Unichain Sepolia",
@@ -406,6 +448,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://sepolia.uniscan.xyz",
     cctpDomain: 10,
     oftEid: TESTNET_OFT_EIDs.UNICHAIN_SEPOLIA,
+    hypDomainId: TESTNET_CHAIN_IDs.UNICHAIN_SEPOLIA,
   },
   [CHAIN_IDs.ZK_SYNC_SEPOLIA]: {
     name: "zkSync Sepolia",
@@ -415,6 +458,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://sepolia-era.zksync.network",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: TESTNET_CHAIN_IDs.ZK_SYNC_SEPOLIA,
   },
 };
 
