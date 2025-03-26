@@ -180,7 +180,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.LENS]: {
     name: "Lens",
     family: ZK_STACK,
-    nativeToken: "GHO",
+    nativeToken: "WGHO",
     publicRPC: "https://api.lens.matterhosted.dev",
     blockExplorer: "https://block-explorer.testnet.lens.dev", // @todo update
     cctpDomain: CCTP_NO_DOMAIN,
