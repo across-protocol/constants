@@ -219,6 +219,53 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "solana",
   },
+  "TATARA-USDC": {
+    name: "Tatara USDC",
+    symbol: "TATARA-USDC",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.SEPOLIA]: "0x2b9Ca0A8C773bb1B92A3dDAE9F882Fd14457DACc",
+      [CHAIN_IDs.TATARA]: "0x7A8ed27F4C30512326878652d20fC85727401854",
+    },
+    coingeckoId: "usdc",
+  },
+  "TATARA-USDS": {
+    name: "Tatara USDS",
+    symbol: "TATARA-USDS",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.SEPOLIA]: "0xfC7b006bDEd8e5D4A55FbaC7A91dAf3753f085CD",
+    },
+    coingeckoId: "usds",
+  },
+  "TATARA-USDT": {
+    name: "Tatara USDT",
+    symbol: "TATARA-USDT",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.SEPOLIA]: "0x18fDA3c97Ea92A04D1636D84948624b414D0058E",
+    },
+    coingeckoId: "usdt",
+  },
+  "TATARA-WBTC": {
+    name: "Tatara WBTC",
+    symbol: "TATARA-WBTC",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.SEPOLIA]: "0xd67A804510739C33c578162A26324C83DCFC0a0A",
+    },
+    coingeckoId: "wrapped-bitcoin",
+  },
+  "TATARA-WETH": {
+    name: "Tatara WETH",
+    symbol: "TATARA-WETH",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.SEPOLIA]: "0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9",
+      [CHAIN_IDs.TATARA]: "0x17B8Ee96E3bcB3b04b3e8334de4524520C51caB4",
+    },
+    coingeckoId: "weth",
+  },
   UMA: {
     name: "UMA Voting Token",
     symbol: "UMA",
