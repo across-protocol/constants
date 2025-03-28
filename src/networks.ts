@@ -4,6 +4,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   BASE_SEPOLIA: 84532,
   BLAST_SEPOLIA: 168587773,
   INK_SEPOLIA: 763373,
+  TATARA: 129399,
   LENS_SEPOLIA: 37111,
   LISK_SEPOLIA: 4202,
   MODE_SEPOLIA: 919,
@@ -176,6 +177,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: MAINNET_CHAIN_IDs.INK,
+  },
+  [CHAIN_IDs.TATARA]: {
+    name: "Katana Tatara",
+    family: NONE, // Snowflake family - tbd
+    nativeToken: "ETH",
+    publicRPC: "https://rpc.tatara.katanarpc.com/<apikey>",
+    blockExplorer: "https://explorer.tatara.katana.network",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.LENS]: {
     name: "Lens",
