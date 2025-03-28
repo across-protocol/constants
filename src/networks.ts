@@ -193,7 +193,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: ZK_STACK,
     nativeToken: "WGHO",
     publicRPC: "https://api.lens.matterhosted.dev",
-    blockExplorer: "https://block-explorer.testnet.lens.dev", // @todo update
+    blockExplorer: "https://explorer.lens.xyz",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
