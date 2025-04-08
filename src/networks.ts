@@ -204,7 +204,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     publicRPC: "https://rpc.linea.build",
     blockExplorer: "https://lineascan.build",
-    cctpDomain: CCTP_NO_DOMAIN,
+    cctpDomain: 11,
     oftEid: OFT_NO_EID,
     hypDomainId: MAINNET_CHAIN_IDs.LINEA,
   },
