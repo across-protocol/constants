@@ -228,9 +228,9 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.BASE_SEPOLIA]: "0x3c95BB5f49F3643558aa8F699403564A652FBeB0",
       [CHAIN_IDs.POLYGON_AMOY]: "0x8B0180f2101c8260d49339abfEe87927412494B4",
       [CHAIN_IDs.SEPOLIA]: "0x2b9Ca0A8C773bb1B92A3dDAE9F882Fd14457DACc",
-      [CHAIN_IDs.TATARA]: "0x7A8ed27F4C30512326878652d20fC85727401854",
+      [CHAIN_IDs.TATARA]: "0x102E14ffF48170F2e5b6d0e30259fCD4eE5E28aE",
     },
-    coingeckoId: "usdc",
+    coingeckoId: "usd-coin",
   },
   "TATARA-USDS": {
     name: "Tatara USDS",
@@ -239,7 +239,7 @@ export const TOKEN_SYMBOLS_MAP = {
     addresses: {
       [CHAIN_IDs.SEPOLIA]: "0xfC7b006bDEd8e5D4A55FbaC7A91dAf3753f085CD",
     },
-    coingeckoId: "usds",
+    coingeckoId: "usd-coin",
   },
   "TATARA-USDT": {
     name: "Tatara USDT",
@@ -248,7 +248,7 @@ export const TOKEN_SYMBOLS_MAP = {
     addresses: {
       [CHAIN_IDs.SEPOLIA]: "0x18fDA3c97Ea92A04D1636D84948624b414D0058E",
     },
-    coingeckoId: "usdt",
+    coingeckoId: "usd-coin",
   },
   "TATARA-WBTC": {
     name: "Tatara WBTC",
@@ -499,11 +499,11 @@ export const TOKEN_SYMBOLS_MAP = {
 // Hard-coded mapping of token symbols that should be treated as having equivalent
 // prices. The right-hand side should map to a token symbol in TOKEN_SYMBOLS_MAP.
 export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
-  [TOKEN_SYMBOLS_MAP["USDC.e"].symbol]: TOKEN_SYMBOLS_MAP["USDC"].symbol,
-  [TOKEN_SYMBOLS_MAP["USDbC"].symbol]: TOKEN_SYMBOLS_MAP["USDC"].symbol,
-  [TOKEN_SYMBOLS_MAP["USDzC"].symbol]: TOKEN_SYMBOLS_MAP["USDC"].symbol,
-  [TOKEN_SYMBOLS_MAP["USDB"].symbol]: TOKEN_SYMBOLS_MAP["DAI"].symbol,
-  "LGHO": TOKEN_SYMBOLS_MAP["WGHO"].symbol, // LGHO is the symbol for WGHO on L1.
+  [TOKEN_SYMBOLS_MAP["USDC.e"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
+  [TOKEN_SYMBOLS_MAP.USDbC.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
+  [TOKEN_SYMBOLS_MAP.USDzC.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
+  [TOKEN_SYMBOLS_MAP.USDB.symbol]: TOKEN_SYMBOLS_MAP.DAI.symbol,
+  LGHO: TOKEN_SYMBOLS_MAP.WGHO.symbol, // LGHO is the symbol for WGHO on L1.
   // Testnet remappings.
-  [TOKEN_SYMBOLS_MAP["TATARA-USDC"].symbol]: TOKEN_SYMBOLS_MAP["USDC"].symbol,
+  [TOKEN_SYMBOLS_MAP["TATARA-USDC"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
 };

@@ -179,7 +179,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     hypDomainId: MAINNET_CHAIN_IDs.INK,
   },
   [CHAIN_IDs.TATARA]: {
-    name: "Katana Tatara",
+    name: "Tatara",
     family: NONE, // Snowflake family - tbd
     nativeToken: "ETH",
     publicRPC: "https://rpc.tatara.katanarpc.com/<apikey>",
