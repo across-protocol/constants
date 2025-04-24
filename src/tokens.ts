@@ -82,16 +82,6 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "boba-network",
   },
-  BTCB: {
-    name: "BTCB Token",
-    symbol: "BTCB",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.BNB]: "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
-      [CHAIN_IDs.MAINNET]: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
-    },
-    coingeckoId: "binance-bitcoin",
-  },
   CAKE: {
     name: "PancakeSwap Token",
     symbol: "Cake",
@@ -435,8 +425,9 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 8,
     addresses: {
       [CHAIN_IDs.ARBITRUM]: "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
-      [CHAIN_IDs.BOBA]: "0xdc0486f8bf31DF57a952bcd3c1d3e166e3d9eC8b",
       [CHAIN_IDs.BLAST]: "0xF7bc58b8D8f97ADC129cfC4c9f45Ce3C0E1D2692",
+      [CHAIN_IDs.BNB]: "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      [CHAIN_IDs.BOBA]: "0xdc0486f8bf31DF57a952bcd3c1d3e166e3d9eC8b",
       [CHAIN_IDs.LINEA]: "0x3aAB2285ddcDdaD8edf438C1bAB47e1a9D05a9b4",
       [CHAIN_IDs.LISK]: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3",
       [CHAIN_IDs.MAINNET]: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
