@@ -62,6 +62,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "balancer",
   },
+  BNB: {
+    name: "BNB",
+    symbol: "BNB",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BNB]: "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
+      [CHAIN_IDs.MAINNET]: "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
+    },
+    coingeckoId: "binancecoin",
+  },
   BOBA: {
     name: "Boba",
     symbol: "BOBA",
@@ -71,6 +81,26 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.MAINNET]: "0x42bBFa2e77757C645eeaAd1655E0911a7553Efbc",
     },
     coingeckoId: "boba-network",
+  },
+  BTCB: {
+    name: "BTCB Token",
+    symbol: "BTCB",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BNB]: "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      [CHAIN_IDs.MAINNET]: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+    },
+    coingeckoId: "binance-bitcoin",
+  },
+  CAKE: {
+    name: "PancakeSwap Token",
+    symbol: "Cake",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BNB]: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      [CHAIN_IDs.MAINNET]: "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898",
+    },
+    coingeckoId: "pancakeswap-token",
   },
   DAI: {
     name: "Dai Stablecoin",
@@ -98,6 +128,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.ARBITRUM_SEPOLIA]: "0x980B62Da83eFf3D4576C647993b0c1D7faf17c73",
       [CHAIN_IDs.BASE]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.BASE_SEPOLIA]: "0x4200000000000000000000000000000000000006",
+      [CHAIN_IDs.BNB]: "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
       [CHAIN_IDs.BOBA]: "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
       [CHAIN_IDs.BLAST]: "0x4300000000000000000000000000000000000004",
       [CHAIN_IDs.BLAST_SEPOLIA]: "0x4200000000000000000000000000000000000023",
@@ -282,6 +313,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "usdb",
   },
+  "USDC-BNB": {
+    name: "USD Coin",
+    symbol: "USDC-BNB",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BNB]: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+    },
+    unmatchedDecimalsL1Token: "USDC",
+    coingeckoId: "usd-coin",
+  },
   USDC: {
     name: "USD Coin",
     symbol: "USDC",
@@ -347,6 +388,16 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.ZORA]: "0xCccCCccc7021b32EBb4e8C08314bD62F7c653EC4",
     },
     coingeckoId: "usd-coin-ethereum-bridged",
+  },
+  "USDT-BNB": {
+    name: "Tether USD",
+    symbol: "USDT-BNB",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BNB]: "0x55d398326f99059fF775485246999027B3197955",
+    },
+    unmatchedDecimalsL1Token: "USDT",
+    coingeckoId: "tether",
   },
   USDT: {
     name: "Tether USD",
