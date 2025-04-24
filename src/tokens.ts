@@ -310,7 +310,7 @@ export const TOKEN_SYMBOLS_MAP = {
     addresses: {
       [CHAIN_IDs.BNB]: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
     },
-    unmatchedDecimalsL1Token: "USDC",
+    l1TokenDecimals: 6,
     coingeckoId: "usd-coin",
   },
   USDC: {
@@ -386,7 +386,7 @@ export const TOKEN_SYMBOLS_MAP = {
     addresses: {
       [CHAIN_IDs.BNB]: "0x55d398326f99059fF775485246999027B3197955",
     },
-    unmatchedDecimalsL1Token: "USDT",
+    l1TokenDecimals: 6,
     coingeckoId: "tether",
   },
   USDT: {
