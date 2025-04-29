@@ -411,6 +411,17 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "tether",
   },
+  VLR: {
+    name: "Velora",
+    symbol: "VLR",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BASE]: "0x4e107a0000DB66f0E9Fd2039288Bf811dD1f9c74",
+      [CHAIN_IDs.MAINNET]: "0x4e107a0000DB66f0E9Fd2039288Bf811dD1f9c74",
+      [CHAIN_IDs.OPTIMISM]: "0x4e107a0000DB66f0E9Fd2039288Bf811dD1f9c74",
+    },
+    coingeckoId: "paraswap", // @todo
+  },
   WAZERO: {
     name: "Wrapped AZERO",
     symbol: "WAZERO",
@@ -494,7 +505,6 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "gho",
   },
-
   WGRASS: {
     name: "Wrapped Grass",
     symbol: "WGRASS",
@@ -504,6 +514,17 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SEPOLIA]: "0x2Be68B15c693D3b5747F9F0D49D30A2E81BAA2Df",
     },
     coingeckoId: "gho", // GRASS is Sepolia GHO.
+  },
+  WLD: {
+    name: "Worldcoin",
+    symbol: "WLD",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x163f8C2467924be0ae7B5347228CABF260318753",
+      [CHAIN_IDs.OPTIMISM]: "0xdC6fF44d5d932Cbd77B52E5612Ba0529DC6226F1",
+      [CHAIN_IDs.WORLD_CHAIN]: "0x2cFc85d8E48F8EAB294be644d9E25C3030863003",
+    },
+    coingeckoId: "worldcoin-wld",
   },
   WMATIC: {
     name: "Matic",
