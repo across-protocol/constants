@@ -84,7 +84,7 @@ export const TOKEN_SYMBOLS_MAP = {
   },
   CAKE: {
     name: "PancakeSwap Token",
-    symbol: "Cake",
+    symbol: "CAKE",
     decimals: 18,
     addresses: {
       [CHAIN_IDs.BNB]: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
