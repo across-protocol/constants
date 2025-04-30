@@ -380,17 +380,6 @@ export const TOKEN_SYMBOLS_MAP = {
     l1TokenDecimals: 6,
     coingeckoId: "usd-coin",
   },
-  "USDT-BNB": {
-    name: "Tether USD",
-    symbol: "USDT-BNB",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.BNB]: "0x55d398326f99059fF775485246999027B3197955",
-      [CHAIN_IDs.MAINNET]: "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    },
-    l1TokenDecimals: 6,
-    coingeckoId: "tether",
-  },
   USDT: {
     name: "Tether USD",
     symbol: "USDT",
@@ -409,6 +398,17 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SEPOLIA]: "0x7169D38820dfd117C3FA1f22a697dBA58d90BA06",
       [CHAIN_IDs.ZK_SYNC]: "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
     },
+    coingeckoId: "tether",
+  },
+  "USDT-BNB": {
+    name: "Tether USD",
+    symbol: "USDT-BNB",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BNB]: "0x55d398326f99059fF775485246999027B3197955",
+      [CHAIN_IDs.MAINNET]: "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    },
+    l1TokenDecimals: 6,
     coingeckoId: "tether",
   },
   VLR: {
@@ -569,6 +569,7 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   [TOKEN_SYMBOLS_MAP.USDzC.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP.USDB.symbol]: TOKEN_SYMBOLS_MAP.DAI.symbol,
   [TOKEN_SYMBOLS_MAP["USDC-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
+  [TOKEN_SYMBOLS_MAP["USDT-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
   LGHO: TOKEN_SYMBOLS_MAP.WGHO.symbol, // LGHO is the symbol for WGHO on L1.
   // Testnet remappings.
   [TOKEN_SYMBOLS_MAP["TATARA-USDC"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
