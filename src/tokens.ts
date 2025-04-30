@@ -571,6 +571,7 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   [TOKEN_SYMBOLS_MAP["USDC-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP["USDT-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
   LGHO: TOKEN_SYMBOLS_MAP.WGHO.symbol, // LGHO is the symbol for WGHO on L1.
+  ETH: TOKEN_SYMBOLS_MAP.WETH.symbol,
   // Testnet remappings.
   [TOKEN_SYMBOLS_MAP["TATARA-USDC"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
 };
