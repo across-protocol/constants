@@ -432,6 +432,15 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "aleph-zero",
   },
+  WBNB: {
+    name: "Wrapped BNB",
+    symbol: "WBNB",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BNB]: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+    },
+    coingeckoId: "wbnb",
+  },
   WBTC: {
     name: "Wrapped Bitcoin",
     symbol: "WBTC",
