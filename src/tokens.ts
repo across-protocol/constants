@@ -303,17 +303,6 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "usdb",
   },
-  "USDC-BNB": {
-    name: "USD Coin",
-    symbol: "USDC-BNB",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.BNB]: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
-      [CHAIN_IDs.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-    },
-    l1TokenDecimals: 6,
-    coingeckoId: "usd-coin",
-  },
   USDC: {
     name: "USD Coin",
     symbol: "USDC",
@@ -379,6 +368,17 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.ZORA]: "0xCccCCccc7021b32EBb4e8C08314bD62F7c653EC4",
     },
     coingeckoId: "usd-coin-ethereum-bridged",
+  },
+  "USDC-BNB": {
+    name: "USD Coin",
+    symbol: "USDC-BNB",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BNB]: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+      [CHAIN_IDs.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    },
+    l1TokenDecimals: 6,
+    coingeckoId: "usd-coin",
   },
   "USDT-BNB": {
     name: "Tether USD",
