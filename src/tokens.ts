@@ -67,7 +67,7 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "BNB",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.BSC]: "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
+      [CHAIN_IDs.BSC]: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       [CHAIN_IDs.MAINNET]: "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
     },
     coingeckoId: "binancecoin",
@@ -432,6 +432,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "aleph-zero",
   },
+  WBNB: {
+    name: "Wrapped BNB",
+    symbol: "WBNB",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BSC]: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      [CHAIN_IDs.MAINNET]: "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
+    },
+    coingeckoId: "wbnb",
+  },
   WBTC: {
     name: "Wrapped Bitcoin",
     symbol: "WBTC",
@@ -571,7 +581,13 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   [TOKEN_SYMBOLS_MAP["USDC-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP["USDT-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
   LGHO: TOKEN_SYMBOLS_MAP.WGHO.symbol, // LGHO is the symbol for WGHO on L1.
+  // The TOKEN_SYMBOLS_MAP structure assumes that each L2 token address is unique but several mappings
+  // can share the same L1 token mapping. Therefore this structure lends itself to querying symbols/decimals/name
+  // for an L1 token directly on-chain and then looking up the L2 data from this mapping. Therefore, its likely to get
+  // an "ETH" from this mapping but its mapped to a "WETH" on-chain, therefore map the ETH back to the WETH. Same
+  // with other native / wrapped token pairings like BNB/WBNB, MATIC/WMATIC, LGHO/WGHO, etc.
   ETH: TOKEN_SYMBOLS_MAP.WETH.symbol,
+  BNB: TOKEN_SYMBOLS_MAP.WBNB.symbol,
   // Testnet remappings.
   [TOKEN_SYMBOLS_MAP["TATARA-USDC"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
 };
