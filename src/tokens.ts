@@ -67,8 +67,8 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "BNB",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.BNB]: "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
       [CHAIN_IDs.MAINNET]: "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
+      [CHAIN_IDs.BNB]: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
     },
     coingeckoId: "binancecoin",
   },
@@ -437,6 +437,7 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "WBNB",
     decimals: 18,
     addresses: {
+      [CHAIN_IDs.MAINNET]: "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
       [CHAIN_IDs.BNB]: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
     },
     coingeckoId: "wbnb",
