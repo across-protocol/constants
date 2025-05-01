@@ -437,8 +437,8 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "WBNB",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.MAINNET]: "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
       [CHAIN_IDs.BSC]: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      [CHAIN_IDs.MAINNET]: "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
     },
     coingeckoId: "wbnb",
   },
