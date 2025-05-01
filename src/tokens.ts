@@ -581,7 +581,13 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   [TOKEN_SYMBOLS_MAP["USDC-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP["USDT-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
   LGHO: TOKEN_SYMBOLS_MAP.WGHO.symbol, // LGHO is the symbol for WGHO on L1.
+  // The TOKEN_SYMBOLS_MAP structure assumes that each L2 token address is unique but several mappings
+  // can share the same L1 token mapping. Therefore this structure lends itself to querying symbols/decimals/name
+  // for an L1 token directly on-chain and then looking up the L2 data from this mapping. Therefore, its likely to get
+  // an "ETH" from this mapping but its mapped to a "WETH" on-chain, therefore map the ETH back to the WETH. Same
+  // with other native / wrapped token pairings like BNB/WBNB, MATIC/WMATIC, LGHO/WGHO, etc.
   ETH: TOKEN_SYMBOLS_MAP.WETH.symbol,
+  BNB: TOKEN_SYMBOLS_MAP.WBNB.symbol,
   // Testnet remappings.
   [TOKEN_SYMBOLS_MAP["TATARA-USDC"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
 };
