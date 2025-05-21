@@ -158,7 +158,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://bscscan.com",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: PRODUCTION_OFT_EIDs.BSC,
-    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+    hypDomainId: MAINNET_CHAIN_IDs.BSC,
   },
   [CHAIN_IDs.BOBA]: {
     name: "Boba",
