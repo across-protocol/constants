@@ -326,7 +326,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     publicRPC: "https://worldchain-mainnet.g.alchemy.com/public",
     blockExplorer: "https://worldchain-mainnet-explorer.alchemy.com",
-    cctpDomain: CCTP_NO_DOMAIN,
+    cctpDomain: 14,
     oftEid: PRODUCTION_OFT_EIDs.WORLD_CHAIN,
     hypDomainId: MAINNET_CHAIN_IDs.WORLD_CHAIN,
   },
