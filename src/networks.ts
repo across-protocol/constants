@@ -15,7 +15,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   SEPOLIA: 11155111,
   UNICHAIN_SEPOLIA: 1301,
   ZK_SYNC_SEPOLIA: 300,
-};
+} as const;
 
 export const TESTNET_CHAIN_IDs = {
   ...TESTNET_SEPOLIA_CHAIN_IDs,
@@ -47,12 +47,12 @@ export const MAINNET_CHAIN_IDs = {
   ZK_SYNC: 324,
   ZORA: 7777777,
   SOLANA: 34268394551451,
-};
+} as const;
 
 export const CHAIN_IDs = {
   ...MAINNET_CHAIN_IDs,
   ...TESTNET_CHAIN_IDs,
-};
+} as const;
 
 export enum ChainFamily {
   NONE,
