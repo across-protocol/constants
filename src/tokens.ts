@@ -207,7 +207,7 @@ export const TOKEN_SYMBOLS_MAP = {
   },
   WHYPE: {
     name: "Wrapped Hyperliquid",
-    symbol: "HYPE",
+    symbol: "WHYPE",
     decimals: 18,
     addresses: {
       [CHAIN_IDs.HYPEREVM]: "0x5555555555555555555555555555555555555555",
