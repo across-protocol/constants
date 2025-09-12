@@ -175,14 +175,14 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
-  [CHAIN_IDs.HYPERLIQUID]: {
+  [CHAIN_IDs.HYPEREVM]: {
     name: "HyperEVM",
     family: NONE,
     nativeToken: "HYPE",
     publicRPC: "https://rpc.hyperliquid.xyz",
     blockExplorer: "https://hyperevmscan.io/",
     cctpDomain: 18, //  @todo: just a guess.
-    oftEid: OFT_NO_EID,
+    oftEid: PRODUCTION_OFT_EIDs.HYPEREVM,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.UNICHAIN]: {
