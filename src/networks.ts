@@ -4,6 +4,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   BASE_SEPOLIA: 84532,
   BLAST_SEPOLIA: 168587773,
   BOB_SEPOLIA: 808813,
+  HYPEREVM_TESTNET: 998,
   INK_SEPOLIA: 763373,
   TATARA: 129399,
   LENS_SEPOLIA: 37111,
@@ -407,6 +408,16 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+  },
+  [CHAIN_IDs.HYPEREVM_TESTNET]: {
+    name: "HyperEVM Testnet",
+    family: NONE,
+    nativeToken: "HYPE",
+    publicRPC: "https://rpc.hyperliquid-testnet.xyz/evm",
+    blockExplorer: "https://testnet.purrsec.com/",
+    cctpDomain: CCTP_NO_DOMAIN, // @todo
+    oftEid: TESTNET_OFT_EIDs.HYPEREVM_TESTNET,
+    hypDomainId: TESTNET_CHAIN_IDs.HYPEREVM_TESTNET,
   },
   [CHAIN_IDs.LENS_SEPOLIA]: {
     name: "Lens Sepolia",
