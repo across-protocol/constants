@@ -205,7 +205,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.LENS]: {
     name: "Lens",
     family: ZK_STACK,
-    nativeToken: "WGHO",
+    nativeToken: "GHO",
     publicRPC: "https://api.lens.matterhosted.dev",
     blockExplorer: "https://explorer.lens.xyz",
     cctpDomain: CCTP_NO_DOMAIN,
