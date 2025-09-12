@@ -204,6 +204,7 @@ export const TOKEN_SYMBOLS_MAP = {
       // HYPE address and it seems that the zero address is used for receiving burned priority fees
       // - https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers#system-addresses
       // - https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm
+      [CHAIN_IDs.HYPEREVM_TESTNET]: "0x2222222222222222222222222222222222222222",
     },
     coingeckoId: "hyperliquid",
   },
