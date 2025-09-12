@@ -200,11 +200,8 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "HYPE",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.HYPEREVM]: "0x2222222222222222222222222222222222222222", // @todo I think this is right, its the system
-      // HYPE address and it seems that the zero address is used for receiving burned priority fees
-      // - https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers#system-addresses
-      // - https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm
-      [CHAIN_IDs.HYPEREVM_TESTNET]: "0x2222222222222222222222222222222222222222",
+      [CHAIN_IDs.HYPEREVM]: "0x5555555555555555555555555555555555555555",
+      [CHAIN_IDs.HYPEREVM_TESTNET]: "0x5555555555555555555555555555555555555555",
     },
     coingeckoId: "hyperliquid",
   },
