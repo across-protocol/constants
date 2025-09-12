@@ -195,6 +195,18 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "gho", // GRASS is Sepolia GHO.
   },
+  HYPE: {
+    name: "Hyperliquid",
+    symbol: "HYPE",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.HYPEREVM]: "0x2222222222222222222222222222222222222222", // @todo I think this is right, its the system
+      // HYPE address and it seems that the zero address is used for receiving burned priority fees
+      // - https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers#system-addresses
+      // - https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm
+    },
+    coingeckoId: "hyperliquid",
+  },
   LSK: {
     name: "Lisk",
     symbol: "LSK",
@@ -409,6 +421,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.ARBITRUM]: "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
       [CHAIN_IDs.BASE]: "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
       [CHAIN_IDs.BOBA]: "0x5DE1677344D3Cb0D7D465c10b72A8f60699C062d",
+      [CHAIN_IDs.HYPEREVM]: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       [CHAIN_IDs.LINEA]: "0xA219439258ca9da29E9Cc4cE5596924745e12B93",
       [CHAIN_IDs.LISK]: "0x05D032ac25d322df992303dCa074EE7392C117b9",
       [CHAIN_IDs.MAINNET]: "0xdAC17F958D2ee523a2206206994597C13D831ec7",
