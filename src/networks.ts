@@ -182,7 +182,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "HYPE",
     publicRPC: "https://rpc.hyperliquid.xyz",
     blockExplorer: "https://hyperevmscan.io/",
-    cctpDomain: 18, //  @todo: just a guess.
+    cctpDomain: 19,
     oftEid: PRODUCTION_OFT_EIDs.HYPEREVM,
     hypDomainId: CHAIN_IDs.HYPEREVM,
   },
@@ -415,7 +415,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "HYPE",
     publicRPC: "https://rpc.hyperliquid-testnet.xyz/evm",
     blockExplorer: "https://testnet.purrsec.com/",
-    cctpDomain: CCTP_NO_DOMAIN, // @todo
+    cctpDomain: 19,
     oftEid: TESTNET_OFT_EIDs.HYPEREVM_TESTNET,
     hypDomainId: TESTNET_CHAIN_IDs.HYPEREVM_TESTNET,
   },
