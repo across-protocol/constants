@@ -183,7 +183,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://hyperevmscan.io/",
     cctpDomain: 18, //  @todo: just a guess.
     oftEid: PRODUCTION_OFT_EIDs.HYPEREVM,
-    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+    hypDomainId: CHAIN_IDs.HYPEREVM,
   },
   [CHAIN_IDs.UNICHAIN]: {
     name: "Unichain",
