@@ -205,6 +205,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "hyperliquid",
   },
+  WHYPE: {
+    name: "Wrapped Hyperliquid",
+    symbol: "HYPE",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.HYPEREVM]: "0x5555555555555555555555555555555555555555",
+      [CHAIN_IDs.HYPEREVM_TESTNET]: "0x5555555555555555555555555555555555555555",
+    },
+    coingeckoId: "hyperliquid",
+  },
   LSK: {
     name: "Lisk",
     symbol: "LSK",
@@ -624,6 +634,7 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   // with other native / wrapped token pairings like BNB/WBNB, MATIC/WMATIC, LGHO/WGHO, etc.
   ETH: TOKEN_SYMBOLS_MAP.WETH.symbol,
   BNB: TOKEN_SYMBOLS_MAP.WBNB.symbol,
+  HYPE: TOKEN_SYMBOLS_MAP.WHYPE.symbol,
   // Testnet remappings.
   [TOKEN_SYMBOLS_MAP["TATARA-USDC"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
 };
