@@ -180,7 +180,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "HyperEVM",
     family: NONE,
     nativeToken: "HYPE",
-    publicRPC: "https://rpc.hyperliquid.xyz",
+    publicRPC: "https://rpc.hyperliquid.xyz/evm",
     blockExplorer: "https://hyperevmscan.io/",
     cctpDomain: 19,
     oftEid: PRODUCTION_OFT_EIDs.HYPEREVM,
