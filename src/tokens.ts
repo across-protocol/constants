@@ -464,7 +464,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.MAINNET]: "0x4e107a0000DB66f0E9Fd2039288Bf811dD1f9c74",
       [CHAIN_IDs.OPTIMISM]: "0x4e107a0000DB66f0E9Fd2039288Bf811dD1f9c74",
     },
-    coingeckoId: "paraswap", // @todo
+    coingeckoId: "velora",
   },
   WAZERO: {
     name: "Wrapped AZERO",
