@@ -479,7 +479,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://testnet-rpc.plasma.to/",
     blockExplorer: "https://testnet.plasmascan.to/",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEid: TESTNET_OFT_EIDs.PLASMA_TESTNET,
+    oftEid: OFT_NO_EID,
     hypDomainId: TESTNET_CHAIN_IDs.PLASMA_TESTNET,
   },
   [CHAIN_IDs.POLYGON_AMOY]: {
