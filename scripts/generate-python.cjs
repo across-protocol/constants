@@ -105,8 +105,10 @@ class PublicNetwork:
 
 PRODUCTION_NETWORKS: Final[Dict[int, PublicNetwork]] = {
 ${Object.entries(networks.production).map(([chainId, config]) => {
-  const chainName = Object.entries(mainnetChainIds).find(([, id]) => id.toString() === chainId)?.[0];
+  const allChainIds = { ...mainnetChainIds, ...testnetChainIds };
+  const chainName = Object.entries(allChainIds).find(([, id]) => id.toString() === chainId)?.[0];
   const familyName = Object.entries(chainFamilies).find(([, value]) => value === config.family)?.[0];
+  if (!chainName) return null;
   return `    CHAIN_IDS["${chainName}"]: PublicNetwork(
         name="${config.name}",
         family=ChainFamily.${familyName},
@@ -117,13 +119,15 @@ ${Object.entries(networks.production).map(([chainId, config]) => {
         oft_eid=${config.oftEid},
         hyp_domain_id=${config.hypDomainId},
     ),`;
-}).join('\n')}
+}).filter(Boolean).join('\n')}
 }
 
 TEST_NETWORKS: Final[Dict[int, PublicNetwork]] = {
 ${Object.entries(networks.testnet).map(([chainId, config]) => {
-  const chainName = Object.entries(testnetChainIds).find(([, id]) => id.toString() === chainId)?.[0];
+  const allChainIds = { ...mainnetChainIds, ...testnetChainIds };
+  const chainName = Object.entries(allChainIds).find(([, id]) => id.toString() === chainId)?.[0];
   const familyName = Object.entries(chainFamilies).find(([, value]) => value === config.family)?.[0];
+  if (!chainName) return null;
   return `    CHAIN_IDS["${chainName}"]: PublicNetwork(
         name="${config.name}",
         family=ChainFamily.${familyName},
@@ -134,7 +138,7 @@ ${Object.entries(networks.testnet).map(([chainId, config]) => {
         oft_eid=${config.oftEid},
         hyp_domain_id=${config.hypDomainId},
     ),`;
-}).join('\n')}
+}).filter(Boolean).join('\n')}
 }
 
 PUBLIC_NETWORKS: Final[Dict[int, PublicNetwork]] = {
@@ -196,8 +200,9 @@ TOKEN_SYMBOLS_MAP: Final[Dict[str, TokenConfig]] = {
 ${Object.entries(tokens).map(([symbol, config]) => {
   const addressEntries = Object.entries(config.addresses).map(([chainId, address]) => {
     const chainName = Object.entries(allChainIds).find(([, id]) => id.toString() === chainId)?.[0];
+    if (!chainName) return null;
     return `        CHAIN_IDS["${chainName}"]: "${address}",`;
-  }).join('\n');
+  }).filter(Boolean).join('\n');
   
   const l1Decimals = config.l1TokenDecimals ? `,\n        l1_token_decimals=${config.l1TokenDecimals}` : '';
   
