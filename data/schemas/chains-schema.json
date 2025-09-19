@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Chain Information Schema",
+  "description": "Schema for blockchain network configuration data",
+  "type": "object",
+  "properties": {
+    "chainFamilies": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z_]+$": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "testnetSepoliaChainIds": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z_]+$": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "testnetChainIds": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z_]+$": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "mainnetChainIds": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z_]+$": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "productionOftEids": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z_]+$": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "testnetOftEids": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z_]+$": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "hyperlaneDomainIdOverrides": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z_]+$": {
+          "type": "integer"
+        }
+      }
+    },
+    "constants": {
+      "type": "object",
+      "properties": {
+        "CCTP_NO_DOMAIN": {
+          "type": "integer"
+        },
+        "OFT_NO_EID": {
+          "type": "integer"
+        },
+        "HYPERLANE_NO_DOMAIN_ID": {
+          "type": "integer"
+        }
+      },
+      "required": ["CCTP_NO_DOMAIN", "OFT_NO_EID", "HYPERLANE_NO_DOMAIN_ID"]
+    },
+    "networks": {
+      "type": "object",
+      "properties": {
+        "production": {
+          "$ref": "#/definitions/networkMap"
+        },
+        "testnet": {
+          "$ref": "#/definitions/networkMap"
+        }
+      },
+      "required": ["production", "testnet"]
+    }
+  },
+  "required": [
+    "chainFamilies",
+    "testnetSepoliaChainIds",
+    "testnetChainIds", 
+    "mainnetChainIds",
+    "productionOftEids",
+    "testnetOftEids",
+    "hyperlaneDomainIdOverrides",
+    "constants",
+    "networks"
+  ],
+  "definitions": {
+    "networkMap": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "$ref": "#/definitions/networkConfig"
+        }
+      }
+    },
+    "networkConfig": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "family": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "nativeToken": {
+          "type": "string"
+        },
+        "publicRPC": {
+          "type": "string"
+        },
+        "blockExplorer": {
+          "type": "string"
+        },
+        "cctpDomain": {
+          "type": "integer"
+        },
+        "oftEid": {
+          "type": "integer"
+        },
+        "hypDomainId": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name",
+        "family", 
+        "nativeToken",
+        "publicRPC",
+        "blockExplorer",
+        "cctpDomain",
+        "oftEid",
+        "hypDomainId"
+      ]
+    }
+  }
+}
