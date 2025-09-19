@@ -1,0 +1,513 @@
+{
+  "$schema": "./schemas/chains-schema.json",
+  "chainFamilies": {
+    "NONE": 0,
+    "OP_STACK": 1,
+    "ORBIT": 2,
+    "ZK_STACK": 3,
+    "SVM": 4
+  },
+  "testnetSepoliaChainIds": {
+    "ARBITRUM_SEPOLIA": 421614,
+    "BASE_SEPOLIA": 84532,
+    "BLAST_SEPOLIA": 168587773,
+    "BOB_SEPOLIA": 808813,
+    "HYPEREVM_TESTNET": 998,
+    "INK_SEPOLIA": 763373,
+    "TATARA": 129399,
+    "LENS_SEPOLIA": 37111,
+    "LISK_SEPOLIA": 4202,
+    "MODE_SEPOLIA": 919,
+    "OPTIMISM_SEPOLIA": 11155420,
+    "POLYGON_AMOY": 80002,
+    "SCROLL_SEPOLIA": 534351,
+    "SEPOLIA": 11155111,
+    "UNICHAIN_SEPOLIA": 1301,
+    "ZK_SYNC_SEPOLIA": 300
+  },
+  "testnetChainIds": {
+    "ARBITRUM_SEPOLIA": 421614,
+    "BASE_SEPOLIA": 84532,
+    "BLAST_SEPOLIA": 168587773,
+    "BOB_SEPOLIA": 808813,
+    "HYPEREVM_TESTNET": 998,
+    "INK_SEPOLIA": 763373,
+    "TATARA": 129399,
+    "LENS_SEPOLIA": 37111,
+    "LISK_SEPOLIA": 4202,
+    "MODE_SEPOLIA": 919,
+    "OPTIMISM_SEPOLIA": 11155420,
+    "POLYGON_AMOY": 80002,
+    "SCROLL_SEPOLIA": 534351,
+    "SEPOLIA": 11155111,
+    "UNICHAIN_SEPOLIA": 1301,
+    "ZK_SYNC_SEPOLIA": 300,
+    "SOLANA_DEVNET": 133268194659241
+  },
+  "mainnetChainIds": {
+    "ALEPH_ZERO": 41455,
+    "ARBITRUM": 42161,
+    "BASE": 8453,
+    "BLAST": 81457,
+    "BOB": 60808,
+    "BSC": 56,
+    "BOBA": 288,
+    "HYPEREVM": 999,
+    "INK": 57073,
+    "LENS": 232,
+    "LINEA": 59144,
+    "LISK": 1135,
+    "MAINNET": 1,
+    "MODE": 34443,
+    "OPTIMISM": 10,
+    "POLYGON": 137,
+    "REDSTONE": 690,
+    "SCROLL": 534352,
+    "SONEIUM": 1868,
+    "SUPERSEED": 5330,
+    "UNICHAIN": 130,
+    "WORLD_CHAIN": 480,
+    "ZK_SYNC": 324,
+    "ZORA": 7777777,
+    "SOLANA": 34268394551451
+  },
+  "productionOftEids": {
+    "ARBITRUM": 30110,
+    "BASE": 30184,
+    "BLAST": 30243,
+    "BSC": 30102,
+    "HYPEREVM": 30367,
+    "MAINNET": 30101,
+    "OPTIMISM": 30111,
+    "POLYGON": 30109,
+    "SONEIUM": 30340,
+    "UNICHAIN": 30320,
+    "WORLD_CHAIN": 30319,
+    "SOLANA": 30168
+  },
+  "testnetOftEids": {
+    "ARBITRUM_SEPOLIA": 40231,
+    "BASE_SEPOLIA": 40245,
+    "OPTIMISM_SEPOLIA": 40232,
+    "HYPEREVM_TESTNET": 40362,
+    "POLYGON_AMOY": 40267,
+    "SEPOLIA": 40161,
+    "UNICHAIN_SEPOLIA": 40333,
+    "SOLANA_DEVNET": 40168
+  },
+  "hyperlaneDomainIdOverrides": {
+    "SOLANA": 1399811149,
+    "SOLANA_DEVNET": 1399811151
+  },
+  "constants": {
+    "CCTP_NO_DOMAIN": -1,
+    "OFT_NO_EID": -1,
+    "HYPERLANE_NO_DOMAIN_ID": -1
+  },
+  "networks": {
+    "production": {
+      "41455": {
+        "name": "Aleph Zero",
+        "family": 2,
+        "nativeToken": "AZERO",
+        "publicRPC": "https://rpc.alephzero.raas.gelato.cloud",
+        "blockExplorer": "https://evm-explorer.alephzero.org",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "42161": {
+        "name": "Arbitrum One",
+        "family": 0,
+        "nativeToken": "ETH",
+        "publicRPC": "https://arb1.arbitrum.io/rpc",
+        "blockExplorer": "https://arbiscan.io",
+        "cctpDomain": 3,
+        "oftEid": 30110,
+        "hypDomainId": 42161
+      },
+      "8453": {
+        "name": "Base",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://mainnet.base.org",
+        "blockExplorer": "https://basescan.org",
+        "cctpDomain": 6,
+        "oftEid": 30184,
+        "hypDomainId": 8453
+      },
+      "81457": {
+        "name": "Blast",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://rpc.blast.io",
+        "blockExplorer": "https://blastscan.io",
+        "cctpDomain": -1,
+        "oftEid": 30243,
+        "hypDomainId": 81457
+      },
+      "56": {
+        "name": "BNB Smart Chain",
+        "family": 0,
+        "nativeToken": "BNB",
+        "publicRPC": "https://bsc-dataseed1.binance.org",
+        "blockExplorer": "https://bscscan.com",
+        "cctpDomain": -1,
+        "oftEid": 30102,
+        "hypDomainId": 56
+      },
+      "288": {
+        "name": "Boba",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://mainnet.boba.network",
+        "blockExplorer": "https://blockexplorer.boba.network",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "999": {
+        "name": "HyperEVM",
+        "family": 0,
+        "nativeToken": "HYPE",
+        "publicRPC": "https://rpc.hyperliquid.xyz/evm",
+        "blockExplorer": "https://hyperevmscan.io/",
+        "cctpDomain": 19,
+        "oftEid": 30367,
+        "hypDomainId": 999
+      },
+      "130": {
+        "name": "Unichain",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://mainnet.unichain.org/",
+        "blockExplorer": "https://uniscan.xyz",
+        "cctpDomain": 10,
+        "oftEid": 30320,
+        "hypDomainId": 130
+      },
+      "57073": {
+        "name": "Ink",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://rpc-gel.inkonchain.com",
+        "blockExplorer": "https://explorer.inkonchain.com",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": 57073
+      },
+      "129399": {
+        "name": "Tatara",
+        "family": 0,
+        "nativeToken": "ETH",
+        "publicRPC": "https://rpc.tatara.katanarpc.com/<apikey>",
+        "blockExplorer": "https://explorer.tatara.katana.network",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "232": {
+        "name": "Lens",
+        "family": 3,
+        "nativeToken": "WGHO",
+        "publicRPC": "https://api.lens.matterhosted.dev",
+        "blockExplorer": "https://explorer.lens.xyz",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "59144": {
+        "name": "Linea",
+        "family": 0,
+        "nativeToken": "ETH",
+        "publicRPC": "https://rpc.linea.build",
+        "blockExplorer": "https://lineascan.build",
+        "cctpDomain": 11,
+        "oftEid": -1,
+        "hypDomainId": 59144
+      },
+      "1135": {
+        "name": "Lisk",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://rpc.api.lisk.com",
+        "blockExplorer": "https://blockscout.lisk.com",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "1": {
+        "name": "Mainnet",
+        "family": 0,
+        "nativeToken": "ETH",
+        "publicRPC": "https://eth.llamarpc.com",
+        "blockExplorer": "https://etherscan.io",
+        "cctpDomain": 0,
+        "oftEid": 30101,
+        "hypDomainId": 1
+      },
+      "34443": {
+        "name": "Mode",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://mainnet.mode.network",
+        "blockExplorer": "https://explorer.mode.network",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": 34443
+      },
+      "10": {
+        "name": "Optimism",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://mainnet.optimism.io",
+        "blockExplorer": "https://optimistic.etherscan.io",
+        "cctpDomain": 2,
+        "oftEid": 30111,
+        "hypDomainId": 10
+      },
+      "137": {
+        "name": "Polygon",
+        "family": 0,
+        "nativeToken": "MATIC",
+        "publicRPC": "https://polygon-rpc.com",
+        "blockExplorer": "https://polygonscan.com",
+        "cctpDomain": 7,
+        "oftEid": 30109,
+        "hypDomainId": 137
+      },
+      "690": {
+        "name": "Redstone",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://rpc.redstonechain.com",
+        "blockExplorer": "https://explorer.redstone.xyz",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": 690
+      },
+      "534352": {
+        "name": "Scroll",
+        "family": 0,
+        "nativeToken": "ETH",
+        "publicRPC": "https://rpc.scroll.io",
+        "blockExplorer": "https://scrollscan.com",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "34268394551451": {
+        "name": "Solana",
+        "family": 4,
+        "nativeToken": "SOL",
+        "publicRPC": "https://api.mainnet-beta.solana.com",
+        "blockExplorer": "https://solscan.io",
+        "cctpDomain": 5,
+        "oftEid": 30168,
+        "hypDomainId": 1399811149
+      },
+      "1868": {
+        "name": "Soneium",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://rpc.soneium.org",
+        "blockExplorer": "https://soneium.blockscout.com",
+        "cctpDomain": -1,
+        "oftEid": 30340,
+        "hypDomainId": -1
+      },
+      "5330": {
+        "name": "Superseed",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://mainnet.superseed.xyz",
+        "blockExplorer": "",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "480": {
+        "name": "World Chain",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://worldchain-mainnet.g.alchemy.com/public",
+        "blockExplorer": "https://worldchain-mainnet-explorer.alchemy.com",
+        "cctpDomain": 14,
+        "oftEid": 30319,
+        "hypDomainId": 480
+      },
+      "324": {
+        "name": "zkSync",
+        "family": 0,
+        "nativeToken": "ETH",
+        "publicRPC": "https://mainnet.era.zksync.io",
+        "blockExplorer": "https://era.zksync.network",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": 324
+      },
+      "7777777": {
+        "name": "Zora",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://rpc.zora.energy",
+        "blockExplorer": "https://zorascan.xyz",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      }
+    },
+    "testnet": {
+      "421614": {
+        "name": "Arbitrum Sepolia",
+        "family": 0,
+        "nativeToken": "ETH",
+        "publicRPC": "https://sepolia-rollup.arbitrum.io/rpc",
+        "blockExplorer": "https://sepolia.arbiscan.io",
+        "cctpDomain": 3,
+        "oftEid": 40231,
+        "hypDomainId": 421614
+      },
+      "84532": {
+        "name": "Base Sepolia",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://sepolia.base.org",
+        "blockExplorer": "https://sepolia.basescan.org",
+        "cctpDomain": 6,
+        "oftEid": 40245,
+        "hypDomainId": 84532
+      },
+      "168587773": {
+        "name": "Blast Sepolia",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://sepolia.blast.io",
+        "blockExplorer": "https://sepolia.blastscan.io",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": 168587773
+      },
+      "808813": {
+        "name": "BOB Sepolia",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://bob-sepolia.rpc.gobob.xyz",
+        "blockExplorer": "https://bob-sepolia.explorer.gobob.xyz",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "998": {
+        "name": "HyperEVM Testnet",
+        "family": 0,
+        "nativeToken": "HYPE",
+        "publicRPC": "https://rpc.hyperliquid-testnet.xyz/evm",
+        "blockExplorer": "https://testnet.purrsec.com/",
+        "cctpDomain": 19,
+        "oftEid": 40362,
+        "hypDomainId": 998
+      },
+      "37111": {
+        "name": "Lens Sepolia",
+        "family": 3,
+        "nativeToken": "GRASS",
+        "publicRPC": "https://rpc.testnet.lens.dev",
+        "blockExplorer": "https://block-explorer.testnet.lens.dev",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "4202": {
+        "name": "Lisk Sepolia",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://rpc.sepolia-api.lisk.com",
+        "blockExplorer": "https://sepolia-blockscout.lisk.com",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "919": {
+        "name": "Mode Sepolia",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://sepolia.mode.network",
+        "blockExplorer": "https://sepolia.explorer.mode.network",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": 919
+      },
+      "11155420": {
+        "name": "Optimism Sepolia",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://sepolia.optimism.io",
+        "blockExplorer": "https://sepolia-optimism.etherscan.io",
+        "cctpDomain": 2,
+        "oftEid": 40232,
+        "hypDomainId": 11155420
+      },
+      "80002": {
+        "name": "Polygon Amoy",
+        "family": 0,
+        "nativeToken": "MATIC",
+        "publicRPC": "https://rpc-amoy.polygon.technology",
+        "blockExplorer": "https://amoy.polygonscan.com",
+        "cctpDomain": 7,
+        "oftEid": 40267,
+        "hypDomainId": 80002
+      },
+      "534351": {
+        "name": "Scroll Sepolia",
+        "family": 0,
+        "nativeToken": "ETH",
+        "publicRPC": "https://sepolia-rpc.scroll.io",
+        "blockExplorer": "https://sepolia.scrollscan.com",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": -1
+      },
+      "11155111": {
+        "name": "Sepolia",
+        "family": 0,
+        "nativeToken": "ETH",
+        "publicRPC": "https://sepolia.drpc.org",
+        "blockExplorer": "https://sepolia.etherscan.io",
+        "cctpDomain": 0,
+        "oftEid": 40161,
+        "hypDomainId": 11155111
+      },
+      "133268194659241": {
+        "name": "Solana Devnet",
+        "family": 4,
+        "nativeToken": "SOL",
+        "publicRPC": "https://api.devnet.solana.com",
+        "blockExplorer": "https://explorer.solana.com/?cluster=devnet",
+        "cctpDomain": 5,
+        "oftEid": 40168,
+        "hypDomainId": 1399811151
+      },
+      "1301": {
+        "name": "Unichain Sepolia",
+        "family": 1,
+        "nativeToken": "ETH",
+        "publicRPC": "https://sepolia.unichain.org",
+        "blockExplorer": "https://sepolia.uniscan.xyz",
+        "cctpDomain": 10,
+        "oftEid": 40333,
+        "hypDomainId": 1301
+      },
+      "300": {
+        "name": "zkSync Sepolia",
+        "family": 0,
+        "nativeToken": "ETH",
+        "publicRPC": "https://sepolia.era.zksync.dev",
+        "blockExplorer": "https://sepolia-era.zksync.network",
+        "cctpDomain": -1,
+        "oftEid": -1,
+        "hypDomainId": 300
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Token Information Schema", 
+  "description": "Schema for cryptocurrency token configuration data",
+  "type": "object",
+  "properties": {
+    "tokens": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z0-9._-]+$": {
+          "$ref": "#/definitions/tokenConfig"
+        }
+      }
+    },
+    "tokenEquivalenceRemapping": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z0-9._-]+$": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": ["tokens", "tokenEquivalenceRemapping"],
+  "definitions": {
+    "tokenConfig": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "decimals": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 255
+        },
+        "addresses": {
+          "type": "object",
+          "patternProperties": {
+            "^[0-9]+$": {
+              "type": "string"
+            }
+          }
+        },
+        "coingeckoId": {
+          "type": "string"
+        },
+        "l1TokenDecimals": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 255
+        }
+      },
+      "required": ["name", "symbol", "decimals", "addresses", "coingeckoId"]
+    }
+  }
+}
