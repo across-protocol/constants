@@ -455,6 +455,18 @@ export const TOKEN_SYMBOLS_MAP = {
     l1TokenDecimals: 6,
     coingeckoId: "tether",
   },
+  "USDT-SPOT": {
+    name: "Tether USD",
+    symbol: "USDT-SPOT",
+    decimals: 8,
+    addresses: {
+      [CHAIN_IDs.HYPERCORE]: "0x200000000000000000000000000000000000010C",
+      [CHAIN_IDs.HYPEREVM]: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      [CHAIN_IDs.MAINNET]: "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    },
+    l1TokenDecimals: 6,
+    coingeckoId: "tether",
+  },
   VLR: {
     name: "Velora",
     symbol: "VLR",

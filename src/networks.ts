@@ -32,6 +32,7 @@ export const MAINNET_CHAIN_IDs = {
   BSC: 56,
   BOBA: 288,
   HYPEREVM: 999,
+  HYPERCORE: 1337, // Arbitrary chain id for HyperCore
   INK: 57073,
   LENS: 232,
   LINEA: 59144,
@@ -185,6 +186,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: 19,
     oftEid: PRODUCTION_OFT_EIDs.HYPEREVM,
     hypDomainId: CHAIN_IDs.HYPEREVM,
+  },
+  [CHAIN_IDs.HYPERCORE]: {
+    name: "HyperCore",
+    family: NONE,
+    nativeToken: "HYPE",
+    publicRPC: "https://api.hyperliquid.xyz",
+    blockExplorer: "https://app.hyperliquid.xyz/explorer",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.UNICHAIN]: {
     name: "Unichain",
