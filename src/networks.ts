@@ -33,7 +33,7 @@ export const MAINNET_CHAIN_IDs = {
   BSC: 56,
   BOBA: 288,
   HYPEREVM: 999,
-  HYPERCORE: 1337, // Arbitrary chain id for HyperCore
+  HYPERCORE: 239048, // Arbitrary chain id for HyperCore
   INK: 57073,
   LENS: 232,
   LINEA: 59144,
@@ -298,7 +298,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://plasmascan.to",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: PRODUCTION_OFT_EIDs.PLASMA,
-    hypDomainId: HYPERLANE_NO_DOMAIN_ID
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.POLYGON]: {
     name: "Polygon",
