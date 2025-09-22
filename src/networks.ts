@@ -11,6 +11,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   LISK_SEPOLIA: 4202,
   MODE_SEPOLIA: 919,
   OPTIMISM_SEPOLIA: 11155420,
+  PLASMA_TESTNET: 9746,
   POLYGON_AMOY: 80002,
   SCROLL_SEPOLIA: 534351,
   SEPOLIA: 11155111,
@@ -75,7 +76,7 @@ export const PRODUCTION_OFT_EIDs = {
   HYPEREVM: 30367,
   MAINNET: 30101,
   OPTIMISM: 30111,
-  PLASMA: 30383, // @todo Confirm w/ LZ.
+  PLASMA: 30383,
   POLYGON: 30109,
   SONEIUM: 30340,
   UNICHAIN: 30320,
@@ -289,6 +290,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     oftEid: PRODUCTION_OFT_EIDs.OPTIMISM,
     hypDomainId: MAINNET_CHAIN_IDs.OPTIMISM,
   },
+  [CHAIN_IDs.PLASMA]: {
+    name: "Plasma",
+    family: NONE,
+    nativeToken: "XPL",
+    publicRPC: "https://rpc.plasma.to",
+    blockExplorer: "https://plasmascan.to",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: PRODUCTION_OFT_EIDs.PLASMA,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID
+  },
   [CHAIN_IDs.POLYGON]: {
     name: "Polygon",
     family: NONE,
@@ -298,16 +309,6 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: 7,
     oftEid: PRODUCTION_OFT_EIDs.POLYGON,
     hypDomainId: MAINNET_CHAIN_IDs.POLYGON,
-  },
-  [CHAIN_IDs.PLASMA]: {
-    name: "Plasma",
-    family: NONE,
-    nativeToken: "XPL",
-    publicRPC: "https://rpc.plasma.to",
-    blockExplorer: "https://plasmascan.to",
-    cctpDomain: CCTP_NO_DOMAIN,
-    oftEid: PRODUCTION_OFT_EIDs.POLYGON,
-    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.REDSTONE]: {
     name: "Redstone",
@@ -481,6 +482,16 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: 2,
     oftEid: TESTNET_OFT_EIDs.OPTIMISM_SEPOLIA,
     hypDomainId: TESTNET_CHAIN_IDs.OPTIMISM_SEPOLIA,
+  },
+  [CHAIN_IDs.PLASMA_TESTNET]: {
+    name: "Plasma Testnet",
+    family: NONE,
+    nativeToken: "XPL",
+    publicRPC: "https://testnet-rpc.plasma.to/",
+    blockExplorer: "https://testnet.plasmascan.to/",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.POLYGON_AMOY]: {
     name: "Polygon Amoy",
