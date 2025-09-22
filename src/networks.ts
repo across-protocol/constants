@@ -39,6 +39,7 @@ export const MAINNET_CHAIN_IDs = {
   MAINNET: 1,
   MODE: 34443,
   OPTIMISM: 10,
+  PLASMA: 9745,
   POLYGON: 137,
   REDSTONE: 690,
   SCROLL: 534352,
@@ -73,6 +74,7 @@ export const PRODUCTION_OFT_EIDs = {
   HYPEREVM: 30367,
   MAINNET: 30101,
   OPTIMISM: 30111,
+  PLASMA: 30383, // @todo Confirm w/ LZ.
   POLYGON: 30109,
   SONEIUM: 30340,
   UNICHAIN: 30320,
@@ -285,6 +287,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: 7,
     oftEid: PRODUCTION_OFT_EIDs.POLYGON,
     hypDomainId: MAINNET_CHAIN_IDs.POLYGON,
+  },
+  [CHAIN_IDs.PLASMA]: {
+    name: "Plasma",
+    family: NONE,
+    nativeToken: "XPL",
+    publicRPC: "https://rpc.plasma.to",
+    blockExplorer: "https://plasmascan.to",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: PRODUCTION_OFT_EIDs.POLYGON,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.REDSTONE]: {
     name: "Redstone",
