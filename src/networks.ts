@@ -491,7 +491,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://testnet.plasmascan.to/",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
-    hypDomainId: TESTNET_CHAIN_IDs.PLASMA_TESTNET,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.POLYGON_AMOY]: {
     name: "Polygon Amoy",
