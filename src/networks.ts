@@ -295,10 +295,10 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "XPL",
     publicRPC: "https://rpc.plasma.to",
-    blockExplorer: "https://plasmascan.to/",
+    blockExplorer: "https://plasmascan.to",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: PRODUCTION_OFT_EIDs.PLASMA,
-    hypDomainId: MAINNET_CHAIN_IDs.PLASMA,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID
   },
   [CHAIN_IDs.POLYGON]: {
     name: "Polygon",
@@ -309,16 +309,6 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: 7,
     oftEid: PRODUCTION_OFT_EIDs.POLYGON,
     hypDomainId: MAINNET_CHAIN_IDs.POLYGON,
-  },
-  [CHAIN_IDs.PLASMA]: {
-    name: "Plasma",
-    family: NONE,
-    nativeToken: "XPL",
-    publicRPC: "https://rpc.plasma.to",
-    blockExplorer: "https://plasmascan.to",
-    cctpDomain: CCTP_NO_DOMAIN,
-    oftEid: PRODUCTION_OFT_EIDs.POLYGON,
-    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.REDSTONE]: {
     name: "Redstone",
