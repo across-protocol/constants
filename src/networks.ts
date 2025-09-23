@@ -33,7 +33,7 @@ export const MAINNET_CHAIN_IDs = {
   BSC: 56,
   BOBA: 288,
   HYPEREVM: 999,
-  HYPERCORE: 239048, // Arbitrary chain id for HyperCore
+  HYPERCORE: 1337, // Arbitrary chain ID for HyperCore but consistent with other APIs
   INK: 57073,
   LENS: 232,
   LINEA: 59144,
