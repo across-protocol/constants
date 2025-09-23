@@ -665,6 +665,7 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   [TOKEN_SYMBOLS_MAP.USDB.symbol]: TOKEN_SYMBOLS_MAP.DAI.symbol,
   [TOKEN_SYMBOLS_MAP["USDC-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP["USDT-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
+  [TOKEN_SYMBOLS_MAP["USDT-SPOT"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
   LGHO: TOKEN_SYMBOLS_MAP.WGHO.symbol, // LGHO is the symbol for WGHO on L1.
   // The TOKEN_SYMBOLS_MAP structure assumes that each L2 token address is unique but several mappings
   // can share the same L1 token mapping. Therefore this structure lends itself to querying symbols/decimals/name
