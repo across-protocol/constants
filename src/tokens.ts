@@ -231,11 +231,22 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "MATIC",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.MAINNET]: "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+      [CHAIN_IDs.MAINNET]: "0x455e53cbb86018ac2b8092fdcd39d8444affc3f6",
       [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
     },
-    coingeckoId: "matic-network",
+    coingeckoId: "polygon-ecosystem-token",
+  },
+  POL: {
+    name: "Polygon Ecosystem Token",
+    symbol: "POL",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x455e53cbb86018ac2b8092fdcd39d8444affc3f6",
+      [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
+      [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
+    },
+    coingeckoId: "polygon-ecosystem-token",
   },
   OP: {
     name: "Optimism",
