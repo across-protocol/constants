@@ -237,6 +237,15 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "polygon-ecosystem-token",
   },
+  OP: {
+    name: "Optimism",
+    symbol: "OP",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.OPTIMISM]: "0x4200000000000000000000000000000000000042",
+    },
+    coingeckoId: "optimism",
+  },
   POL: {
     name: "Polygon Ecosystem Token",
     symbol: "POL",
@@ -247,15 +256,6 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
     },
     coingeckoId: "polygon-ecosystem-token",
-  },
-  OP: {
-    name: "Optimism",
-    symbol: "OP",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.OPTIMISM]: "0x4200000000000000000000000000000000000042",
-    },
-    coingeckoId: "optimism",
   },
   POOL: {
     name: "PoolTogether",
@@ -632,7 +632,19 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
     },
-    coingeckoId: "wmatic",
+    coingeckoId: "wrapped-pol",
+  },
+  WPOL: {
+    name: "WrappedPolygon Ecosystem Token",
+    symbol: "WPOL",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x455e53cbb86018ac2b8092fdcd39d8444affc3f6",
+      [CHAIN_IDs.POLYGON]: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
+      [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
+    },
+    coingeckoId: "wrapped-pol",
   },
   WSOL: {
     name: "Wrapped SOL",
