@@ -422,6 +422,16 @@ export const TOKEN_SYMBOLS_MAP = {
     l1TokenDecimals: 6,
     coingeckoId: "usd-coin",
   },
+  USDH: {
+    name: "Hyperliquid USD",
+    symbol: "USDH",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.HYPEREVM]: "0x111111a1a0667d36bD57c0A9f569b98057111111",
+      [CHAIN_IDs.HYPEREVM_TESTNET]: "0x111111a1a0667d36bD57c0A9f569b98057111111",
+    },
+    coingeckoId: "usdh-2",
+  },
   USDT: {
     name: "Tether USD",
     symbol: "USDT",
