@@ -25,6 +25,7 @@ export const TESTNET_CHAIN_IDs = {
 } as const;
 
 export const MAINNET_CHAIN_IDs = {
+  ALEPH_ZERO: 41455,
   ARBITRUM: 42161,
   BASE: 8453,
   BLAST: 81457,
@@ -117,8 +118,18 @@ export const CCTP_NO_DOMAIN = -1;
 export const OFT_NO_EID = -1;
 export const HYPERLANE_NO_DOMAIN_ID = -1;
 
-const { NONE, OP_STACK, SVM, ZK_STACK } = ChainFamily;
+const { NONE, OP_STACK, ORBIT, SVM, ZK_STACK } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
+  [CHAIN_IDs.ALEPH_ZERO]: {
+    name: "Aleph Zero",
+    family: ORBIT,
+    nativeToken: "AZERO",
+    publicRPC: "https://rpc.alephzero.raas.gelato.cloud",
+    blockExplorer: "https://evm-explorer.alephzero.org",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+  },
   [CHAIN_IDs.ARBITRUM]: {
     name: "Arbitrum One",
     family: NONE,
