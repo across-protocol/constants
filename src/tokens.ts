@@ -27,6 +27,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "arbitrum",
   },
+  AZERO: {
+    name: "Aleph Zero",
+    symbol: "AZERO",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.ALEPH_ZERO]: "0xb7Da55D7040ef9C887e20374D76A88F93A59119E",
+      [CHAIN_IDs.MAINNET]: "0xdD0ae774F7E300CdAA4EA371cD55169665Ee6AFe",
+    },
+    coingeckoId: "aleph-zero",
+  },
   BADGER: {
     name: "Badger",
     symbol: "BADGER",
@@ -103,6 +113,7 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "ETH",
     decimals: 18,
     addresses: {
+      [CHAIN_IDs.ALEPH_ZERO]: "0xB3f0eE446723f4258862D949B4c9688e7e7d35d3",
       [CHAIN_IDs.ARBITRUM]: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       [CHAIN_IDs.ARBITRUM_SEPOLIA]: "0x980B62Da83eFf3D4576C647993b0c1D7faf17c73",
       [CHAIN_IDs.BASE]: "0x4200000000000000000000000000000000000006",
@@ -377,6 +388,7 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "USDC.e",
     decimals: 6,
     addresses: {
+      [CHAIN_IDs.ALEPH_ZERO]: "0x18d25B4e18165c97e1285212e5d1f80eDD6d3Aa7",
       [CHAIN_IDs.ARBITRUM]: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
       [CHAIN_IDs.BOBA]: "0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc",
       [CHAIN_IDs.LISK]: "0xF242275d3a6527d877f2c927a82D9b057609cc71",
@@ -437,6 +449,7 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "USDT",
     decimals: 6,
     addresses: {
+      [CHAIN_IDs.ALEPH_ZERO]: "0xD648529D4803d3467bA8850577BEd4e4b8Ae583C",
       [CHAIN_IDs.ARBITRUM]: "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
       [CHAIN_IDs.BASE]: "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
       [CHAIN_IDs.BOBA]: "0x5DE1677344D3Cb0D7D465c10b72A8f60699C062d",
@@ -498,6 +511,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "plasma",
   },
+  WAZERO: {
+    name: "Wrapped AZERO",
+    symbol: "WAZERO",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.ALEPH_ZERO]: "0xb7Da55D7040ef9C887e20374D76A88F93A59119E",
+      [CHAIN_IDs.MAINNET]: "0xdD0ae774F7E300CdAA4EA371cD55169665Ee6AFe",
+    },
+    coingeckoId: "aleph-zero",
+  },
   WBNB: {
     name: "Wrapped BNB",
     symbol: "WBNB",
@@ -536,6 +559,7 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "WETH",
     decimals: 18,
     addresses: {
+      [CHAIN_IDs.ALEPH_ZERO]: "0xB3f0eE446723f4258862D949B4c9688e7e7d35d3",
       [CHAIN_IDs.ARBITRUM]: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       [CHAIN_IDs.ARBITRUM_SEPOLIA]: "0x980B62Da83eFf3D4576C647993b0c1D7faf17c73",
       [CHAIN_IDs.BASE]: "0x4200000000000000000000000000000000000006",
