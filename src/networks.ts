@@ -285,7 +285,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     hypDomainId: MAINNET_CHAIN_IDs.MODE,
   },
   [CHAIN_IDs.MONAD]: {
-    name: "Monad",
+    name: "Monad Mainnet",
     family: NONE, // Is this true?
     nativeToken: "MON",
     publicRPC: "https://monad-testnet.gateway.tatum.io/", // This is a testnet RPC, placeholder for now
