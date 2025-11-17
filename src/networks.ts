@@ -77,7 +77,7 @@ export const PRODUCTION_OFT_EIDs = {
   BSC: 30102,
   HYPEREVM: 30367,
   MAINNET: 30101,
-  // MONAD: xxxxx, // Placeholder for Monad EID
+  MONAD: 30390,
   OPTIMISM: 30111,
   PLASMA: 30383,
   POLYGON: 30109,
@@ -289,7 +289,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE, // Is this true?
     nativeToken: "MON",
     publicRPC: "https://monad-testnet.gateway.tatum.io/", // This is a testnet RPC, placeholder for now
-    blockExplorer: "https://testnet.monvision.io/", // This is a testnet block explorer, placeholder for now
+    blockExplorer: "https://monadscan.com/",
     cctpDomain: CCTP_NO_DOMAIN, // Placeholder for Monad CCTP domain
     oftEid: OFT_NO_EID, // Placeholder for Monad EID
     hypDomainId: MAINNET_CHAIN_IDs.MONAD,
