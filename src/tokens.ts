@@ -237,6 +237,17 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "polygon-ecosystem-token",
   },
+  // MON: {
+  //   name: "Monad",
+  //   symbol: "MON",
+  //   decimals: 18,
+  //   addresses: {
+  //     [CHAIN_IDs.MAINNET]: "0xc555D625828c4527d477e595fF1Dd5801B4a600e", // Is this right address on Mainnet?
+  //     [CHAIN_IDs.MONAD]: "0xc555D625828c4527d477e595fF1Dd5801B4a600e", // Placeholder
+  //     [CHAIN_IDs.MONAD_TESTNET]: "0xc555D625828c4527d477e595fF1Dd5801B4a600e", // Placeholder
+  //   },
+  //   coingeckoId: "monad",
+  // },
   OP: {
     name: "Optimism",
     symbol: "OP",

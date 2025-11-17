@@ -10,6 +10,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   LENS_SEPOLIA: 37111,
   LISK_SEPOLIA: 4202,
   MODE_SEPOLIA: 919,
+  MONAD_TESTNET: 10143,
   OPTIMISM_SEPOLIA: 11155420,
   PLASMA_TESTNET: 9746,
   POLYGON_AMOY: 80002,
@@ -40,6 +41,7 @@ export const MAINNET_CHAIN_IDs = {
   LISK: 1135,
   MAINNET: 1,
   MODE: 34443,
+  MONAD: 143,
   OPTIMISM: 10,
   PLASMA: 9745,
   POLYGON: 137,
@@ -75,6 +77,7 @@ export const PRODUCTION_OFT_EIDs = {
   BSC: 30102,
   HYPEREVM: 30367,
   MAINNET: 30101,
+  // MONAD: xxxxx, // Placeholder for Monad EID
   OPTIMISM: 30111,
   PLASMA: 30383,
   POLYGON: 30109,
@@ -90,6 +93,7 @@ export const TESTNET_OFT_EIDs = {
   BASE_SEPOLIA: 40245,
   OPTIMISM_SEPOLIA: 40232,
   HYPEREVM_TESTNET: 40362,
+  MONAD_TESTNET: 40204,
   POLYGON_AMOY: 40267,
   SEPOLIA: 40161,
   UNICHAIN_SEPOLIA: 40333,
@@ -279,6 +283,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: MAINNET_CHAIN_IDs.MODE,
+  },
+  [CHAIN_IDs.MONAD]: {
+    name: "Monad",
+    family: NONE, // Is this true?
+    nativeToken: "MON",
+    publicRPC: "https://monad-testnet.gateway.tatum.io/", // This is a testnet RPC, placeholder for now
+    blockExplorer: "https://testnet.monvision.io/", // This is a testnet block explorer, placeholder for now
+    cctpDomain: CCTP_NO_DOMAIN, // Placeholder for Monad CCTP domain
+    oftEid: OFT_NO_EID, // Placeholder for Monad EID
+    hypDomainId: MAINNET_CHAIN_IDs.MONAD,
   },
   [CHAIN_IDs.OPTIMISM]: {
     name: "Optimism",
@@ -472,6 +486,16 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: TESTNET_CHAIN_IDs.MODE_SEPOLIA,
+  },
+  [CHAIN_IDs.MONAD_TESTNET]: {
+    name: "Monad Testnet",
+    family: NONE, // Is this true?
+    nativeToken: "MON",
+    publicRPC: "https://monad-testnet.gateway.tatum.io/",
+    blockExplorer: "https://testnet.monvision.io/",
+    cctpDomain: CCTP_NO_DOMAIN, // Placeholder for Monad CCTP domain
+    oftEid: TESTNET_OFT_EIDs.MONAD_TESTNET, // Placeholder for Monad EID
+    hypDomainId: TESTNET_CHAIN_IDs.MONAD_TESTNET,
   },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: {
     name: "Optimism Sepolia",
