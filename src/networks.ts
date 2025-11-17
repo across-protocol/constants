@@ -290,8 +290,8 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "MON",
     publicRPC: "https://monad-testnet.gateway.tatum.io/", // This is a testnet RPC, placeholder for now
     blockExplorer: "https://monadscan.com/",
-    cctpDomain: CCTP_NO_DOMAIN, // Placeholder for Monad CCTP domain
-    oftEid: OFT_NO_EID, // Placeholder for Monad EID
+    cctpDomain: 15,
+    oftEid: PRODUCTION_OFT_EIDs.MONAD,
     hypDomainId: MAINNET_CHAIN_IDs.MONAD,
   },
   [CHAIN_IDs.OPTIMISM]: {
