@@ -288,7 +288,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Monad Mainnet",
     family: NONE, // Is this true?
     nativeToken: "MON",
-    publicRPC: "https://monad-testnet.gateway.tatum.io/", // This is a testnet RPC, placeholder for now
+    publicRPC: "https://rpc-mainnet.monadinfra.com/",
     blockExplorer: "https://monadscan.com/",
     cctpDomain: 15,
     oftEid: PRODUCTION_OFT_EIDs.MONAD,
@@ -491,10 +491,10 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Monad Testnet",
     family: NONE, // Is this true?
     nativeToken: "MON",
-    publicRPC: "https://monad-testnet.gateway.tatum.io/",
+    publicRPC: "https://testnet-rpc.monad.xyz/",
     blockExplorer: "https://testnet.monvision.io/",
     cctpDomain: 15,
-    oftEid: TESTNET_OFT_EIDs.MONAD_TESTNET, // Placeholder for Monad EID
+    oftEid: TESTNET_OFT_EIDs.MONAD_TESTNET,
     hypDomainId: TESTNET_CHAIN_IDs.MONAD_TESTNET,
   },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: {
