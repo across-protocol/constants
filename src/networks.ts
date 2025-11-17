@@ -493,7 +493,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "MON",
     publicRPC: "https://monad-testnet.gateway.tatum.io/",
     blockExplorer: "https://testnet.monvision.io/",
-    cctpDomain: CCTP_NO_DOMAIN, // Placeholder for Monad CCTP domain
+    cctpDomain: 15, // Placeholder for Monad CCTP domain
     oftEid: TESTNET_OFT_EIDs.MONAD_TESTNET, // Placeholder for Monad EID
     hypDomainId: TESTNET_CHAIN_IDs.MONAD_TESTNET,
   },
