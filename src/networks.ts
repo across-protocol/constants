@@ -303,7 +303,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.POLYGON]: {
     name: "Polygon",
     family: NONE,
-    nativeToken: "MATIC",
+    nativeToken: "POL",
     publicRPC: "https://polygon-rpc.com",
     blockExplorer: "https://polygonscan.com",
     cctpDomain: 7,
@@ -496,7 +496,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.POLYGON_AMOY]: {
     name: "Polygon Amoy",
     family: NONE,
-    nativeToken: "MATIC",
+    nativeToken: "POL",
     publicRPC: "https://rpc-amoy.polygon.technology",
     blockExplorer: "https://amoy.polygonscan.com",
     cctpDomain: 7,
