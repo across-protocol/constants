@@ -237,6 +237,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "polygon-ecosystem-token",
   },
+  MON: {
+    name: "Monad",
+    symbol: "MON",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MONAD]: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+      [CHAIN_IDs.MONAD_TESTNET]: "0x760AfE86e5de5fa0Ee542fc7B7B713e1c5425701",
+    },
+    coingeckoId: "monad",
+  },
   OP: {
     name: "Optimism",
     symbol: "OP",
@@ -647,6 +657,16 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
     },
     coingeckoId: "wrapped-pol",
+  },
+  WMON: {
+    name: "Wrapped Monad",
+    symbol: "WMON",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MONAD]: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+      [CHAIN_IDs.MONAD_TESTNET]: "0x760AfE86e5de5fa0Ee542fc7B7B713e1c5425701",
+    },
+    coingeckoId: "monad", // Change this after coingecko adds WMON
   },
   WPOL: {
     name: "WrappedPolygon Ecosystem Token",
