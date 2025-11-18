@@ -286,7 +286,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.MONAD]: {
     name: "Monad Mainnet",
-    family: NONE, // Is this true?
+    family: NONE,
     nativeToken: "MON",
     publicRPC: "https://rpc-mainnet.monadinfra.com/",
     blockExplorer: "https://monadscan.com/",
@@ -489,7 +489,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.MONAD_TESTNET]: {
     name: "Monad Testnet",
-    family: NONE, // Is this true?
+    family: NONE,
     nativeToken: "MON",
     publicRPC: "https://testnet-rpc.monad.xyz/",
     blockExplorer: "https://testnet.monvision.io/",
