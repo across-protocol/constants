@@ -285,7 +285,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     hypDomainId: MAINNET_CHAIN_IDs.MODE,
   },
   [CHAIN_IDs.MONAD]: {
-    name: "Monad Mainnet",
+    name: "Monad",
     family: NONE,
     nativeToken: "MON",
     publicRPC: "https://rpc-mainnet.monadinfra.com/",
