@@ -456,6 +456,17 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "usdh-2",
   },
+  "USDH-SPOT": {
+    name: "Hyperliquid USD",
+    symbol: "USDH-SPOT",
+    decimals: 8,
+    addresses: {
+      // We use HyperCore's USDT system address for USDH-SPOT.
+      // https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers#system-addresses
+      [CHAIN_IDs.HYPERCORE]: "0x2000000000000000000000000000000000000168",
+    },
+    coingeckoId: "usdh-2",
+  },
   USDT: {
     name: "Tether USD",
     symbol: "USDT",
@@ -669,7 +680,7 @@ export const TOKEN_SYMBOLS_MAP = {
     coingeckoId: "monad", // Change this after coingecko adds WMON
   },
   WPOL: {
-    name: "WrappedPolygon Ecosystem Token",
+    name: "Wrapped Polygon Ecosystem Token",
     symbol: "WPOL",
     decimals: 18,
     addresses: {
