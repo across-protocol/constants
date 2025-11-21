@@ -201,7 +201,6 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "HYPE",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.HYPERCORE]: "0x2222222222222222222222222222222222222222",
       [CHAIN_IDs.HYPEREVM]: "0x5555555555555555555555555555555555555555",
       [CHAIN_IDs.HYPEREVM_TESTNET]: "0x5555555555555555555555555555555555555555",
     },
@@ -212,7 +211,6 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "WHYPE",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.HYPERCORE]: "0x2222222222222222222222222222222222222222",
       [CHAIN_IDs.HYPEREVM]: "0x5555555555555555555555555555555555555555",
       [CHAIN_IDs.HYPEREVM_TESTNET]: "0x5555555555555555555555555555555555555555",
     },
@@ -463,6 +461,8 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "USDH-SPOT",
     decimals: 8,
     addresses: {
+      // We use HyperCore's USDT system address for USDH-SPOT.
+      // https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers#system-addresses
       [CHAIN_IDs.HYPERCORE]: "0x2000000000000000000000000000000000000168",
     },
     coingeckoId: "usdh-2",
@@ -680,7 +680,7 @@ export const TOKEN_SYMBOLS_MAP = {
     coingeckoId: "monad", // Change this after coingecko adds WMON
   },
   WPOL: {
-    name: "WrappedPolygon Ecosystem Token",
+    name: "Wrapped Polygon Ecosystem Token",
     symbol: "WPOL",
     decimals: 18,
     addresses: {
