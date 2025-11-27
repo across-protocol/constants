@@ -667,7 +667,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
     },
-    coingeckoId: "wrapped-pol",
+    coingeckoId: "wmatic",
   },
   WMON: {
     name: "Wrapped Monad",
@@ -689,7 +689,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
     },
-    coingeckoId: "wrapped-pol",
+    coingeckoId: "wmatic",
   },
   WSOL: {
     name: "Wrapped SOL",
