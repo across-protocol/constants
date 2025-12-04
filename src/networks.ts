@@ -40,6 +40,7 @@ export const MAINNET_CHAIN_IDs = {
   LINEA: 59144,
   LISK: 1135,
   MAINNET: 1,
+  MEGAETH: 4326, // Do we want to go with MEGAETH or MEGA_ETH?
   MODE: 34443,
   MONAD: 143,
   OPTIMISM: 10,
@@ -79,6 +80,7 @@ export const PRODUCTION_OFT_EIDs = {
   INK: 30339,
   MAINNET: 30101,
   MONAD: 30390,
+  // @TODO: Add MEGAETH EID
   OPTIMISM: 30111,
   PLASMA: 30383,
   POLYGON: 30109,
@@ -274,6 +276,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: 0,
     oftEid: PRODUCTION_OFT_EIDs.MAINNET,
     hypDomainId: MAINNET_CHAIN_IDs.MAINNET,
+  },
+  [CHAIN_IDs.MEGAETH]: {
+    name: "MegaETH",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    publicRPC: "", // @TODO: Add MegaETH RPC
+    blockExplorer: "https://megaeth-testnet-v3.blockscout.com/", // @TODO: Add MegaETH block explorer (this is testnet block explorer)
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: OFT_NO_EID, // @TODO: Add MegaETH EID
+    hypDomainId: MAINNET_CHAIN_IDs.MEGAETH, // @TODO: What is hypDomainId?
   },
   [CHAIN_IDs.MODE]: {
     name: "Mode",
