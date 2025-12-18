@@ -76,6 +76,7 @@ export const PRODUCTION_OFT_EIDs = {
   BLAST: 30243,
   BSC: 30102,
   HYPEREVM: 30367,
+  INK: 30339,
   MAINNET: 30101,
   MONAD: 30390,
   OPTIMISM: 30111,
@@ -220,8 +221,8 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     publicRPC: "https://rpc-gel.inkonchain.com",
     blockExplorer: "https://explorer.inkonchain.com",
-    cctpDomain: CCTP_NO_DOMAIN,
-    oftEid: OFT_NO_EID,
+    cctpDomain: 21,
+    oftEid: PRODUCTION_OFT_EIDs.INK,
     hypDomainId: MAINNET_CHAIN_IDs.INK,
   },
   [CHAIN_IDs.TATARA]: {
