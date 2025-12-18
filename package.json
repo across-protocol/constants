@@ -1,6 +1,6 @@
 {
   "name": "@across-protocol/constants",
-  "version": "3.1.92",
+  "version": "3.1.92-alpha.1",
   "description": "Export commonly re-used values for Across repositories",
   "repository": {
     "type": "git",
