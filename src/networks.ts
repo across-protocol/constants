@@ -221,7 +221,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     publicRPC: "https://rpc-gel.inkonchain.com",
     blockExplorer: "https://explorer.inkonchain.com",
-    cctpDomain: CCTP_NO_DOMAIN,
+    cctpDomain: 21,
     oftEid: PRODUCTION_OFT_EIDs.INK,
     hypDomainId: MAINNET_CHAIN_IDs.INK,
   },
