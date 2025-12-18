@@ -2,12 +2,15 @@
   "name": "@across-protocol/constants",
   "version": "3.1.92",
   "description": "Export commonly re-used values for Across repositories",
-  "repository": "https://github.com/across-protocol/constants.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/across-protocol/constants"
+  },
   "author": "hello@umaproject.org",
   "license": "AGPL-3.0-only",
   "private": false,
   "publishConfig": {
-    "registry": "https://registry.npmjs.com/",
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "type": "module",
