@@ -473,7 +473,8 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "USDM",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.MEGAETH]: "0x6651573521BD0852e570ac7D1f530aC022279507" // @TODO: This is testnet address, change with mainnet
+      [CHAIN_IDs.MAINNET]: "0xEc2AF1C8B110a61fD9C3Fa6a554a031Ca9943926",
+      [CHAIN_IDs.MEGAETH]: "" // @TODO: This is testnet address, change with mainnet
     }
   },
   USDT: {
