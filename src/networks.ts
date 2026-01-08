@@ -390,7 +390,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.era.zksync.io",
-    blockExplorer: "https://era.zksync.network",
+    blockExplorer: "https://explorer.zksync.io",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: MAINNET_CHAIN_IDs.ZK_SYNC,
