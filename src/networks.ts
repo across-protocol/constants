@@ -281,8 +281,8 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "MegaETH",
     family: OP_STACK,
     nativeToken: "ETH",
-    publicRPC: "", // @TODO: Add MegaETH RPC
-    blockExplorer: "https://megaeth-testnet-v3.blockscout.com/", // @TODO: Add MegaETH block explorer (this is testnet block explorer)
+    publicRPC: "https://mainnet.megaeth.com/rpc",
+    blockExplorer: "https://megaeth.blockscout.com/",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID, // @TODO: Add MegaETH EID
     hypDomainId: MAINNET_CHAIN_IDs.MEGAETH, // @TODO: What is hypDomainId?
