@@ -231,8 +231,8 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Tatara",
     family: NONE, // Snowflake family - tbd
     nativeToken: "ETH",
-    publicRPC: "https://rpc.tatara.katanarpc.com/<apikey>",
-    blockExplorer: "https://explorer.tatara.katana.network",
+    publicRPC: ""
+    blockExplorer: "",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
