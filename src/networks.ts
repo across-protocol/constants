@@ -284,7 +284,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://mainnet.megaeth.com/rpc",
     blockExplorer: "https://megaeth.blockscout.com",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEid: 30398,
+    oftEid: PRODUCTION_OFT_EIDs.MEGAETH,
     hypDomainId: MAINNET_CHAIN_IDs.MEGAETH,
   },
   [CHAIN_IDs.MODE]: {
