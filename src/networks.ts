@@ -282,10 +282,10 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: OP_STACK,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.megaeth.com/rpc",
-    blockExplorer: "https://megaeth.blockscout.com/",
+    blockExplorer: "https://megaeth.blockscout.com",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEid: OFT_NO_EID, // @TODO: Add MegaETH EID
-    hypDomainId: MAINNET_CHAIN_IDs.MEGAETH, // @TODO: What is hypDomainId?
+    oftEid: 30398,
+    hypDomainId: MAINNET_CHAIN_IDs.MEGAETH,
   },
   [CHAIN_IDs.MODE]: {
     name: "Mode",
