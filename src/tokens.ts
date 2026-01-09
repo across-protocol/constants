@@ -433,9 +433,10 @@ export const TOKEN_SYMBOLS_MAP = {
     name: "MegaUSD",
     symbol: "USDM",
     decimals: 18,
+    coingeckoId: "megausd",
     addresses: {
       [CHAIN_IDs.MAINNET]: "0xEc2AF1C8B110a61fD9C3Fa6a554a031Ca9943926",
-      // [CHAIN_IDs.MEGAETH]: "" @todo
+      [CHAIN_IDs.MEGAETH]: "0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7",
     }
   },
   USDT: {
