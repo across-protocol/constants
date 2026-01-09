@@ -475,7 +475,7 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.MAINNET]: "0xEc2AF1C8B110a61fD9C3Fa6a554a031Ca9943926",
-      [CHAIN_IDs.MEGAETH]: "" // @TODO: This is testnet address, change with mainnet
+      // [CHAIN_IDs.MEGAETH]: "" @TODO: This is testnet address, change with mainnet
     }
   },
   USDT: {
