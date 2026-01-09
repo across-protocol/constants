@@ -229,9 +229,9 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.TATARA]: {
     name: "Tatara",
-    family: NONE, // Snowflake family - tbd
+    family: NONE,
     nativeToken: "ETH",
-    publicRPC: ""
+    publicRPC: "",
     blockExplorer: "",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
