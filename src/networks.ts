@@ -40,7 +40,7 @@ export const MAINNET_CHAIN_IDs = {
   LINEA: 59144,
   LISK: 1135,
   MAINNET: 1,
-  MEGAETH: 4326, // Do we want to go with MEGAETH or MEGA_ETH?
+  MEGAETH: 4326,
   MODE: 34443,
   MONAD: 143,
   OPTIMISM: 10,
