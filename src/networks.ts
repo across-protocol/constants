@@ -50,6 +50,7 @@ export const MAINNET_CHAIN_IDs = {
   SCROLL: 534352,
   SONEIUM: 1868,
   SUPERSEED: 5330,
+  TEMPO: 4217,
   UNICHAIN: 130,
   WORLD_CHAIN: 480,
   ZK_SYNC: 324,
@@ -383,6 +384,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     publicRPC: "https://mainnet.superseed.xyz",
     blockExplorer: "", // @todo: To be added later
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+  },
+  [CHAIN_IDs.TEMPO]: {
+    name: "Tempo",
+    family: NONE,
+    nativeToken: "pathUSD", // While there is no native token on Tempo, pathUSD is the default fee token.
+    publicRPC: "", // @todo
+    blockExplorer: "", // @todo
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,

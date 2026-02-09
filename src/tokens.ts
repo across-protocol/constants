@@ -282,6 +282,15 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "pooltogether",
   },
+  pathUSD: {
+    name: "pathUSD",
+    symbol: "pathUSD",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.TEMPO]: "0x20c0000000000000000000000000000000000000",
+    },
+    coingeckoId: "pathusd",
+  },
   SNX: {
     name: "Synthetix",
     symbol: "SNX",
