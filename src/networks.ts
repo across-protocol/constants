@@ -86,6 +86,7 @@ export const PRODUCTION_OFT_EIDs = {
   PLASMA: 30383,
   POLYGON: 30109,
   SONEIUM: 30340,
+  TEMPO: 30410,
   UNICHAIN: 30320,
   WORLD_CHAIN: 30319,
   SOLANA: 30168,
@@ -395,7 +396,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "", // @todo
     blockExplorer: "", // @todo
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEid: OFT_NO_EID,
+    oftEid: PRODUCTION_OFT_EIDs.TEMPO,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.WORLD_CHAIN]: {
