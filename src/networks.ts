@@ -393,8 +393,8 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Tempo",
     family: NONE,
     nativeToken: "pathUSD", // While there is no native token on Tempo, pathUSD is the default fee token.
-    publicRPC: "", // @todo
-    blockExplorer: "", // @todo
+    publicRPC: "https://rpc.tempo.xyz",
+    blockExplorer: "https://explore.mainnet.tempo.xyz",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: PRODUCTION_OFT_EIDs.TEMPO,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
