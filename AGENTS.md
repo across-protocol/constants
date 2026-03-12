@@ -21,11 +21,11 @@ Update this `AGENTS.md` when new source files are added or the build/publish pro
 
 ## Source files
 
-| File | Purpose | Key exports |
-|------|---------|-------------|
-| `src/index.ts` | Barrel re-export | Re-exports `networks` and `tokens` |
-| `src/networks.ts` | Chain ID constants | Testnet and mainnet chain IDs, chain metadata (~620 lines) |
-| `src/tokens.ts` | Token definitions | `TOKEN_SYMBOLS_MAP` with name, symbol, decimals, per-chain addresses, coingeckoId (~730 lines) |
+| File              | Purpose            | Key exports                                                                                    |
+| ----------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
+| `src/index.ts`    | Barrel re-export   | Re-exports `networks` and `tokens`                                                             |
+| `src/networks.ts` | Chain ID constants | Testnet and mainnet chain IDs, chain metadata (~620 lines)                                     |
+| `src/tokens.ts`   | Token definitions  | `TOKEN_SYMBOLS_MAP` with name, symbol, decimals, per-chain addresses, coingeckoId (~730 lines) |
 
 ## Directory tree
 
