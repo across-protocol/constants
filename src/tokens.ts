@@ -418,6 +418,25 @@ export const TOKEN_SYMBOLS_MAP = {
     l1TokenDecimals: 6,
     coingeckoId: "usd-coin",
   },
+  "USDC-PERPS": {
+    name: "USDC (Perps)",
+    symbol: "USDC-PERPS",
+    decimals: 8,
+    addresses: {
+      // 0x21 prefix is an internal convention to differentiate perps from spot (0x20).
+      [CHAIN_IDs.HYPERCORE]: "0x2100000000000000000000000000000000000000",
+    },
+    coingeckoId: "usd-coin",
+  },
+  "USDC-SPOT": {
+    name: "USDC (Spot)",
+    symbol: "USDC-SPOT",
+    decimals: 8,
+    addresses: {
+      [CHAIN_IDs.HYPERCORE]: "0x2000000000000000000000000000000000000000",
+    },
+    coingeckoId: "usd-coin",
+  },
   USDH: {
     name: "Hyperliquid USD",
     symbol: "USDH",
@@ -721,6 +740,8 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   [TOKEN_SYMBOLS_MAP.USDzC.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP.USDB.symbol]: TOKEN_SYMBOLS_MAP.DAI.symbol,
   [TOKEN_SYMBOLS_MAP["USDC-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
+  [TOKEN_SYMBOLS_MAP["USDC-PERPS"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
+  [TOKEN_SYMBOLS_MAP["USDC-SPOT"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP["USDT-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
   [TOKEN_SYMBOLS_MAP["USDT-SPOT"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
   LGHO: TOKEN_SYMBOLS_MAP.WGHO.symbol, // LGHO is the symbol for WGHO on L1.
