@@ -52,6 +52,7 @@ export const MAINNET_CHAIN_IDs = {
   SONEIUM: 1868,
   SUPERSEED: 5330,
   TEMPO: 4217,
+  TRON: 728126428,
   UNICHAIN: 130,
   WORLD_CHAIN: 480,
   ZK_SYNC: 324,
@@ -88,6 +89,7 @@ export const PRODUCTION_OFT_EIDs = {
   POLYGON: 30109,
   SONEIUM: 30340,
   TEMPO: 30410,
+  TRON: 30420,
   UNICHAIN: 30320,
   WORLD_CHAIN: 30319,
   SOLANA: 30168,
@@ -398,6 +400,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "", // @todo: To be added later
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+  },
+  [CHAIN_IDs.TRON]: {
+    name: "TRON",
+    family: NONE,
+    nativeToken: "TRX",
+    publicRPC: "https://api.trongrid.io/jsonrpc",
+    blockExplorer: "https://tronscan.org",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: PRODUCTION_OFT_EIDs.TRON,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.TEMPO]: {
