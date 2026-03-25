@@ -312,6 +312,17 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "solana",
   },
+  TRX: {
+    name: "TRON",
+    symbol: "TRX",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x50327c6c5a14DCaDE707ABad2E27eB517df87AB5",
+      // @todo: May ultimately need to use Base58 checksummed encoding for TRON.
+      [CHAIN_IDs.TRON]: "0x891cdb91d149f23B1a45D9c5Ca78a88d0cB44C18",
+    },
+    coingeckoId: "tron",
+  },
   UMA: {
     name: "UMA Voting Token",
     symbol: "UMA",
@@ -706,6 +717,17 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SOLANA_DEVNET]: "So11111111111111111111111111111111111111112",
     },
     coingeckoId: "wrapped-solana",
+  },
+  WTRX: {
+    name: "Wrapped TRX",
+    symbol: "WTRX",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x50327c6c5a14DCaDE707ABad2E27eB517df87AB5",
+      // @todo: May ultimately need to use Base58 checksummed encoding for TRON.
+      [CHAIN_IDs.TRON]: "0x891cdb91d149f23B1a45D9c5Ca78a88d0cB44C18",
+    },
+    coingeckoId: "wrapped-tron",
   },
   WXPL: {
     name: "Wrapped Plasma",
