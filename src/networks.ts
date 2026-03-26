@@ -71,6 +71,7 @@ export enum ChainFamily {
   ORBIT, // Future: Might need to distinguish between ORBIT_L2 and ORBIT_L3...
   ZK_STACK,
   SVM,
+  TVM,
 }
 
 // Source https://docs.layerzero.network/v2/developers/evm/technical-reference/deployed-contracts
@@ -130,7 +131,7 @@ export const CCTP_NO_DOMAIN = -1;
 export const OFT_NO_EID = -1;
 export const HYPERLANE_NO_DOMAIN_ID = -1;
 
-const { NONE, OP_STACK, ORBIT, SVM, ZK_STACK } = ChainFamily;
+const { NONE, OP_STACK, ORBIT, SVM, TVM, ZK_STACK } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ALEPH_ZERO]: {
     name: "Aleph Zero",
@@ -404,7 +405,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   },
   [CHAIN_IDs.TRON]: {
     name: "TRON",
-    family: NONE,
+    family: TVM,
     nativeToken: "TRX",
     publicRPC: "https://api.trongrid.io/jsonrpc",
     blockExplorer: "https://tronscan.org",
