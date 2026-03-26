@@ -131,7 +131,7 @@ export const CCTP_NO_DOMAIN = -1;
 export const OFT_NO_EID = -1;
 export const HYPERLANE_NO_DOMAIN_ID = -1;
 
-const { NONE, OP_STACK, ORBIT, SVM, ZK_STACK } = ChainFamily;
+const { NONE, OP_STACK, ORBIT, SVM, TVM, ZK_STACK } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ALEPH_ZERO]: {
     name: "Aleph Zero",
