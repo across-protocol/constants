@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "node16",
+    "module": "CommonJS",
     "target": "ES2024",
     // output .d.ts declaration files for consumers
     "declaration": true,
@@ -16,8 +16,9 @@
     // noUnused* overlap with @typescript-eslint/no-unused-vars, can disable if duplicative
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    // use Node's module resolution algorithm
-    "moduleResolution": "node16",
+    // use Node's module resolution algorithm, instead of the legacy TS one
+    "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
     // interop between ESM and CJS modules. Recommended by TS
     "esModuleInterop": true,
     // significant perf increase by skipping checking .d.ts files, particularly those in node_modules. Recommended by TS
