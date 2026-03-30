@@ -16,7 +16,7 @@
     // noUnused* overlap with @typescript-eslint/no-unused-vars, can disable if duplicative
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    // use Node's module resolution algorithm, instead of the legacy TS one
+    // use Node's module resolution algorithm
     "moduleResolution": "node16",
     // interop between ESM and CJS modules. Recommended by TS
     "esModuleInterop": true,
