@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-    // Target ES5
-    "target": "ES5",
-    // Set the import helpers
-    "importHelpers": true,
+    "target": "ES2024",
     // output .d.ts declaration files for consumers
     "declaration": true,
     // output .js.map sourcemap files for consumers
@@ -21,8 +18,7 @@
     "noUnusedParameters": true,
     // use Node's module resolution algorithm, instead of the legacy TS one
     "moduleResolution": "node",
-    // transpile JSX to React.createElement
-    "jsx": "react",
+    "ignoreDeprecations": "6.0",
     // interop between ESM and CJS modules. Recommended by TS
     "esModuleInterop": true,
     // significant perf increase by skipping checking .d.ts files, particularly those in node_modules. Recommended by TS
