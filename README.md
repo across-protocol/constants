@@ -17,20 +17,20 @@ yarn add @across-protocol/constants
 ## Usage
 
 ```typescript
-import { TOKEN_SYMBOLS_MAP } from "@across-protocol/constants";
+import { TOKEN_SYMBOLS_MAP } from "@across-protocol/constants"
 
 // Access token metadata
-const usdc = TOKEN_SYMBOLS_MAP.USDC;
-console.log(usdc.decimals); // 6
-console.log(usdc.addresses[1]); // Ethereum mainnet address
+const usdc = TOKEN_SYMBOLS_MAP.USDC
+console.log(usdc.decimals) // 6
+console.log(usdc.addresses[1]) // Ethereum mainnet address
 ```
 
 ## What's Exported
 
-| Module | Description |
-|--------|-------------|
-| `networks` | Chain ID constants for testnets and mainnets, chain metadata |
-| `tokens` | `TOKEN_SYMBOLS_MAP` — token name, symbol, decimals, per-chain addresses, coingeckoId |
+| Module     | Description                                                                          |
+| ---------- | ------------------------------------------------------------------------------------ |
+| `networks` | Chain ID constants for testnets and mainnets, chain metadata                         |
+| `tokens`   | `TOKEN_SYMBOLS_MAP` — token name, symbol, decimals, per-chain addresses, coingeckoId |
 
 ## Development
 

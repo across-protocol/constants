@@ -4,8 +4,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "verbatimModuleSyntax": false,
-    "declaration": false,
-    "declarationMap": false,
     "outDir": "./dist/cjs",
     "removeComments": true,
     "ignoreDeprecations": "6.0"
