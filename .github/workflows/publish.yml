@@ -1,12 +1,10 @@
-# When making a release, please keep in mind that this action expects and validates a few things:
+# When making a release, please keep in mind:
 # - Releases marked as drafts will be ignored (ie. they will not publish).
 # - Ensure that package.json has a version.
 # - Ensure the git tag you create during the release process starts with a v (ie. v1.2.3).
 # - Ensure that the version in package.json matches the release tag created.
 # - Ensure versions are valid semver format.
 # - Ensure the GitHub release is marked as a pre-release if the semver version has a pre-release tag.
-
-# This script was inspired by this README: https://github.com/marketplace/actions/github-releases-for-automated-package-publishing
 
 name: Publish Package to npmjs
 on:
@@ -15,63 +13,36 @@ on:
 permissions:
   id-token: write
   contents: read
-env:
-  NODE_OPTIONS: "--max_old_space_size=4096"
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      # Setup Node.js version first
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          node-version: "22.18.0"
+          node-version: "22.18"
           always-auth: true
           registry-url: "https://registry.npmjs.org"
-
-      # Note we set an `id` called `release`. We'll use that later...
-      - name: Validate and extract release information
-        id: release
-        uses: manovotny/github-releases-for-automated-package-publishing-action@v2.0.1
-
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Build
-        run: yarn build
-
+          cache: "yarn"
+      # Trusted Publishing requires npm >= 11.5.1
       - name: Update npm
         run: npm install -g npm@latest
-
-      - name: Log Node & npm versions (after update)
-        # Make sure we hit 11.5.1 version requirement for Trusted Publishing
+      - name: Log Node & npm versions
         run: |
           node -v
           npm -v
-
-      # The last two steps will publish the package. Note that we're using
-      # information from the `release` step above (I told you we'd use it
-      # later). Notice the `if` statements on both steps...
-      #
-      # If there *is* a tag (ie. `beta`, `canary`, etc.), we publish a
-      # "pre-release" or "tagged" version of a package (ie. 1.2.3-beta.1).
-      #
-      # If there *is not* a tag (ie. `beta`, `canary`, etc.), we publish a
-      # version of a package (ie. 1.2.3).
-      #
-      # This example is using npm to publish, but you could just as easily
-      # use yarn, if you prefer. It's also publishing to the NPM registry,
-      # thus, it's using `NPM_TOKEN`, but you could just as easily use
-      # `GITHUB_TOKEN` if you were publishing to the GitHub Package registry.
-
-      # This will publish a "pre-release" or "tagged" version of a package.
-
-      # This will publish a version of a package.
-      - name: Publish version
-        if: steps.release.outputs.tag == ''
-        run: npm publish
-
-      - name: Publish tagged version
-        if: steps.release.outputs.tag != ''
-        run: npm publish --tag ${{ steps.release.outputs.tag }}
+      - run: yarn install --frozen-lockfile
+      - name: Determine publish tag
+        id: tag
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          # Extract pre-release identifier (e.g. "beta" from "1.0.0-beta.1")
+          PRE=$(echo "$VERSION" | sed -n 's/.*-\([a-zA-Z]*\).*/\1/p')
+          echo "pre=$PRE" >> "$GITHUB_OUTPUT"
+      - name: Publish
+        run: |
+          if [ -n "${{ steps.tag.outputs.pre }}" ]; then
+            npm publish --tag ${{ steps.tag.outputs.pre }}
+          else
+            npm publish
+          fi
