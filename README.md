@@ -27,10 +27,10 @@ console.log(usdc.addresses[1]); // Ethereum mainnet address
 
 ## What's Exported
 
-| Module | Description |
-|--------|-------------|
-| `networks` | Chain ID constants for testnets and mainnets, chain metadata |
-| `tokens` | `TOKEN_SYMBOLS_MAP` — token name, symbol, decimals, per-chain addresses, coingeckoId |
+| Module     | Description                                                                          |
+| ---------- | ------------------------------------------------------------------------------------ |
+| `networks` | Chain ID constants for testnets and mainnets, chain metadata                         |
+| `tokens`   | `TOKEN_SYMBOLS_MAP` — token name, symbol, decimals, per-chain addresses, coingeckoId |
 
 ## Development
 

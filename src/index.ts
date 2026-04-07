@@ -1,2 +1,2 @@
-export * from "./networks";
-export * from "./tokens";
+export * from "./networks.js";
+export * from "./tokens.js";

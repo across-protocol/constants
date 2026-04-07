@@ -1,4 +1,4 @@
-import { CHAIN_IDs } from "./networks";
+import { CHAIN_IDs } from "./networks.js";
 
 // Information for the supported tokens on each chain.
 // NOTE: All addresses should be checksummed
