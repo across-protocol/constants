@@ -318,8 +318,7 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 6,
     addresses: {
       [CHAIN_IDs.MAINNET]: "0x50327c6c5a14DCaDE707ABad2E27eB517df87AB5",
-      // @todo: May ultimately need to use Base58 checksummed encoding for TRON.
-      [CHAIN_IDs.TRON]: "0x891cdb91d149f23B1a45D9c5Ca78a88d0cB44C18",
+      [CHAIN_IDs.TRON]: "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
     },
     coingeckoId: "tron",
   },
@@ -503,7 +502,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.POLYGON]: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
       [CHAIN_IDs.SCROLL]: "0xf55BEC9cafDbE8730f096Aa55dad6D22d44099Df",
       [CHAIN_IDs.SEPOLIA]: "0x7169D38820dfd117C3FA1f22a697dBA58d90BA06",
-      [CHAIN_IDs.TRON]: "0xa614f803B6FD780986A42c78Ec9c7f77e6DeD13C", // @todo Base58?
+      [CHAIN_IDs.TRON]: "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
       [CHAIN_IDs.UNICHAIN]: "0x9151434b16b9763660705744891fA906F660EcC5",
       [CHAIN_IDs.ZK_SYNC]: "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
     },
@@ -725,8 +724,7 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 6,
     addresses: {
       [CHAIN_IDs.MAINNET]: "0x50327c6c5a14DCaDE707ABad2E27eB517df87AB5",
-      // @todo: May ultimately need to use Base58 checksummed encoding for TRON.
-      [CHAIN_IDs.TRON]: "0x891cdb91d149f23B1a45D9c5Ca78a88d0cB44C18",
+      [CHAIN_IDs.TRON]: "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
     },
     coingeckoId: "wrapped-tron",
   },
