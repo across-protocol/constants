@@ -1,6 +1,6 @@
 {
   "name": "@across-protocol/constants",
-  "version": "3.1.109",
+  "version": "3.1.110",
   "description": "Export commonly re-used values for Across repositories",
   "repository": {
     "type": "git",
@@ -44,13 +44,18 @@
   },
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
-  "typings": "./dist/esm/index.d.ts",
+  "types": "./dist/cjs/index.d.ts",
+  "typings": "./dist/cjs/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/esm/index.d.ts",
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
     },
     "./dist/cjs/*": {
       "require": "./dist/cjs/*.js",
