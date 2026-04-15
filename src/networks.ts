@@ -191,7 +191,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     blockExplorer: "https://explorer.gobob.xyz",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
-    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+    hypDomainId: MAINNET_CHAIN_IDs.BOB,
   },
   [CHAIN_IDs.BOBA]: {
     name: "Boba",
