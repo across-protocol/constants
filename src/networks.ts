@@ -170,6 +170,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     oftEid: PRODUCTION_OFT_EIDs.BSC,
     hypDomainId: MAINNET_CHAIN_IDs.BSC,
   },
+  [CHAIN_IDs.BOB]: {
+    name: "BOB",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    publicRPC: "https://rpc.gobob.xyz",
+    blockExplorer: "https://explorer.gobob.xyz",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+  },
   [CHAIN_IDs.BOBA]: {
     name: "Boba",
     family: OP_STACK,
@@ -442,6 +452,16 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: 19,
     oftEid: TESTNET_OFT_EIDs.HYPEREVM_TESTNET,
     hypDomainId: TESTNET_CHAIN_IDs.HYPEREVM_TESTNET,
+  },
+  [CHAIN_IDs.INK_SEPOLIA]: {
+    name: "Ink Sepolia",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    publicRPC: "https://rpc-gel-sepolia.inkonchain.com",
+    blockExplorer: "https://explorer-sepolia.inkonchain.com",
+    cctpDomain: 21,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.LENS_SEPOLIA]: {
     name: "Lens Sepolia",
