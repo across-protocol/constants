@@ -10,6 +10,7 @@ export const TESTNET_SEPOLIA_CHAIN_IDs = {
   LENS_SEPOLIA: 37111,
   LISK_SEPOLIA: 4202,
   MODE_SEPOLIA: 919,
+  MONAD_TESTNET: 10143,
   OPTIMISM_SEPOLIA: 11155420,
   PLASMA_TESTNET: 9746,
   POLYGON_AMOY: 80002,
@@ -36,10 +37,13 @@ export const MAINNET_CHAIN_IDs = {
   HYPERCORE: 1337, // Arbitrary chain ID for HyperCore but consistent with other APIs
   INK: 57073,
   LENS: 232,
+  LIGHTER: 2337,
   LINEA: 59144,
   LISK: 1135,
   MAINNET: 1,
+  MEGAETH: 4326,
   MODE: 34443,
+  MONAD: 143,
   OPTIMISM: 10,
   PLASMA: 9745,
   POLYGON: 137,
@@ -47,6 +51,8 @@ export const MAINNET_CHAIN_IDs = {
   SCROLL: 534352,
   SONEIUM: 1868,
   SUPERSEED: 5330,
+  TEMPO: 4217,
+  TRON: 728126428,
   UNICHAIN: 130,
   WORLD_CHAIN: 480,
   ZK_SYNC: 324,
@@ -65,6 +71,7 @@ export enum ChainFamily {
   ORBIT, // Future: Might need to distinguish between ORBIT_L2 and ORBIT_L3...
   ZK_STACK,
   SVM,
+  TVM,
 }
 
 // Source https://docs.layerzero.network/v2/developers/evm/technical-reference/deployed-contracts
@@ -74,11 +81,16 @@ export const PRODUCTION_OFT_EIDs = {
   BLAST: 30243,
   BSC: 30102,
   HYPEREVM: 30367,
+  INK: 30339,
   MAINNET: 30101,
+  MONAD: 30390,
+  MEGAETH: 30398,
   OPTIMISM: 30111,
   PLASMA: 30383,
   POLYGON: 30109,
   SONEIUM: 30340,
+  TEMPO: 30410,
+  TRON: 30420,
   UNICHAIN: 30320,
   WORLD_CHAIN: 30319,
   SOLANA: 30168,
@@ -90,6 +102,7 @@ export const TESTNET_OFT_EIDs = {
   BASE_SEPOLIA: 40245,
   OPTIMISM_SEPOLIA: 40232,
   HYPEREVM_TESTNET: 40362,
+  MONAD_TESTNET: 40204,
   POLYGON_AMOY: 40267,
   SEPOLIA: 40161,
   UNICHAIN_SEPOLIA: 40333,
@@ -118,7 +131,7 @@ export const CCTP_NO_DOMAIN = -1;
 export const OFT_NO_EID = -1;
 export const HYPERLANE_NO_DOMAIN_ID = -1;
 
-const { NONE, OP_STACK, ORBIT, SVM, ZK_STACK } = ChainFamily;
+const { NONE, OP_STACK, ORBIT, SVM, TVM, ZK_STACK } = ChainFamily;
 export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.ALEPH_ZERO]: {
     name: "Aleph Zero",
@@ -226,16 +239,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "ETH",
     publicRPC: "https://rpc-gel.inkonchain.com",
     blockExplorer: "https://explorer.inkonchain.com",
-    cctpDomain: CCTP_NO_DOMAIN,
-    oftEid: OFT_NO_EID,
+    cctpDomain: 21,
+    oftEid: PRODUCTION_OFT_EIDs.INK,
     hypDomainId: MAINNET_CHAIN_IDs.INK,
   },
   [CHAIN_IDs.TATARA]: {
     name: "Tatara",
-    family: NONE, // Snowflake family - tbd
+    family: NONE,
     nativeToken: "ETH",
-    publicRPC: "https://rpc.tatara.katanarpc.com/<apikey>",
-    blockExplorer: "https://explorer.tatara.katana.network",
+    publicRPC: "",
+    blockExplorer: "",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
@@ -246,6 +259,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "WGHO",
     publicRPC: "https://api.lens.matterhosted.dev",
     blockExplorer: "https://explorer.lens.xyz",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+  },
+  [CHAIN_IDs.LIGHTER]: {
+    name: "Lighter",
+    family: NONE,
+    nativeToken: "LIT",
+    publicRPC: "https://mainnet.zklighter.elliot.ai",
+    blockExplorer: "https://app.lighter.xyz/explorer",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
@@ -280,6 +303,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     oftEid: PRODUCTION_OFT_EIDs.MAINNET,
     hypDomainId: MAINNET_CHAIN_IDs.MAINNET,
   },
+  [CHAIN_IDs.MEGAETH]: {
+    name: "MegaETH",
+    family: OP_STACK,
+    nativeToken: "ETH",
+    publicRPC: "https://mainnet.megaeth.com/rpc",
+    blockExplorer: "https://megaeth.blockscout.com",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: PRODUCTION_OFT_EIDs.MEGAETH,
+    hypDomainId: MAINNET_CHAIN_IDs.MEGAETH,
+  },
   [CHAIN_IDs.MODE]: {
     name: "Mode",
     family: OP_STACK,
@@ -289,6 +322,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: MAINNET_CHAIN_IDs.MODE,
+  },
+  [CHAIN_IDs.MONAD]: {
+    name: "Monad",
+    family: NONE,
+    nativeToken: "MON",
+    publicRPC: "https://rpc-mainnet.monadinfra.com",
+    blockExplorer: "https://monadvision.com",
+    cctpDomain: 15,
+    oftEid: PRODUCTION_OFT_EIDs.MONAD,
+    hypDomainId: MAINNET_CHAIN_IDs.MONAD,
   },
   [CHAIN_IDs.OPTIMISM]: {
     name: "Optimism",
@@ -313,7 +356,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.POLYGON]: {
     name: "Polygon",
     family: NONE,
-    nativeToken: "MATIC",
+    nativeToken: "POL",
     publicRPC: "https://polygon-rpc.com",
     blockExplorer: "https://polygonscan.com",
     cctpDomain: 7,
@@ -370,6 +413,26 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
+  [CHAIN_IDs.TRON]: {
+    name: "TRON",
+    family: TVM,
+    nativeToken: "TRX",
+    publicRPC: "https://api.trongrid.io/jsonrpc",
+    blockExplorer: "https://tronscan.org",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: PRODUCTION_OFT_EIDs.TRON,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+  },
+  [CHAIN_IDs.TEMPO]: {
+    name: "Tempo",
+    family: NONE,
+    nativeToken: "pathUSD", // While there is no native token on Tempo, pathUSD is the default fee token.
+    publicRPC: "https://rpc.tempo.xyz",
+    blockExplorer: "https://explore.mainnet.tempo.xyz",
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: PRODUCTION_OFT_EIDs.TEMPO,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
+  },
   [CHAIN_IDs.WORLD_CHAIN]: {
     name: "World Chain",
     family: OP_STACK,
@@ -385,7 +448,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "ETH",
     publicRPC: "https://mainnet.era.zksync.io",
-    blockExplorer: "https://era.zksync.network",
+    blockExplorer: "https://explorer.zksync.io",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: MAINNET_CHAIN_IDs.ZK_SYNC,
@@ -493,6 +556,16 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     oftEid: OFT_NO_EID,
     hypDomainId: TESTNET_CHAIN_IDs.MODE_SEPOLIA,
   },
+  [CHAIN_IDs.MONAD_TESTNET]: {
+    name: "Monad Testnet",
+    family: NONE,
+    nativeToken: "MON",
+    publicRPC: "https://testnet-rpc.monad.xyz",
+    blockExplorer: "https://testnet.monvision.io",
+    cctpDomain: 15,
+    oftEid: TESTNET_OFT_EIDs.MONAD_TESTNET,
+    hypDomainId: TESTNET_CHAIN_IDs.MONAD_TESTNET,
+  },
   [CHAIN_IDs.OPTIMISM_SEPOLIA]: {
     name: "Optimism Sepolia",
     family: OP_STACK,
@@ -516,7 +589,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
   [CHAIN_IDs.POLYGON_AMOY]: {
     name: "Polygon Amoy",
     family: NONE,
-    nativeToken: "MATIC",
+    nativeToken: "POL",
     publicRPC: "https://rpc-amoy.polygon.technology",
     blockExplorer: "https://amoy.polygonscan.com",
     cctpDomain: 7,

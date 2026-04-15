@@ -1,4 +1,4 @@
-import { CHAIN_IDs } from "./networks";
+import { CHAIN_IDs } from "./networks.js";
 
 // Information for the supported tokens on each chain.
 // NOTE: All addresses should be checksummed
@@ -132,6 +132,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.LISK]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.LISK_SEPOLIA]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.MAINNET]: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      [CHAIN_IDs.MEGAETH]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.MODE]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.MODE_SEPOLIA]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.OPTIMISM]: "0x4200000000000000000000000000000000000006",
@@ -144,7 +145,6 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SCROLL_SEPOLIA]: "0x5300000000000000000000000000000000000004",
       [CHAIN_IDs.SEPOLIA]: "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
       [CHAIN_IDs.SONEIUM]: "0x4200000000000000000000000000000000000006",
-      [CHAIN_IDs.TATARA]: "0x17B8Ee96E3bcB3b04b3e8334de4524520C51caB4",
       [CHAIN_IDs.UNICHAIN]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.UNICHAIN_SEPOLIA]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.WORLD_CHAIN]: "0x4200000000000000000000000000000000000006",
@@ -231,11 +231,21 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "MATIC",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.MAINNET]: "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+      [CHAIN_IDs.MAINNET]: "0x455e53CBB86018Ac2B8092FdCd39d8444aFFC3F6",
       [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
     },
-    coingeckoId: "matic-network",
+    coingeckoId: "polygon-ecosystem-token",
+  },
+  MON: {
+    name: "Monad",
+    symbol: "MON",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MONAD]: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+      [CHAIN_IDs.MONAD_TESTNET]: "0x760AfE86e5de5fa0Ee542fc7B7B713e1c5425701",
+    },
+    coingeckoId: "monad",
   },
   OP: {
     name: "Optimism",
@@ -245,6 +255,17 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.OPTIMISM]: "0x4200000000000000000000000000000000000042",
     },
     coingeckoId: "optimism",
+  },
+  POL: {
+    name: "Polygon Ecosystem Token",
+    symbol: "POL",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x455e53CBB86018Ac2B8092FdCd39d8444aFFC3F6",
+      [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
+      [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
+    },
+    coingeckoId: "polygon-ecosystem-token",
   },
   POOL: {
     name: "PoolTogether",
@@ -260,6 +281,15 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.WORLD_CHAIN]: "0x7077C71B4AF70737a08287E279B717Dcf64fdC57",
     },
     coingeckoId: "pooltogether",
+  },
+  pathUSD: {
+    name: "pathUSD",
+    symbol: "pathUSD",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.TEMPO]: "0x20C0000000000000000000000000000000000000",
+    },
+    coingeckoId: "pathusd",
   },
   SNX: {
     name: "Synthetix",
@@ -282,44 +312,15 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "solana",
   },
-  "TATARA-USDC": {
-    name: "Tatara USDC",
-    symbol: "TATARA-USDC",
+  TRX: {
+    name: "TRON",
+    symbol: "TRX",
     decimals: 6,
     addresses: {
-      [CHAIN_IDs.BASE_SEPOLIA]: "0x3c95BB5f49F3643558aa8F699403564A652FBeB0",
-      [CHAIN_IDs.POLYGON_AMOY]: "0x8B0180f2101c8260d49339abfEe87927412494B4",
-      [CHAIN_IDs.SEPOLIA]: "0x2b9Ca0A8C773bb1B92A3dDAE9F882Fd14457DACc",
-      [CHAIN_IDs.TATARA]: "0x102E14ffF48170F2e5b6d0e30259fCD4eE5E28aE",
+      [CHAIN_IDs.MAINNET]: "0x50327c6c5a14DCaDE707ABad2E27eB517df87AB5",
+      [CHAIN_IDs.TRON]: "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
     },
-    coingeckoId: "usd-coin",
-  },
-  "TATARA-USDS": {
-    name: "Tatara USDS",
-    symbol: "TATARA-USDS",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.SEPOLIA]: "0xfC7b006bDEd8e5D4A55FbaC7A91dAf3753f085CD",
-    },
-    coingeckoId: "usd-coin",
-  },
-  "TATARA-USDT": {
-    name: "Tatara USDT",
-    symbol: "TATARA-USDT",
-    decimals: 6,
-    addresses: {
-      [CHAIN_IDs.SEPOLIA]: "0x18fDA3c97Ea92A04D1636D84948624b414D0058E",
-    },
-    coingeckoId: "usd-coin",
-  },
-  "TATARA-WBTC": {
-    name: "Tatara WBTC",
-    symbol: "TATARA-WBTC",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.SEPOLIA]: "0xd67A804510739C33c578162A26324C83DCFC0a0A",
-    },
-    coingeckoId: "wrapped-bitcoin",
+    coingeckoId: "tron",
   },
   UMA: {
     name: "UMA Voting Token",
@@ -355,9 +356,12 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.BASE_SEPOLIA]: "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
       [CHAIN_IDs.HYPEREVM]: "0xb88339CB7199b77E23DB6E890353E22632Ba630f",
       [CHAIN_IDs.HYPEREVM_TESTNET]: "0x2B3370eE501B4a559b57D449569354196457D8Ab",
+      [CHAIN_IDs.INK]: "0x2D270e6886d130D724215A266106e6832161EAEd",
       [CHAIN_IDs.LINEA]: "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
       [CHAIN_IDs.LENS]: "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884",
       [CHAIN_IDs.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      [CHAIN_IDs.MONAD]: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
+      [CHAIN_IDs.MONAD_TESTNET]: "0xf817257fed379853cDe0fa4F97AB987181B1E5Ea",
       [CHAIN_IDs.OPTIMISM]: "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
       [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
       [CHAIN_IDs.POLYGON]: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
@@ -387,6 +391,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0x9552a0a6624A23B848060AE5901659CDDa1f83f8",
       [CHAIN_IDs.POLYGON]: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
       [CHAIN_IDs.SONEIUM]: "0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369",
+      [CHAIN_IDs.TEMPO]: "0x20C000000000000000000000b9537d11c60E8b50",
       [CHAIN_IDs.ZK_SYNC]: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
     },
     coingeckoId: "usd-coin-ethereum-bridged",
@@ -423,6 +428,56 @@ export const TOKEN_SYMBOLS_MAP = {
     l1TokenDecimals: 6,
     coingeckoId: "usd-coin",
   },
+  "USDC-PERPS": {
+    name: "USDC (Perps)",
+    symbol: "USDC-PERPS",
+    decimals: 8,
+    addresses: {
+      // 0x21 prefix is an internal convention to differentiate perps from spot (0x20).
+      [CHAIN_IDs.HYPERCORE]: "0x2100000000000000000000000000000000000000",
+    },
+    coingeckoId: "usd-coin",
+  },
+  "USDC-SPOT": {
+    name: "USDC (Spot)",
+    symbol: "USDC-SPOT",
+    decimals: 8,
+    addresses: {
+      [CHAIN_IDs.HYPERCORE]: "0x2000000000000000000000000000000000000000",
+    },
+    coingeckoId: "usd-coin",
+  },
+  USDH: {
+    name: "Hyperliquid USD",
+    symbol: "USDH",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.HYPEREVM]: "0x111111a1a0667d36bD57c0A9f569b98057111111",
+      [CHAIN_IDs.HYPEREVM_TESTNET]: "0x111111a1a0667d36bD57c0A9f569b98057111111",
+    },
+    coingeckoId: "usdh-2",
+  },
+  "USDH-SPOT": {
+    name: "Hyperliquid USD",
+    symbol: "USDH-SPOT",
+    decimals: 8,
+    addresses: {
+      // We use HyperCore's USDT system address for USDH-SPOT.
+      // https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers#system-addresses
+      [CHAIN_IDs.HYPERCORE]: "0x2000000000000000000000000000000000000168",
+    },
+    coingeckoId: "usdh-2",
+  },
+  USDM: {
+    name: "MegaUSD",
+    symbol: "USDM",
+    decimals: 18,
+    coingeckoId: "megausd",
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0xEc2AF1C8B110a61fD9C3Fa6a554a031Ca9943926",
+      [CHAIN_IDs.MEGAETH]: "0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7",
+    },
+  },
   USDT: {
     name: "Tether USD",
     symbol: "USDT",
@@ -433,9 +488,13 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.BASE]: "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
       [CHAIN_IDs.BOBA]: "0x5DE1677344D3Cb0D7D465c10b72A8f60699C062d",
       [CHAIN_IDs.HYPEREVM]: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      [CHAIN_IDs.INK]: "0x0200C29006150606B650577BBE7B6248F58470c1",
       [CHAIN_IDs.LINEA]: "0xA219439258ca9da29E9Cc4cE5596924745e12B93",
       [CHAIN_IDs.LISK]: "0x05D032ac25d322df992303dCa074EE7392C117b9",
       [CHAIN_IDs.MAINNET]: "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      [CHAIN_IDs.MEGAETH]: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      [CHAIN_IDs.MONAD]: "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+      [CHAIN_IDs.MONAD_TESTNET]: "0x88b8E2161DEDC77EF4ab7585569D2415a1C1055D",
       [CHAIN_IDs.MODE]: "0xf0F161fDA2712DB8b566946122a5af183995e2eD",
       [CHAIN_IDs.OPTIMISM]: "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
       [CHAIN_IDs.PLASMA]: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
@@ -443,6 +502,8 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.POLYGON]: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
       [CHAIN_IDs.SCROLL]: "0xf55BEC9cafDbE8730f096Aa55dad6D22d44099Df",
       [CHAIN_IDs.SEPOLIA]: "0x7169D38820dfd117C3FA1f22a697dBA58d90BA06",
+      [CHAIN_IDs.TRON]: "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+      [CHAIN_IDs.UNICHAIN]: "0x9151434b16b9763660705744891fA906F660EcC5",
       [CHAIN_IDs.ZK_SYNC]: "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
     },
     coingeckoId: "tether",
@@ -464,7 +525,6 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 8,
     addresses: {
       [CHAIN_IDs.HYPERCORE]: "0x200000000000000000000000000000000000010C",
-      [CHAIN_IDs.HYPEREVM]: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       [CHAIN_IDs.MAINNET]: "0xdAC17F958D2ee523a2206206994597C13D831ec7",
     },
     l1TokenDecimals: 6,
@@ -524,10 +584,13 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.LISK]: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3",
       [CHAIN_IDs.MAINNET]: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
       [CHAIN_IDs.MODE]: "0xcDd475325D6F564d27247D1DddBb0DAc6fA0a5CF",
+      [CHAIN_IDs.MONAD]: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      [CHAIN_IDs.MONAD_TESTNET]: "0xcf5a6076cfa32686c0Df13aBaDa2b40dec133F1d",
       [CHAIN_IDs.OPTIMISM]: "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
       [CHAIN_IDs.POLYGON]: "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
-      [CHAIN_IDs.WORLD_CHAIN]: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3",
       [CHAIN_IDs.SCROLL]: "0x3C1BCa5a656e69edCD0D4E36BEbb3FcDAcA60Cf1",
+      [CHAIN_IDs.UNICHAIN]: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      [CHAIN_IDs.WORLD_CHAIN]: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3",
       [CHAIN_IDs.ZK_SYNC]: "0xBBeB516fb02a01611cBBE0453Fe3c580D7281011",
       [CHAIN_IDs.BOB_SEPOLIA]: "0xAdCE1AB74C8e64c155953A8BdE37cBB06Cf7086D",
       [CHAIN_IDs.SEPOLIA]: "0x9D15Db83680572C9a48826d51b733ea3B0957De3",
@@ -556,6 +619,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.LISK]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.LISK_SEPOLIA]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.MAINNET]: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      [CHAIN_IDs.MEGAETH]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.MODE]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.MODE_SEPOLIA]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.OPTIMISM]: "0x4200000000000000000000000000000000000006",
@@ -569,7 +633,6 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SCROLL_SEPOLIA]: "0x5300000000000000000000000000000000000004",
       [CHAIN_IDs.SEPOLIA]: "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
       [CHAIN_IDs.SONEIUM]: "0x4200000000000000000000000000000000000006",
-      [CHAIN_IDs.TATARA]: "0x17B8Ee96E3bcB3b04b3e8334de4524520C51caB4",
       [CHAIN_IDs.UNICHAIN]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.UNICHAIN_SEPOLIA]: "0x4200000000000000000000000000000000000006",
       [CHAIN_IDs.WORLD_CHAIN]: "0x4200000000000000000000000000000000000006",
@@ -616,7 +679,29 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "WMATIC",
     decimals: 18,
     addresses: {
-      [CHAIN_IDs.MAINNET]: "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+      [CHAIN_IDs.MAINNET]: "0x455e53CBB86018Ac2B8092FdCd39d8444aFFC3F6",
+      [CHAIN_IDs.POLYGON]: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
+      [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
+    },
+    coingeckoId: "wmatic",
+  },
+  WMON: {
+    name: "Wrapped Monad",
+    symbol: "WMON",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MONAD]: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+      [CHAIN_IDs.MONAD_TESTNET]: "0x760AfE86e5de5fa0Ee542fc7B7B713e1c5425701",
+    },
+    coingeckoId: "monad", // Change this after coingecko adds WMON
+  },
+  WPOL: {
+    name: "Wrapped Polygon Ecosystem Token",
+    symbol: "WPOL",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x455e53CBB86018Ac2B8092FdCd39d8444aFFC3F6",
       [CHAIN_IDs.POLYGON]: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
       [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
@@ -632,6 +717,16 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.SOLANA_DEVNET]: "So11111111111111111111111111111111111111112",
     },
     coingeckoId: "wrapped-solana",
+  },
+  WTRX: {
+    name: "Wrapped TRX",
+    symbol: "WTRX",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x50327c6c5a14DCaDE707ABad2E27eB517df87AB5",
+      [CHAIN_IDs.TRON]: "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+    },
+    coingeckoId: "wrapped-tron",
   },
   WXPL: {
     name: "Wrapped Plasma",
@@ -659,11 +754,15 @@ export const TOKEN_SYMBOLS_MAP = {
 // Hard-coded mapping of token symbols that should be treated as having equivalent
 // prices. The right-hand side should map to a token symbol in TOKEN_SYMBOLS_MAP.
 export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
+  [TOKEN_SYMBOLS_MAP.pathUSD.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
+  [TOKEN_SYMBOLS_MAP.USDH.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP["USDC.e"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP.USDbC.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP.USDzC.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP.USDB.symbol]: TOKEN_SYMBOLS_MAP.DAI.symbol,
   [TOKEN_SYMBOLS_MAP["USDC-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
+  [TOKEN_SYMBOLS_MAP["USDC-PERPS"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
+  [TOKEN_SYMBOLS_MAP["USDC-SPOT"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP["USDT-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
   [TOKEN_SYMBOLS_MAP["USDT-SPOT"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
   LGHO: TOKEN_SYMBOLS_MAP.WGHO.symbol, // LGHO is the symbol for WGHO on L1.
@@ -676,6 +775,4 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   BNB: TOKEN_SYMBOLS_MAP.WBNB.symbol,
   HYPE: TOKEN_SYMBOLS_MAP.WHYPE.symbol,
   XPL: TOKEN_SYMBOLS_MAP.WXPL.symbol,
-  // Testnet remappings.
-  [TOKEN_SYMBOLS_MAP["TATARA-USDC"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
 };

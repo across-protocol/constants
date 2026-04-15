@@ -1,13 +1,16 @@
 {
   "name": "@across-protocol/constants",
-  "version": "3.1.81",
+  "version": "3.1.110",
   "description": "Export commonly re-used values for Across repositories",
-  "repository": "https://github.com/across-protocol/constants.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/across-protocol/constants"
+  },
   "author": "hello@umaproject.org",
   "license": "AGPL-3.0-only",
   "private": false,
   "publishConfig": {
-    "registry": "https://registry.npmjs.com/",
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "type": "module",
@@ -20,16 +23,15 @@
     "prettier": "prettier .",
     "eslint": "eslint .",
     "prepare": "yarn build",
-    "build": "yarn run clean && yarn run build:cjs && yarn run build:esm && yarn run build:types",
-    "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir ./dist/cjs --removeComments --verbatimModuleSyntax false && echo > ./dist/cjs/package.json '{\"type\":\"commonjs\"}'",
-    "build:esm": "tsc --project tsconfig.json --module es2015 --outDir ./dist/esm && echo > ./dist/esm/package.json '{\"type\":\"module\",\"sideEffects\":false}'",
-    "build:types": "tsc --project tsconfig.json --module esnext --declarationDir ./dist/types --emitDeclarationOnly --declaration --declarationMap",
+    "build": "yarn run clean && yarn run build:cjs && yarn run build:esm",
+    "build:cjs": "tsc --project tsconfig.cjs.json && echo > ./dist/cjs/package.json '{\"type\":\"commonjs\"}'",
+    "build:esm": "tsc --project tsconfig.json",
     "clean": "rm -rf ./dist"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
-    "eslint": "^8.50.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
@@ -38,17 +40,17 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-promise": "^6.1.1",
     "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "typescript": "^6.0.2"
   },
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
-  "types": "./dist/types/index.d.ts",
-  "typings": "./dist/types/index.d.ts",
+  "types": "./dist/esm/index.d.ts",
+  "typings": "./dist/esm/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/cjs/index.js",
+      "types": "./dist/esm/index.d.ts",
       "import": "./dist/esm/index.js",
-      "types": "./dist/types/index.d.ts"
+      "require": "./dist/cjs/index.js"
     },
     "./dist/cjs/*": {
       "require": "./dist/cjs/*.js",
