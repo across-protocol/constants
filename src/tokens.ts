@@ -27,6 +27,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "arbitrum",
   },
+  AVAX: {
+    name: "AVAX",
+    symbol: "AVAX",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.AVALANCHE]: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      [CHAIN_IDs.MAINNET]: "0x85f138bfEE4ef8e540890CFb48F620571d67Eda3",
+    },
+    coingeckoId: "avalanche",
+  },
   AZERO: {
     name: "Aleph Zero",
     symbol: "AZERO",
@@ -560,6 +570,16 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.MAINNET]: "0xdD0ae774F7E300CdAA4EA371cD55169665Ee6AFe",
     },
     coingeckoId: "aleph-zero",
+  },
+  WAVAX: {
+    name: "Wrapped AVAX",
+    symbol: "WAVAX",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.AVALANCHE]: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      [CHAIN_IDs.MAINNET]: "0x85f138bfEE4ef8e540890CFb48F620571d67Eda3",
+    },
+    coingeckoId: "wrapped-avax",
   },
   WBNB: {
     name: "Wrapped BNB",
