@@ -161,7 +161,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "AVAX",
     publicRPC: "https://api.avax.network/ext/bc/C/rpc",
     blockExplorer: "https://snowscan.xyz",
-    cctpDomain: 1, // V1?
+    cctpDomain: 1,
     oftEid: PRODUCTION_OFT_EIDs.AVALANCHE,
     hypDomainId: MAINNET_CHAIN_IDs.AVALANCHE,
   },
