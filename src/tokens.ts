@@ -35,7 +35,7 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.AVALANCHE]: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
       [CHAIN_IDs.MAINNET]: "0x85f138bfEE4ef8e540890CFb48F620571d67Eda3",
     },
-    coingeckoId: "avalanche",
+    coingeckoId: "avalanche-2",
   },
   AZERO: {
     name: "Aleph Zero",
