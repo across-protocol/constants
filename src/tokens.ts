@@ -27,6 +27,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "arbitrum",
   },
+  AVAX: {
+    name: "AVAX",
+    symbol: "AVAX",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.AVALANCHE]: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      [CHAIN_IDs.MAINNET]: "0x85f138bfEE4ef8e540890CFb48F620571d67Eda3",
+    },
+    coingeckoId: "avalanche-2",
+  },
   AZERO: {
     name: "Aleph Zero",
     symbol: "AZERO",
@@ -352,6 +362,7 @@ export const TOKEN_SYMBOLS_MAP = {
     addresses: {
       [CHAIN_IDs.ARBITRUM]: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       [CHAIN_IDs.ARBITRUM_SEPOLIA]: "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d",
+      [CHAIN_IDs.AVALANCHE]: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       [CHAIN_IDs.BASE]: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       [CHAIN_IDs.BASE_SEPOLIA]: "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
       [CHAIN_IDs.HYPEREVM]: "0xb88339CB7199b77E23DB6E890353E22632Ba630f",
@@ -560,6 +571,16 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.MAINNET]: "0xdD0ae774F7E300CdAA4EA371cD55169665Ee6AFe",
     },
     coingeckoId: "aleph-zero",
+  },
+  WAVAX: {
+    name: "Wrapped AVAX",
+    symbol: "WAVAX",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.AVALANCHE]: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      [CHAIN_IDs.MAINNET]: "0x85f138bfEE4ef8e540890CFb48F620571d67Eda3",
+    },
+    coingeckoId: "wrapped-avax",
   },
   WBNB: {
     name: "Wrapped BNB",

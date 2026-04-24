@@ -28,6 +28,7 @@ export const TESTNET_CHAIN_IDs = {
 export const MAINNET_CHAIN_IDs = {
   ALEPH_ZERO: 41455,
   ARBITRUM: 42161,
+  AVALANCHE: 43114,
   BASE: 8453,
   BLAST: 81457,
   BOB: 60808,
@@ -77,6 +78,7 @@ export enum ChainFamily {
 // Source https://docs.layerzero.network/v2/developers/evm/technical-reference/deployed-contracts
 export const PRODUCTION_OFT_EIDs = {
   ARBITRUM: 30110,
+  AVALANCHE: 30106,
   BASE: 30184,
   BLAST: 30243,
   BSC: 30102,
@@ -152,6 +154,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: 3,
     oftEid: PRODUCTION_OFT_EIDs.ARBITRUM,
     hypDomainId: MAINNET_CHAIN_IDs.ARBITRUM,
+  },
+  [CHAIN_IDs.AVALANCHE]: {
+    name: "Avalanche",
+    family: NONE,
+    nativeToken: "AVAX",
+    publicRPC: "https://api.avax.network/ext/bc/C/rpc",
+    blockExplorer: "https://snowscan.xyz",
+    cctpDomain: 1,
+    oftEid: PRODUCTION_OFT_EIDs.AVALANCHE,
+    hypDomainId: MAINNET_CHAIN_IDs.AVALANCHE,
   },
   [CHAIN_IDs.BASE]: {
     name: "Base",
