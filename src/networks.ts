@@ -1,6 +1,7 @@
 // Chain names and IDs.
 export const TESTNET_SEPOLIA_CHAIN_IDs = {
   ARBITRUM_SEPOLIA: 421614,
+  ARC_TESTNET: 5042002,
   BASE_SEPOLIA: 84532,
   BLAST_SEPOLIA: 168587773,
   BOB_SEPOLIA: 808813,
@@ -28,6 +29,7 @@ export const TESTNET_CHAIN_IDs = {
 export const MAINNET_CHAIN_IDs = {
   ALEPH_ZERO: 41455,
   ARBITRUM: 42161,
+  ARC: 5042,
   AVALANCHE: 43114,
   BASE: 8453,
   BLAST: 81457,
@@ -154,6 +156,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: 3,
     oftEid: PRODUCTION_OFT_EIDs.ARBITRUM,
     hypDomainId: MAINNET_CHAIN_IDs.ARBITRUM,
+  },
+  [CHAIN_IDs.ARC]: {
+    name: "ARC",
+    family: NONE,
+    nativeToken: "USDC",
+    publicRPC: "https://rpc.arc.network", // @TODO: Add proper RPC endpoint
+    blockExplorer: "https://arcscan.app", // @TODO: Add proper block explorer
+    cctpDomain: 26,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.AVALANCHE]: {
     name: "Avalanche",
@@ -477,6 +489,16 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: 3,
     oftEid: TESTNET_OFT_EIDs.ARBITRUM_SEPOLIA,
     hypDomainId: TESTNET_CHAIN_IDs.ARBITRUM_SEPOLIA,
+  },
+  [CHAIN_IDs.ARC_TESTNET]: {
+    name: "ARC Testnet",
+    family: NONE,
+    nativeToken: "USDC",
+    publicRPC: "https://rpc.testnet.arc.network", // @TODO: Add proper RPC endpoint
+    blockExplorer: "https://testnet.arcscan.app", // @TODO: Add proper block explorer
+    cctpDomain: 26,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.BASE_SEPOLIA]: {
     name: "Base Sepolia",
