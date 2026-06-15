@@ -162,7 +162,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: NONE,
     nativeToken: "USDC",
     publicRPC: "https://rpc.arc.network", // @TODO: Add proper RPC endpoint
-    blockExplorer: "https://arcscan.app", // @TODO: Add proper block explorer
+    blockExplorer: "https://explorer.arc.io",
     cctpDomain: 26,
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
@@ -494,8 +494,8 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "ARC Testnet",
     family: NONE,
     nativeToken: "USDC",
-    publicRPC: "https://rpc.testnet.arc.network", // @TODO: Add proper RPC endpoint
-    blockExplorer: "https://testnet.arcscan.app", // @TODO: Add proper block explorer
+    publicRPC: "https://rpc.testnet.arc.network",
+    blockExplorer: "https://testnet.arcscan.app",
     cctpDomain: 26,
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
