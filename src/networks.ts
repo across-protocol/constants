@@ -51,6 +51,7 @@ export const MAINNET_CHAIN_IDs = {
   PLASMA: 9745,
   POLYGON: 137,
   REDSTONE: 690,
+  ROBINHOOD: 4663,
   SCROLL: 534352,
   SONEIUM: 1868,
   SUPERSEED: 5330,
@@ -386,6 +387,16 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: MAINNET_CHAIN_IDs.REDSTONE,
+  },
+  [CHAIN_IDs.ROBINHOOD]: {
+    name: "Robinhood",
+    family: ORBIT,
+    nativeToken: "ETH",
+    publicRPC: "https://rpc.testnet.chain.robinhood.com", // @TODO: Add prod RPC
+    blockExplorer: "https://explorer.testnet.chain.robinhood.com", // @TODO: Add prod block explorer
+    cctpDomain: CCTP_NO_DOMAIN,
+    oftEid: OFT_NO_EID,
+    hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.SCROLL]: {
     name: "Scroll",
