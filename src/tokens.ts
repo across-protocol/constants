@@ -611,7 +611,6 @@ export const TOKEN_SYMBOLS_MAP = {
     addresses: {
       [CHAIN_IDs.ARBITRUM]: "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
       [CHAIN_IDs.BLAST]: "0xF7bc58b8D8f97ADC129cfC4c9f45Ce3C0E1D2692",
-      [CHAIN_IDs.BSC]: "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
       [CHAIN_IDs.BOBA]: "0xdc0486f8bf31DF57a952bcd3c1d3e166e3d9eC8b",
       [CHAIN_IDs.LINEA]: "0x3aAB2285ddcDdaD8edf438C1bAB47e1a9D05a9b4",
       [CHAIN_IDs.LISK]: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3",
@@ -628,6 +627,17 @@ export const TOKEN_SYMBOLS_MAP = {
       [CHAIN_IDs.BOB_SEPOLIA]: "0xAdCE1AB74C8e64c155953A8BdE37cBB06Cf7086D",
       [CHAIN_IDs.SEPOLIA]: "0x9D15Db83680572C9a48826d51b733ea3B0957De3",
     },
+    coingeckoId: "wrapped-bitcoin",
+  },
+  "WBTC-BNB": {
+    name: "Wrapped Bitcoin",
+    symbol: "WBTC-BNB",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.BSC]: "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      [CHAIN_IDs.MAINNET]: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+    },
+    l1TokenDecimals: 8,
     coingeckoId: "wrapped-bitcoin",
   },
   WETH: {
@@ -800,6 +810,7 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   [TOKEN_SYMBOLS_MAP["USDC-SPOT"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP["USDT-BNB"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
   [TOKEN_SYMBOLS_MAP["USDT-SPOT"].symbol]: TOKEN_SYMBOLS_MAP.USDT.symbol,
+  [TOKEN_SYMBOLS_MAP["WBTC-BNB"].symbol]: TOKEN_SYMBOLS_MAP.WBTC.symbol,
   LGHO: TOKEN_SYMBOLS_MAP.WGHO.symbol, // LGHO is the symbol for WGHO on L1.
   // The TOKEN_SYMBOLS_MAP structure assumes that each L2 token address is unique but several mappings
   // can share the same L1 token mapping. Therefore this structure lends itself to querying symbols/decimals/name
