@@ -393,7 +393,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     family: ORBIT,
     nativeToken: "ETH",
     publicRPC: "https://rpc.testnet.chain.robinhood.com", // @TODO: Add prod RPC
-    blockExplorer: "https://explorer.testnet.chain.robinhood.com", // @TODO: Add prod block explorer
+    blockExplorer: "https://robinhoodchain.blockscout.com",
     cctpDomain: CCTP_NO_DOMAIN,
     oftEid: OFT_NO_EID,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
