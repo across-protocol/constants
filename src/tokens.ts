@@ -470,6 +470,15 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "global-dollar",
   },
+  "USDG-MAINNET": {
+    name: "Global Dollar",
+    symbol: "USDG-MAINNET",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0xe343167631d89B6Ffc58B88d6b7fB0228795491D",
+    },
+    coingeckoId: "global-dollar",
+  },
   USDH: {
     name: "Hyperliquid USD",
     symbol: "USDH",
