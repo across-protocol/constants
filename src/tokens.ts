@@ -832,4 +832,5 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   BNB: TOKEN_SYMBOLS_MAP.WBNB.symbol,
   HYPE: TOKEN_SYMBOLS_MAP.WHYPE.symbol,
   XPL: TOKEN_SYMBOLS_MAP.WXPL.symbol,
+  AVAX: TOKEN_SYMBOLS_MAP.WAVAX.symbol,
 };
