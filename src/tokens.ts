@@ -793,17 +793,6 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "plasma",
   },
-  XYZ: {
-    name: "XYZ Token",
-    symbol: "XYZ",
-    decimals: 18,
-    addresses: {
-      [CHAIN_IDs.BASE_SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
-      [CHAIN_IDs.OPTIMISM_SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
-      [CHAIN_IDs.SEPOLIA]: "0x180D555759e4d1d5Cf70C3BaBbAE4B8F410BDAD9",
-    },
-    coingeckoId: "xyz", // This is a testnet token only.
-  },
 };
 
 // Hard-coded mapping of token symbols that should be treated as having equivalent
