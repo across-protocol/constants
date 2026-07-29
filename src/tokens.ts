@@ -647,6 +647,7 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.BSC]: "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      [CHAIN_IDs.MAINNET]: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
     },
     l1TokenDecimals: 8,
     coingeckoId: "wrapped-bitcoin",
