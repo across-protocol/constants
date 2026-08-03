@@ -461,6 +461,16 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "usd-coin",
   },
+  USDe: {
+    name: "USDe",
+    symbol: "USDe",
+    decimals: 18,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+      [CHAIN_IDs.ROBINHOOD]: "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+    },
+    coingeckoId: "ethena-usde",
+  },
   USDG: {
     name: "Global Dollar",
     symbol: "USDG",
