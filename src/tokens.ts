@@ -467,6 +467,11 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "USDG",
     decimals: 6,
     addresses: {
+      // The hub-chain anchor. Consumers that index tokens by their L1 address — the relayer's
+      // TokenClient resolves every per-chain balance from a mainnet token — cannot see a token
+      // that has no mainnet entry, and report a silent zero balance for it instead. Without this
+      // line USDG on Robinhood is invisible to them and every fill into it no-bids.
+      [CHAIN_IDs.MAINNET]: "0xe343167631d89B6Ffc58B88d6b7fB0228795491D",
       [CHAIN_IDs.ROBINHOOD]: "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
     },
     coingeckoId: "global-dollar",
