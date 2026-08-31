@@ -364,7 +364,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "XPL",
     publicRPC: "https://rpc.plasma.to",
     blockExplorer: "https://plasmascan.to",
-    cctpDomain: CCTP_NO_DOMAIN,
+    cctpDomain: 33,
     oftEid: PRODUCTION_OFT_EIDs.PLASMA,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
