@@ -274,8 +274,6 @@ export const TOKEN_SYMBOLS_MAP = {
     decimals: 18,
     addresses: {
       [CHAIN_IDs.MAINNET]: "0x455e53CBB86018Ac2B8092FdCd39d8444aFFC3F6",
-      // POL is the gas token on Polygon, so the chain-137 entry is the wrapped (WPOL) contract,
-      // matching how other native/wrapped pairs are registered here (e.g. BNB, AVAX).
       [CHAIN_IDs.POLYGON]: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
       [CHAIN_IDs.POLYGON_AMOY]: "0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9",
       [CHAIN_IDs.SEPOLIA]: "0x3fd0A53F4Bf853985a95F4Eb3F9C9FDE1F8e2b53",
