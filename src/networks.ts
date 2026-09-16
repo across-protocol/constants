@@ -162,7 +162,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     name: "Arc",
     family: NONE,
     nativeToken: "USDC",
-    publicRPC: "https://rpc.arc.network", // @TODO: Add proper RPC endpoint
+    publicRPC: "https://rpc.mainnet.arc.io",
     blockExplorer: "https://explorer.arc.io",
     cctpDomain: 26,
     oftEid: OFT_NO_EID,
