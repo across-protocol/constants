@@ -448,7 +448,10 @@ export const TOKEN_SYMBOLS_MAP = {
   "USDC-PERPS": {
     name: "USDC (Perps)",
     symbol: "USDC-PERPS",
-    decimals: 8,
+    // HyperCore's perps ledger accounts in 6, unlike USDC-SPOT's genuine 8.
+    // Perps credits are only representable at 1e-6, so 8 would advertise
+    // precision the ledger cannot hold.
+    decimals: 6,
     addresses: {
       // 0x21 prefix is an internal convention to differentiate perps from spot (0x20).
       [CHAIN_IDs.HYPERCORE]: "0x2100000000000000000000000000000000000000",
