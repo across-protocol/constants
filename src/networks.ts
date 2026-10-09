@@ -93,6 +93,7 @@ export const PRODUCTION_OFT_EIDs = {
   OPTIMISM: 30111,
   PLASMA: 30383,
   POLYGON: 30109,
+  ROBINHOOD: 30416,
   SONEIUM: 30340,
   TEMPO: 30410,
   TRON: 30420,
@@ -395,7 +396,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     publicRPC: "https://rpc.mainnet.chain.robinhood.com",
     blockExplorer: "https://robinhoodchain.blockscout.com",
     cctpDomain: CCTP_NO_DOMAIN,
-    oftEid: OFT_NO_EID,
+    oftEid: PRODUCTION_OFT_EIDs.ROBINHOOD,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
   [CHAIN_IDs.SCROLL]: {
