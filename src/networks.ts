@@ -160,10 +160,10 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     hypDomainId: MAINNET_CHAIN_IDs.ARBITRUM,
   },
   [CHAIN_IDs.ARC]: {
-    name: "ARC",
+    name: "Arc",
     family: NONE,
     nativeToken: "USDC",
-    publicRPC: "https://rpc.arc.network", // @TODO: Add proper RPC endpoint
+    publicRPC: "https://rpc.mainnet.arc.io",
     blockExplorer: "https://explorer.arc.io",
     cctpDomain: 26,
     oftEid: OFT_NO_EID,
@@ -365,7 +365,7 @@ export const PRODUCTION_NETWORKS: { [chainId: number]: PublicNetwork } = {
     nativeToken: "XPL",
     publicRPC: "https://rpc.plasma.to",
     blockExplorer: "https://plasmascan.to",
-    cctpDomain: CCTP_NO_DOMAIN,
+    cctpDomain: 33,
     oftEid: PRODUCTION_OFT_EIDs.PLASMA,
     hypDomainId: HYPERLANE_NO_DOMAIN_ID,
   },
@@ -503,7 +503,7 @@ export const TEST_NETWORKS: { [chainId: number]: PublicNetwork } = {
     hypDomainId: TESTNET_CHAIN_IDs.ARBITRUM_SEPOLIA,
   },
   [CHAIN_IDs.ARC_TESTNET]: {
-    name: "ARC Testnet",
+    name: "Arc Testnet",
     family: NONE,
     nativeToken: "USDC",
     publicRPC: "https://rpc.testnet.arc.network",
