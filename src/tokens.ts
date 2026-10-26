@@ -309,8 +309,8 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "PYUSD",
     decimals: 6,
     addresses: {
-      [CHAIN_IDs.MAINNET]: "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
       [CHAIN_IDs.ARBITRUM]: "0x46850aD61C2B7d64d08c9C754F45254596696984",
+      [CHAIN_IDs.MAINNET]: "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
     },
     coingeckoId: "paypal-usd",
   },
