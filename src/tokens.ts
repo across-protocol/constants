@@ -304,6 +304,15 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "pathusd",
   },
+  PYUSD: {
+    name: "PayPal USD",
+    symbol: "PYUSD",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+    },
+    coingeckoId: "paypal-usd",
+  },
   SNX: {
     name: "Synthetix",
     symbol: "SNX",
@@ -809,6 +818,7 @@ export const TOKEN_EQUIVALENCE_REMAPPING: { [symbol: string]: string } = {
   [TOKEN_SYMBOLS_MAP.pathUSD.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP.USDH.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP.USDG.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
+  [TOKEN_SYMBOLS_MAP.PYUSD.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP["USDC.e"].symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP.USDbC.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
   [TOKEN_SYMBOLS_MAP.USDzC.symbol]: TOKEN_SYMBOLS_MAP.USDC.symbol,
