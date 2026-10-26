@@ -472,8 +472,8 @@ export const TOKEN_SYMBOLS_MAP = {
     symbol: "USDG",
     decimals: 6,
     addresses: {
-      [CHAIN_IDs.ROBINHOOD]: "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
       [CHAIN_IDs.ARBITRUM]: "0x004B506865409877C9fA29bfb1ebA929984B9bbC",
+      [CHAIN_IDs.ROBINHOOD]: "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
     },
     coingeckoId: "global-dollar",
   },
