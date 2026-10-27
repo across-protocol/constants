@@ -295,6 +295,15 @@ export const TOKEN_SYMBOLS_MAP = {
     },
     coingeckoId: "pooltogether",
   },
+  PYUSD: {
+    name: "PayPal USD",
+    symbol: "PYUSD",
+    decimals: 6,
+    addresses: {
+      [CHAIN_IDs.MAINNET]: "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+    },
+    coingeckoId: "paypal-usd",
+  },
   pathUSD: {
     name: "pathUSD",
     symbol: "pathUSD",
